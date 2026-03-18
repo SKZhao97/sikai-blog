@@ -1,4 +1,7 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://www.sikaizhao.com/'
 languageCode = 'en-us'
 title = "Sikai's Blog"
 theme = 'stack'
+
+[params.footer]
+    motto = "Stay Hungury, Stay Foolish"

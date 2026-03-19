@@ -5,3 +5,7 @@ theme = 'stack'
 
 [params.footer]
     motto = "Stay Hungury, Stay Foolish"
+
+[params.comments]
+    enabled = false  # 将这里改为 false
+

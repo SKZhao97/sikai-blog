@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>测试 on Sikai&#39;s Blog</title>
+        <link>http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/</link>
+        <description>Recent content in 测试 on Sikai&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 18 Mar 2026 23:47:39 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/%E6%B5%8B%E8%AF%95/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Hello World: A New Chapter</title>
+            <link>http://localhost:1313/post/my-first-post/</link>
+            <pubDate>Wed, 18 Mar 2026 23:47:39 +0800</pubDate>
+            <guid>http://localhost:1313/post/my-first-post/</guid>
+            <description>&lt;img src=&#34;http://localhost:1313/&#34; alt=&#34;Featured image of post Hello World: A New Chapter&#34; /&gt;&lt;p&gt;Finally, &lt;a class=&#34;link&#34; href=&#34;https://www.sikaizhao.com&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;sikaizhao.com&lt;/a&gt; is live.&lt;/p&gt;&#xA;&lt;p&gt;This space is more than just a website; it’s a digital garden where I plan to cultivate my thoughts.&lt;/p&gt;&#xA;&lt;p&gt;My goal is simple: to learn more, to think deeper, and to share frequently. To keep pace with this fast-changing world, constant learning is the only way to ensure we have the power to create better things.&lt;/p&gt;&#xA;&lt;p&gt;It may be a little bit late for me to start up my personal blog, but as the saying goes: &amp;ldquo;The best time to plant a tree was 20 years ago. The second best time is now.&amp;rdquo;&lt;/p&gt;&#xA;&lt;p&gt;Stay tuned. The journey begins now.&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>

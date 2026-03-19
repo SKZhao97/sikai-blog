@@ -2,8 +2,9 @@
 date = '2026-03-18T23:47:39+08:00'
 draft = false
 title = 'Hello World: A New Chapter'
-image = 'cover.jpg'
 description = "Keep learning, keep thinking, keep building and try to create the next"
+
+image = 'cover.jpg'
 +++
 
 

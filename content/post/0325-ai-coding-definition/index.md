@@ -4,6 +4,9 @@ draft = false
 title = 'AI Coding：一些观察'
 description = "关于模型、工具和软件开发流程的笔记"
 
+categories= ["AI Coding"]
+tags= ["AI", "Agent"]
+
 image = 'cover.png'
 +++
 

@@ -4,6 +4,9 @@ draft = false
 title = "A Sip of Homebrew: From the 1975 Club to Today's CLI"
 description = "Something about the Homebrew"
 
+categories= ["Tools"]
+tags= ["Homebrew"]
+
 image = 'cover.jpg'
 
 +++

@@ -4,6 +4,9 @@ draft = false
 title = 'Hello World: A New Chapter'
 description = "Keep learning, keep thinking, keep building and try to create the next"
 
+categories= ["Thoughts"]
+tags= []
+
 image = 'cover.jpg'
 +++
 

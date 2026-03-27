@@ -4,6 +4,9 @@ draft = false
 title = 'Set up the Blog'
 description = "Web construting based on Hugo, Netlify and Cloudflare"
 
+categories= ["Engineering"]
+tags= ["Hugo", "Netlify", "Cloudflare"]
+
 image = 'cover.jpg'
 +++
 

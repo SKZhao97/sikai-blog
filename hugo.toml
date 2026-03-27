@@ -3,9 +3,75 @@ languageCode = 'en-us'
 title = "Sikai's Blog"
 theme = 'stack'
 
+[params.sidebar]
+  subtitle = "Software Engineer"
+  avatar = "img/avatar.png"
+
 [params.footer]
     motto = "Stay Hungury, Stay Foolish"
 
 [params.comments]
     enabled = false  # 将这里改为 false
 
+[[menu.main]]
+  identifier = "home"
+  name = "Home"
+  url = "/"
+  weight = 10
+  [menu.main.params]
+    icon = "home"
+
+[[menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives/"
+  weight = 20
+  [menu.main.params]
+    icon = "archives"
+
+[[menu.main]]
+  identifier = "categories"
+  name = "Categories"
+  url = "/categories/"
+  weight = 30
+  [menu.main.params]
+    icon = "categories"
+
+[[menu.main]]
+  identifier = "tags"
+  name = "Tags"
+  url = "/tags/"
+  weight = 40
+  [menu.main.params]
+    icon = "tag"
+
+#[[menu.main]]
+#  identifier = "search"
+#  name = "Search"
+#  url = "/search/"
+#  weight = 50
+#  [menu.main.params]
+#    icon = "search"
+
+[[menu.main]]
+  identifier = "about"
+  name = "About"
+  url = "/about/"
+  weight = 60
+  [menu.main.params]
+    icon = "user"
+
+[[menu.social]]
+name = "GitHub"
+url = "https://github.com/SKZhao97"
+weight = 10
+[menu.social.params]
+icon = "brand-github"
+
+
+[[menu.social]]
+name = "Email"
+url = "mailto:sikaizhao97@gmail.com"
+weight = 30
+[menu.social.params]
+icon = "messages"

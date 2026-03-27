@@ -4,6 +4,9 @@ draft = false
 title = 'Vibe coding VS Spec Coding'
 description = "从“先跑起来”到“先说清楚"
 
+categories= ["AI Coding"]
+tags= ["AI", "Spec Coding", "Vibe Coding"]
+
 image = 'cover.png'
 +++
 

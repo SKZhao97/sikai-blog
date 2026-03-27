@@ -4,6 +4,9 @@ draft = false
 title = '从写代码到做判断'
 description = "AI Coding 时代下，软件工程师还有护城河吗？"
 
+categories= ["AI Coding", "Thoughts"]
+tags= ["AI"]
+
 image = 'cover.png'
 +++
 

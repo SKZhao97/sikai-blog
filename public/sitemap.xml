@@ -2,13 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/post/0326-how-software-enginer-survive/</loc>
-    <lastmod>2026-03-26T16:15:00+08:00</lastmod>
-  </url><url>
     <loc>http://localhost:1313/post/</loc>
-    <lastmod>2026-03-26T16:15:00+08:00</lastmod>
+    <lastmod>2026-03-27T17:00:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/</loc>
+    <lastmod>2026-03-27T17:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/0327-vibe-coding-vs-spec-coding/</loc>
+    <lastmod>2026-03-27T17:00:00+08:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/post/0326-how-software-enginer-survive/</loc>
     <lastmod>2026-03-26T16:15:00+08:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/post/0325-ai-coding-definition/</loc>

@@ -13,6 +13,9 @@ theme = 'stack'
 [params.comments]
     enabled = false  # 将这里改为 false
 
+[params.widgets]
+    homepage = []
+
 [[menu.main]]
   identifier = "home"
   name = "Home"
@@ -45,13 +48,13 @@ theme = 'stack'
   [menu.main.params]
     icon = "tag"
 
-#[[menu.main]]
-#  identifier = "search"
-#  name = "Search"
-#  url = "/search/"
-#  weight = 50
-#  [menu.main.params]
-#    icon = "search"
+[[menu.main]]
+  identifier = "search"
+  name = "Search"
+  url = "/search/"
+  weight = 50
+  [menu.main.params]
+    icon = "search"
 
 [[menu.main]]
   identifier = "about"
@@ -75,3 +78,14 @@ url = "mailto:sikaizhao97@gmail.com"
 weight = 30
 [menu.social.params]
 icon = "messages"
+
+[mediaTypes]
+  [mediaTypes."application/json"]
+    suffixes = ["json"]
+
+[outputFormats]
+  [outputFormats.JSON]
+    mediaType = "application/json"
+
+[outputs]
+  page = ["HTML", "JSON"]

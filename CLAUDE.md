@@ -82,6 +82,7 @@ The blog has a client-side search feature powered by the Stack theme.
 - Edit `themes/stack/layouts/page/search.json` for JSON data structure
 - The search uses client-side JavaScript; no server-side processing is required.
 
+
 ## Deployment
 
 The site is deployed via Netlify. The `netlify.toml` file specifies the build command and environment variables. The build command runs `hugo build --gc --minify --baseURL "${URL}"`.

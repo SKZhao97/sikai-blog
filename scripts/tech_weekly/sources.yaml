@@ -1,0 +1,46 @@
+sources:
+  - name: OpenAI Blog
+    url: https://openai.com/news/rss.xml
+    kind: official
+    topic: ai
+  - name: Anthropic News
+    url: https://www.anthropic.com/news/rss.xml
+    kind: official
+    topic: ai
+  - name: GitHub Blog Engineering
+    url: https://github.blog/engineering/feed/
+    kind: official
+    topic: developer-tools
+  - name: GitHub Blog Changelog
+    url: https://github.blog/changelog/feed/
+    kind: official
+    topic: developer-tools
+  - name: Google Blog Technology
+    url: https://blog.google/technology/rss/
+    kind: official
+    topic: ai
+  - name: Google DeepMind Blog
+    url: https://deepmind.google/blog/rss.xml
+    kind: official
+    topic: ai
+  - name: Cloudflare Blog
+    url: https://blog.cloudflare.com/rss/
+    kind: official
+    topic: cloud
+  - name: AWS News Blog
+    url: https://aws.amazon.com/blogs/aws/feed/
+    kind: official
+    topic: cloud
+  - name: TechCrunch
+    url: https://techcrunch.com/feed/
+    kind: media
+    topic: tech
+  - name: The Verge Tech
+    url: https://www.theverge.com/rss/tech/index.xml
+    kind: media
+    topic: tech
+  - name: Ars Technica
+    url: http://feeds.arstechnica.com/arstechnica/index
+    kind: media
+    topic: tech
+

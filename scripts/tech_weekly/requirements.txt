@@ -1,0 +1,5 @@
+beautifulsoup4==4.14.2
+certifi==2025.10.5
+feedparser==6.0.12
+PyYAML==6.0.3
+python-dateutil==2.9.0.post0

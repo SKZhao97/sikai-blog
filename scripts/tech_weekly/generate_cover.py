@@ -40,7 +40,7 @@ def generate_cover(path: Path, *, target_date: date, primary_tag: str) -> None:
     week_label = f"{target_date.isocalendar().year} W{target_date.isocalendar().week:02d}"
     start, end = iso_week_date_range(target_date)
     svg = build_cover_svg(
-        title="科技周报",
+        title="Tech Weekly",
         week_label=week_label,
         date_range=f"{start} to {end}",
         primary_tag=primary_tag,

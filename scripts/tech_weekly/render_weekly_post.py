@@ -10,7 +10,7 @@ from zoneinfo import ZoneInfo
 from .config import CONTENT_POST_DIR, MIN_EVENTS_TO_PUBLISH, TIMEZONE_NAME
 from .generate_cover import generate_cover
 from .models import EventCluster
-from .utils import build_bilingual_summaries, ensure_bilingual_title
+from .utils import clean_title
 
 LOGGER = logging.getLogger(__name__)
 TZ = ZoneInfo(TIMEZONE_NAME)
@@ -31,11 +31,18 @@ def weekly_slug(target_date) -> str:
 
 def weekly_title(target_date) -> str:
     calendar = target_date.isocalendar()
-    return f"科技周报 | Tech Weekly | {calendar.year} W{calendar.week:02d}"
+    return f"Tech Weekly | {calendar.year} W{calendar.week:02d}"
 
 
 def render_weekly_post(run_at: datetime, clusters: list[EventCluster], tags: list[str], *, dry_run: bool) -> RenderResult:
-    return render_weekly_post_with_options(run_at, clusters, tags, dry_run=dry_run, force_rewrite_date=False)
+    return render_weekly_post_with_options(
+        run_at,
+        clusters,
+        tags,
+        dry_run=dry_run,
+        force_rewrite_date=False,
+        min_events=MIN_EVENTS_TO_PUBLISH,
+    )
 
 
 def render_weekly_post_with_options(
@@ -45,8 +52,9 @@ def render_weekly_post_with_options(
     *,
     dry_run: bool,
     force_rewrite_date: bool,
+    min_events: int,
 ) -> RenderResult:
-    if len(clusters) < MIN_EVENTS_TO_PUBLISH:
+    if len(clusters) < min_events:
         return RenderResult(False, None, None, "not_enough_events")
 
     target_date = run_at.astimezone(TZ).date()
@@ -68,7 +76,6 @@ def render_weekly_post_with_options(
 
     front_matter = build_front_matter(run_at, target_date, tags)
     intro = (
-        "本周整理前一天公开 RSS 中值得关注的科技新闻，按日追加。\n"
         "This weekly post collects notable tech news from curated public RSS feeds and is updated daily.\n"
     )
     day_section = render_day_section(target_date_str, clusters)
@@ -79,7 +86,11 @@ def render_weekly_post_with_options(
         body_without_front_matter = strip_front_matter(existing_body)
         if force_rewrite_date:
             body_without_front_matter = remove_existing_day_section(body_without_front_matter, target_date_str)
-        body_without_front_matter = body_without_front_matter.rstrip() + "\n\n" + day_section
+        intro, existing_sections = split_intro_and_sections(body_without_front_matter)
+        if existing_sections.strip():
+            body_without_front_matter = intro.rstrip() + "\n\n" + day_section + "\n" + existing_sections.lstrip()
+        else:
+            body_without_front_matter = intro.rstrip() + "\n\n" + day_section
         new_body = front_matter + "\n" + body_without_front_matter + "\n"
 
     if dry_run:
@@ -102,7 +113,7 @@ def build_front_matter(run_at: datetime, target_date, tags: list[str]) -> str:
             f"date = '{date_value}'",
             "draft = false",
             f"title = '{title}'",
-            f"description = '{title} weekly digest generated from curated public RSS feeds.'",
+            f"description = '{title} generated from curated public RSS feeds.'",
             "categories = ['Tech Digest']",
             f"tags = [{serialized_tags}]",
             "image = 'cover.svg'",
@@ -124,37 +135,36 @@ def remove_existing_day_section(content: str, date_string: str) -> str:
     return updated.strip() + "\n"
 
 
+def split_intro_and_sections(content: str) -> tuple[str, str]:
+    match = re.search(r"^## \d{4}-\d{2}-\d{2}$", content, flags=re.MULTILINE)
+    if not match:
+        return content.strip(), ""
+    return content[: match.start()].rstrip(), content[match.start() :].lstrip()
+
+
 def render_day_section(date_string: str, clusters: list[EventCluster]) -> str:
     blocks = [f"## {date_string}"]
     for cluster in clusters:
-        zh_title, en_title = ensure_bilingual_title(cluster.main_item.title)
-        zh_summary, en_summary = build_bilingual_summaries(
-            cluster.main_item.summary,
-            cluster.main_item.title,
-            cluster.main_item.source,
-            cluster.tags,
-        )
+        title = clean_title(cluster.main_item.title)
+        summary = cluster.main_item.summary.strip() or "See the source link for the full update."
+        published_at = cluster.main_item.published_at.astimezone(TZ).strftime("%Y-%m-%d %H:%M GMT+8")
         blocks.extend(
             [
                 "",
-                f"### {en_title}",
+                f"### {title}",
                 "",
-                f"**中文标题：** {zh_title}",
-                "",
-                f"来源 / Source: {cluster.main_item.source}",
+                f"Source: {cluster.main_item.source}",
+                f"Published: {published_at}",
                 "",
                 "**English Summary:**",
-                en_summary,
+                summary,
                 "",
-                "**中文摘要：**",
-                zh_summary,
-                "",
-                "原文链接 / Source:",
+                "Link:",
                 cluster.main_item.link,
             ]
         )
         if cluster.related_items:
-            blocks.extend(["", "补充来源 / Related:"])
+            blocks.extend(["", "Related:"])
             for item in cluster.related_items:
                 blocks.append(item.link)
     return "\n".join(blocks).rstrip() + "\n"

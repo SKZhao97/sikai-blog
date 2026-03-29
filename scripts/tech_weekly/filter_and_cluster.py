@@ -12,6 +12,7 @@ from .config import (
     MAX_DYNAMIC_TAGS,
     MIN_EVENTS_TO_PUBLISH,
     NOISY_TITLE_KEYWORDS,
+    WEAK_NEWS_KEYWORDS,
 )
 from .models import EventCluster, FeedItem
 from .utils import (
@@ -29,18 +30,28 @@ LOGGER = logging.getLogger(__name__)
 
 def filter_items(items: Iterable[FeedItem], *, start, end) -> list[FeedItem]:
     filtered: list[FeedItem] = []
+    reason_counts: Counter[str] = Counter()
     for item in items:
         if not item.link or any(part in item.link.lower() for part in EXCLUDED_SUBSTRINGS):
+            reason_counts["excluded_link"] += 1
             continue
         if not (start <= item.published_at < end):
+            reason_counts["outside_window"] += 1
             continue
         lowered_title = item.title.lower()
         if any(keyword in lowered_title for keyword in NOISY_TITLE_KEYWORDS):
+            reason_counts["noisy_title"] += 1
+            continue
+        if any(keyword in lowered_title for keyword in WEAK_NEWS_KEYWORDS):
+            reason_counts["weak_news"] += 1
             continue
         if len(item.title.strip()) < 12:
+            reason_counts["short_title"] += 1
             continue
         filtered.append(item)
     LOGGER.info("Filtered down to %s items inside target window", len(filtered))
+    if reason_counts:
+        LOGGER.info("Filter drop reasons: %s", dict(reason_counts))
     return filtered
 
 
@@ -104,8 +115,6 @@ def cluster_items(items: list[FeedItem], *, max_events: int = DEFAULT_MAX_EVENTS
             )
         )
     result.sort(key=lambda cluster: (cluster.score, cluster.main_item.published_at), reverse=True)
-    if len(result) < MIN_EVENTS_TO_PUBLISH:
-        LOGGER.info("Only %s clusters remain, below publish threshold", len(result))
     return result[:max_events]
 
 

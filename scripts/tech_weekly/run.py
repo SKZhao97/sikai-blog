@@ -13,6 +13,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit-sources", help="Comma-separated source names to include")
     parser.add_argument("--limit-items", type=int, help="Limit items fetched per RSS feed")
     parser.add_argument("--max-events", type=int, default=None, help="Limit number of rendered events")
+    parser.add_argument("--min-events", type=int, default=None, help="Override minimum event threshold for rendering")
     parser.add_argument(
         "--force-rewrite-date",
         action="store_true",
@@ -30,6 +31,7 @@ def main() -> int:
     args = parse_args()
     configure_logging(args.debug)
 
+    from .config import MIN_EVENTS_TO_PUBLISH
     from .fetch_rss import fetch_items, load_sources
     from .filter_and_cluster import cluster_items, compute_weekly_tags, dedupe_items, filter_items
     from .render_weekly_post import render_weekly_post_with_options
@@ -51,8 +53,11 @@ def main() -> int:
     deduped_items = dedupe_items(filtered_items)
     clusters = cluster_items(deduped_items, max_events=args.max_events or 8)
     tags = compute_weekly_tags(clusters)
+    min_events = args.min_events if args.min_events is not None else MIN_EVENTS_TO_PUBLISH
 
     logging.info("Clusters selected: %s", len(clusters))
+    if len(clusters) < min_events:
+        logging.info("Only %s clusters remain, below publish threshold %s", len(clusters), min_events)
     for cluster in clusters:
         logging.info(
             "Event score=%s source=%s title=%s",
@@ -67,6 +72,7 @@ def main() -> int:
         tags,
         dry_run=args.dry_run,
         force_rewrite_date=args.force_rewrite_date,
+        min_events=min_events,
     )
     logging.info("Render result: %s", result.reason)
     if result.post_path:

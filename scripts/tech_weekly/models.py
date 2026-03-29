@@ -10,6 +10,8 @@ class FeedSource:
     url: str
     kind: str
     topic: str
+    source_type: str = "rss"
+    max_items: int | None = None
 
 
 @dataclass(slots=True)
@@ -34,4 +36,3 @@ class EventCluster:
     score: int
     keywords: list[str]
     tags: list[str]
-

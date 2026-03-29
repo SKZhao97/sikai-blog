@@ -65,10 +65,10 @@ TAG_RULES = {
 PRIMARY_TAG_COLORS = {
     "AI": ("#0f766e", "#14b8a6", "#99f6e4"),
     "Cloud": ("#1d4ed8", "#3b82f6", "#bfdbfe"),
-    "Security": ("#c2410c", "#f97316", "#fed7aa"),
-    "Open Source": ("#166534", "#22c55e", "#bbf7d0"),
-    "Developer Tools": ("#4f46e5", "#818cf8", "#c7d2fe"),
-    "default": ("#334155", "#64748b", "#cbd5e1"),
+    "Security": ("#155e75", "#06b6d4", "#bae6fd"),
+    "Open Source": ("#0f766e", "#2dd4bf", "#99f6e4"),
+    "Developer Tools": ("#1d4ed8", "#38bdf8", "#bae6fd"),
+    "default": ("#0f766e", "#0891b2", "#bae6fd"),
 }
 
 STOPWORDS = {
@@ -167,4 +167,15 @@ NOISY_TITLE_KEYWORDS = {
     "wish you had more free time",
     "sale",
     "deals",
+}
+
+WEAK_NEWS_KEYWORDS = {
+    "doge",
+    "legal defeat",
+    "lawsuit",
+    "texted",
+    "ad when i can",
+    "celebrity",
+    "cagefight",
+    "spring sale",
 }

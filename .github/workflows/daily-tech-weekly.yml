@@ -1,7 +1,28 @@
 name: Daily Tech Weekly
 
 on:
+  schedule:
+    - cron: '30 0 * * *'
   workflow_dispatch:
+    inputs:
+      run_at:
+        description: 'Optional ISO datetime, e.g. 2026-03-29T08:30:00+08:00'
+        required: false
+        type: string
+      dry_run:
+        description: 'Run without writing files'
+        required: false
+        default: false
+        type: boolean
+      min_events:
+        description: 'Optional override for minimum events required to publish'
+        required: false
+        type: string
+      force_rewrite_date:
+        description: 'Rewrite the existing section for the target date'
+        required: false
+        default: false
+        type: boolean
 
 permissions:
   contents: write
@@ -27,7 +48,22 @@ jobs:
         run: pip install -r scripts/tech_weekly/requirements.txt
 
       - name: Run updater
-        run: python -m scripts.tech_weekly.run
+        run: |
+          CMD="python -m scripts.tech_weekly.run"
+          if [ -n "${{ inputs.run_at }}" ]; then
+            CMD="$CMD --run-at '${{ inputs.run_at }}'"
+          fi
+          if [ "${{ inputs.dry_run }}" = "true" ]; then
+            CMD="$CMD --dry-run"
+          fi
+          if [ -n "${{ inputs.min_events }}" ]; then
+            CMD="$CMD --min-events ${{ inputs.min_events }}"
+          fi
+          if [ "${{ inputs.force_rewrite_date }}" = "true" ]; then
+            CMD="$CMD --force-rewrite-date"
+          fi
+          echo "$CMD"
+          eval "$CMD"
 
       - name: Commit changes
         run: |

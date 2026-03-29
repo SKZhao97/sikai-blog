@@ -14,6 +14,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--limit-items", type=int, help="Limit items fetched per RSS feed")
     parser.add_argument("--max-events", type=int, default=None, help="Limit number of rendered events")
     parser.add_argument("--min-events", type=int, default=None, help="Override minimum event threshold for rendering")
+    parser.add_argument("--force-regenerate-cover", action="store_true", help="Regenerate cover.svg even if it already exists")
     parser.add_argument(
         "--force-rewrite-date",
         action="store_true",
@@ -73,6 +74,7 @@ def main() -> int:
         dry_run=args.dry_run,
         force_rewrite_date=args.force_rewrite_date,
         min_events=min_events,
+        force_regenerate_cover=args.force_regenerate_cover,
     )
     logging.info("Render result: %s", result.reason)
     if result.post_path:

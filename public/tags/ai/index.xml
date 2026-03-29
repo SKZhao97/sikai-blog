@@ -1,4 +1,69 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Sikai's Blog</title><link>https://www.sikaizhao.com/tags/ai/</link><description>Recent content in AI on Sikai's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2026 17:00:00 +0800</lastBuildDate><atom:link href="https://www.sikaizhao.com/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Vibe coding VS Spec Coding</title><link>https://www.sikaizhao.com/post/0327-vibe-coding-vs-spec-coding/</link><pubDate>Fri, 27 Mar 2026 17:00:00 +0800</pubDate><guid>https://www.sikaizhao.com/post/0327-vibe-coding-vs-spec-coding/</guid><description>&lt;img src="https://www.sikaizhao.com/" alt="Featured image of post Vibe coding VS Spec Coding" /&gt;&lt;h2 id="核心原则"&gt;核心原则
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>AI on Sikai's Blog</title><link>https://www.sikaizhao.com/tags/ai/</link><description>Recent content in AI on Sikai's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 29 Mar 2026 21:37:19 +0800</lastBuildDate><atom:link href="https://www.sikaizhao.com/tags/ai/index.xml" rel="self" type="application/rss+xml"/><item><title>Tech Weekly | 2026 W13</title><link>https://www.sikaizhao.com/post/2026-w13-tech-weekly/</link><pubDate>Sun, 29 Mar 2026 21:37:19 +0800</pubDate><guid>https://www.sikaizhao.com/post/2026-w13-tech-weekly/</guid><description>&lt;img src="https://www.sikaizhao.com/" alt="Featured image of post Tech Weekly | 2026 W13" /&gt;&lt;p&gt;This weekly post collects notable tech news from curated public RSS feeds and is updated daily.&lt;/p&gt;
+&lt;h2 id="2026-03-29"&gt;2026-03-29
+&lt;/h2&gt;&lt;h3 id="suno-leans-into-customization-with-v55"&gt;Suno leans into customization with v5.5
+&lt;/h3&gt;&lt;p&gt;Source: The Verge Tech
+Published: 2026-03-29 02:33 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+Suno just released one of its biggest updates yet with v5.5 of its AI music model. Where previous updates focused mostly on improving fidelity and creating more natural vocals, v5.5 is about giving users more control. It includes three new features: Voices, My Taste, and Custom Models. In the release notes, Suno says that Voices […]&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://www.theverge.com/entertainment/903056/suno-ai-music-v5-5-model" target="_blank" rel="noopener"
+ &gt;https://www.theverge.com/entertainment/903056/suno-ai-music-v5-5-model&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="anthropics-claude-popularity-with-paying-consumers-is-skyrocketing"&gt;Anthropic’s Claude popularity with paying consumers is skyrocketing
+&lt;/h3&gt;&lt;p&gt;Source: TechCrunch
+Published: 2026-03-28 22:15 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+Estimates for total Claude consumer users are all over the map (we&amp;rsquo;ve seen figures ranging from 18 million to 30 million). Anthropic hasn&amp;rsquo;t disclosed this data, but a spokesperson did tell TechCrunch that Claude paid subscriptions have more than doubled this year.&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/" target="_blank" rel="noopener"
+ &gt;https://techcrunch.com/2026/03/28/anthropics-claude-popularity-with-paying-consumers-is-skyrocketing/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds"&gt;Bluesky leans into AI with Attie, an app for building custom feeds
+&lt;/h3&gt;&lt;p&gt;Source: TechCrunch
+Published: 2026-03-29 07:00 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+Bluesky’s new app Attie uses AI to help people build custom feeds the open social networking protocol atproto.&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/" target="_blank" rel="noopener"
+ &gt;https://techcrunch.com/2026/03/28/bluesky-leans-into-ai-with-attie-an-app-for-building-custom-feeds/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice"&gt;Stanford study outlines dangers of asking AI chatbots for personal advice
+&lt;/h3&gt;&lt;p&gt;Source: TechCrunch
+Published: 2026-03-29 04:45 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+While there’s been plenty of debate about AI sycophancy, a new study by Stanford computer scientists attempts to measure how harmful that tendency might be.&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/" target="_blank" rel="noopener"
+ &gt;https://techcrunch.com/2026/03/28/stanford-study-outlines-dangers-of-asking-ai-chatbots-for-personal-advice/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="elon-musks-last-co-founder-reportedly-leaves-xai"&gt;Elon Musk’s last co-founder reportedly leaves xAI
+&lt;/h3&gt;&lt;p&gt;Source: TechCrunch
+Published: 2026-03-29 00:11 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+All but two of Musk&amp;rsquo;s 11 xAI co-founders departed before this week.&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/" target="_blank" rel="noopener"
+ &gt;https://techcrunch.com/2026/03/28/elon-musks-last-co-founder-reportedly-leaves-xai/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="why-cant-tiktok-identify-ai-generated-ads-when-i-can"&gt;Why can’t TikTok identify AI generated ads when I can?
+&lt;/h3&gt;&lt;p&gt;Source: The Verge Tech
+Published: 2026-03-28 22:00 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+I&amp;rsquo;ve been struggling to tell whether the ads appearing in my TikTok feeds have been made with generative AI tools. As someone who spends a great deal of time scrutinizing images and videos for the usual &amp;ldquo;tells&amp;rdquo; that something was synthetically generated, some of the promotions I&amp;rsquo;ve seen have definitely sparked suspicion. For several weeks, […]&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure" target="_blank" rel="noopener"
+ &gt;https://www.theverge.com/ai-artificial-intelligence/900400/tiktok-ai-ads-labels-samsung-disclosure&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="what-will-power-the-grid-in-2035-the-race-is-wide-open"&gt;What will power the grid in 2035? The race is wide open
+&lt;/h3&gt;&lt;p&gt;Source: TechCrunch
+Published: 2026-03-28 21:05 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+Fusion, fission, and even natural gas are appeared tied in the race to deliver new power to the grid in the early 2030s.&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://techcrunch.com/2026/03/28/what-will-power-the-grid-in-2035-the-race-is-wide-open/" target="_blank" rel="noopener"
+ &gt;https://techcrunch.com/2026/03/28/what-will-power-the-grid-in-2035-the-race-is-wide-open/&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id="lets-take-a-look-at-the-retro-tech-making-a-comeback"&gt;Let’s take a look at the retro tech making a comeback
+&lt;/h3&gt;&lt;p&gt;Source: TechCrunch
+Published: 2026-03-28 21:00 GMT+8&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;English Summary:&lt;/strong&gt;
+Boomboxes, instant cameras, and even landlines are making a comeback. Here are the coolest retro-inspired devices available.&lt;/p&gt;
+&lt;p&gt;Link:
+&lt;a class="link" href="https://techcrunch.com/2026/03/28/lets-take-a-look-at-the-retro-tech-making-a-comeback/" target="_blank" rel="noopener"
+ &gt;https://techcrunch.com/2026/03/28/lets-take-a-look-at-the-retro-tech-making-a-comeback/&lt;/a&gt;&lt;/p&gt;</description></item><item><title>Vibe coding VS Spec Coding</title><link>https://www.sikaizhao.com/post/0327-vibe-coding-vs-spec-coding/</link><pubDate>Fri, 27 Mar 2026 17:00:00 +0800</pubDate><guid>https://www.sikaizhao.com/post/0327-vibe-coding-vs-spec-coding/</guid><description>&lt;img src="https://www.sikaizhao.com/" alt="Featured image of post Vibe coding VS Spec Coding" /&gt;&lt;h2 id="核心原则"&gt;核心原则
 &lt;/h2&gt;&lt;p&gt;一句话描述，Vibe Coding 强调用自然语言驱动 AI 快速生成与迭代代码，追求“先做出可运行的东西”。Spec Coding强调先把行为边界写清楚，再让实现与测试去对齐，从而降低协作与维护成本.&lt;/p&gt;
 &lt;p&gt;在学术/业界，“vibe coding”“spec coding”并无统一、稳定的标准定义；本文采用常见社区类比：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;vibe coding 的核心原则&lt;/strong&gt;：vibe=以直觉/体验驱动的 AI 生成式开发。概念通常追溯到在 2025 年前后对“把代码细节放到后台、用对话和反馈推进”的描述；实践上更像“多轮提示词→生成→运行→再提示词”的闭环，默认把大量实现细节交给模型，甚至不逐行阅读差异，以极快速度获得可用原型。

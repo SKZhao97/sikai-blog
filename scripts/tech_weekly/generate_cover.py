@@ -34,8 +34,8 @@ def build_cover_svg(*, title: str, week_label: str, date_range: str, primary_tag
 """
 
 
-def generate_cover(path: Path, *, target_date: date, primary_tag: str) -> None:
-    if path.exists():
+def generate_cover(path: Path, *, target_date: date, primary_tag: str, force: bool = False) -> None:
+    if path.exists() and not force:
         return
     week_label = f"{target_date.isocalendar().year} W{target_date.isocalendar().week:02d}"
     start, end = iso_week_date_range(target_date)

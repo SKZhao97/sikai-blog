@@ -23,6 +23,11 @@ on:
         required: false
         default: false
         type: boolean
+      force_regenerate_cover:
+        description: 'Regenerate cover.svg even if it already exists'
+        required: false
+        default: true
+        type: boolean
 
 permissions:
   contents: write
@@ -61,6 +66,9 @@ jobs:
           fi
           if [ "${{ inputs.force_rewrite_date }}" = "true" ]; then
             CMD="$CMD --force-rewrite-date"
+          fi
+          if [ "${{ inputs.force_regenerate_cover }}" = "true" ]; then
+            CMD="$CMD --force-regenerate-cover"
           fi
           echo "$CMD"
           eval "$CMD"

@@ -42,6 +42,7 @@ def render_weekly_post(run_at: datetime, clusters: list[EventCluster], tags: lis
         dry_run=dry_run,
         force_rewrite_date=False,
         min_events=MIN_EVENTS_TO_PUBLISH,
+        force_regenerate_cover=False,
     )
 
 
@@ -53,6 +54,7 @@ def render_weekly_post_with_options(
     dry_run: bool,
     force_rewrite_date: bool,
     min_events: int,
+    force_regenerate_cover: bool,
 ) -> RenderResult:
     if len(clusters) < min_events:
         return RenderResult(False, None, None, "not_enough_events")
@@ -98,7 +100,12 @@ def render_weekly_post_with_options(
 
     post_dir.mkdir(parents=True, exist_ok=True)
     post_path.write_text(new_body, encoding="utf-8")
-    generate_cover(cover_path, target_date=target_date, primary_tag=tags[2] if len(tags) > 2 else "default")
+    generate_cover(
+        cover_path,
+        target_date=target_date,
+        primary_tag=tags[2] if len(tags) > 2 else "default",
+        force=force_regenerate_cover,
+    )
     return RenderResult(True, post_path, cover_path, "created" if created else "updated")
 
 

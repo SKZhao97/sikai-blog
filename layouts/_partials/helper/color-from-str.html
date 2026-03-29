@@ -1,0 +1,13 @@
+{{/*
+    Override Stack's deterministic taxonomy color helper.
+    Keep tag/category chips in a cool blue-teal range so they match the blog's cover art.
+*/}}
+
+{{- $str := . -}}
+{{- $hash := hash.FNV32a $str -}}
+{{- $h := add 175 (mod $hash 85) -}}
+
+{{- $backgroundColor := printf "hsl(%d, 58%%, 86%%)" $h -}}
+{{- $textColor := printf "hsl(%d, 52%%, 18%%)" $h -}}
+
+{{- return dict "BackgroundColor" $backgroundColor "TextColor" $textColor "Hue" $h -}}

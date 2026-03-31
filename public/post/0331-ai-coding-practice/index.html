@@ -16,9 +16,10 @@
 <meta property='og:description' content="使用 AI Coding 做一个真实项目：一些经验总结">
 <meta property='og:url' content='http://localhost:1313/post/0331-ai-coding-practice/'>
 <meta property='og:site_name' content='Sikai&#39;s Blog'>
-<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Agent' /><meta property='article:published_time' content='2026-03-31T16:15:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-31T16:15:00&#43;08:00'/>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Agent' /><meta property='article:tag' content='Claude Code' /><meta property='article:tag' content='Codex' /><meta property='article:tag' content='Efficiency increasing' /><meta property='article:tag' content='Full-stack' /><meta property='article:published_time' content='2026-03-31T16:15:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-31T16:15:00&#43;08:00'/><meta property='og:image' content='http://localhost:1313/' />
 <meta name="twitter:title" content="AI Coding：一个项目">
-<meta name="twitter:description" content="使用 AI Coding 做一个真实项目：一些经验总结"><link rel="alternate" type="application/json" href="http://localhost:1313/post/0331-ai-coding-practice/index.json">
+<meta name="twitter:description" content="使用 AI Coding 做一个真实项目：一些经验总结"><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/' /><link rel="alternate" type="application/json" href="http://localhost:1313/post/0331-ai-coding-practice/index.json">
     </head>
     <body class="
     article-page
@@ -256,6 +257,12 @@
             <main class="main full-width">
     <article class="has-image main-article">
     <header class="article-header">
+    <div class="article-image">
+        <a href="/post/0331-ai-coding-practice/">
+            <img alt="Featured image of post AI Coding：一个项目" height="1024" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/post/0331-ai-coding-practice/cover.png" srcset="/post/0331-ai-coding-practice/cover_hu_345810d8709f7e9e.png 800w, /post/0331-ai-coding-practice/cover.png 1536w" width="1536">
+        </a>
+    </div>
+    
 
     <div class="article-details">
     
@@ -266,6 +273,20 @@
             
             <a href="/categories/ai-coding/" style="background-color: hsl(224, 58%, 86%); color: hsl(224, 52%, 18%);">
                 AI Coding
+            </a>
+        
+            
+            
+            
+            <a href="/categories/thoughts/" style="background-color: hsl(251, 58%, 86%); color: hsl(251, 52%, 18%);">
+                Thoughts
+            </a>
+        
+            
+            
+            
+            <a href="/categories/engineering/" style="background-color: hsl(210, 58%, 86%); color: hsl(210, 52%, 18%);">
+                Engineering
             </a>
         
     </header>
@@ -412,7 +433,7 @@
 <li>没有产品感</li>
 </ul>
 <p>另外， 小量级闭环相比大量级具备更高的确定性，并且减少“幻觉”的堆积，又易于验证，而且避免了大步快走引入问题和偏移导致返工从而降效。总之，<strong>小闭环、快验证、再纠偏能够避免AI编程的提效效果被浪费</strong>。</p>
-<h2 id="4-人工判断依然非常重要尤其是产品和设计">4. 人工判断依然非常重要，尤其是产品和设计
+<h2 id="5-人工判断依然非常重要尤其是产品和设计">5. 人工判断依然非常重要，尤其是产品和设计
 </h2><p>本次开发一个很强的感受是：<strong>AI 可以给出很多“像答案”的东西，但产品方向和审美判断依然需要人来拍板。</strong></p>
 <p>比如：</p>
 <ul>
@@ -422,7 +443,7 @@
 <li>产品 logo 是不是有品牌感</li>
 </ul>
 <p>这些都不是模型应该替人决定的，即使AI提出了充分的说明，但它的上下文基本都是通过和我们的沟通获取的，人的认知和判断理想情况下是要优于AI的，如果一味的点击“yes”、回复“同意”，那么工程师就成了跟着AI走的助手，而并不是把AI当作助手。对于小改动尚且可以，但大体量的项目如果工程师毫无参与，那么后续很难维护，也极易产生偏离，所以，<strong>AI编程的提效本质是给人提效，人工判断不可或缺</strong>。</p>
-<h2 id="5-不同模型可以分工而不是互相替代">5. 不同模型可以分工，而不是互相替代
+<h2 id="6-多agent的分工和调度有利于整体提效">6. 多Agent的分工和调度有利于整体提效
 </h2><p>在开发过程中，笔者同时使用了两个进行coding，由于Claude Code模型相对稍差，总体的分工为：</p>
 <p>Codex：</p>
 <ul>
@@ -439,8 +460,13 @@
 <li>方案、Spec及代码Review</li>
 </ul>
 <p>在实际开发过程中，由于存在两个模型同时运行或者等待其中一个结果的情况，时间有浪费，未能充分利用开发者的全部时间及注意力。后续尝试了Codex多线程编程，同时实现多个功能等方式，但仍然有一定的等待时间浪费，且并非所有的任务均可拆分并行。因此，笔者认为，<strong>如何更好的拆分任务分配给多个AI工具执行是提效的关键因素，且这个因素取决于人</strong>。</p>
-<h2 id="6-一些非常实用的-ai-coding-技巧">6. 一些非常实用的 AI Coding 技巧
-</h2><h3 id="1-先让-ai-复述需求">1. 先让 AI 复述需求
+<h2 id="7-一些ai-coding技巧">7. 一些AI Coding技巧
+</h2>
+    <blockquote>
+        <p>持续补充</p>
+
+    </blockquote>
+<h3 id="1-先让-ai-复述需求">1. 先让 AI 复述需求
 </h3><p>这是一个很朴素的技巧，其实在工作场景下很常见，当我们给AI安排任务并且这个任务并非一句话诉求的情况下， 可以先让它说：</p>
 <ul>
 <li>它理解了什么</li>
@@ -470,13 +496,22 @@
 <p>这类直接反馈比让AI自己优化更有效，但整体体感上仍然不够智能，比如深色模式按钮颜色太浅导致文案看不清的问题，与AI沟通多次才完成调整，可能后续提供更语义化的描述更有效（比如找到前端hmtl并发送给ai等等）</p>
 <h3 id="4-会话太长时要主动总结">4. 会话太长时要主动总结
 </h3><p>AI对超长上下文并不是无限稳定。从体感上，Claude Code遇到过几次超过最大窗口长度的报错，需要执行/reset命令，Codex未遇到相关报错。一个很有效的习惯是阶段性总结当前状态，把重要结论重新显式化，这个总结也可以交给AI工具执行。另外，对于需求调研和方案讨论过程中的一些思路和产出，也可以让AI工具沉淀为单独的文档，一方面可供工程师单点查看，另一方面也可以为AI工具提供总结性的上下文。</p>
-<h2 id="7-总结">7. 总结
-</h2><p>用一句话总结：</p>
+<h2 id="8-总结">8. 总结
+</h2><p>综上所属，本文目前的观点比较明确：</p>
+<ul>
+<li>AI Coding本身代码功能提效效果足够强</li>
+<li>模型的能力决定了AI Coding的提效上限</li>
+<li>AI的协作规范和约束守住AI Coding的提效下限</li>
+<li>工程师的判断力和任务组织调度是提效多少的关键因素</li>
+</ul>
+<p>用一句话总结：</p>
 <p><strong>AI Coding已经足够强大，但它不会自动带来高质量工程，它真正带来的，是在好的工程方法之上，显著提高推进速度，而软件工程师的意义就是去用好AI Coding实现提效</strong>。</p>
 <p>这一点需要包括笔者在内的所有AI时代下的软件工程师不断的去思考和领悟。</p>
 
     <blockquote>
-        <p>以上思考均为本人个人观点，难免存在纰漏，虚心向大家请教，欢迎随时交流</p>
+        <p>以上思考均为本人个人观点，难免存在纰漏，虚心向大家请教，欢迎随时交流<br>
+附：<a class="link" href="https://github.com/SKZhao97/final-whistle"  target="_blank" rel="noopener"
+    >Github Repo</a></p>
 
     </blockquote>
 
@@ -490,6 +525,14 @@
             <a href="/tags/ai/">AI</a>
         
             <a href="/tags/agent/">Agent</a>
+        
+            <a href="/tags/claude-code/">Claude Code</a>
+        
+            <a href="/tags/codex/">Codex</a>
+        
+            <a href="/tags/efficiency-increasing/">Efficiency Increasing</a>
+        
+            <a href="/tags/full-stack/">Full-Stack</a>
         
     </section>
 

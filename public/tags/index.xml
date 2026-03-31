@@ -18,6 +18,30 @@
             <guid>http://localhost:1313/tags/ai/</guid>
             <description></description>
         </item><item>
+            <title>Claude Code</title>
+            <link>http://localhost:1313/tags/claude-code/</link>
+            <pubDate>Tue, 31 Mar 2026 16:15:00 +0800</pubDate>
+            <guid>http://localhost:1313/tags/claude-code/</guid>
+            <description></description>
+        </item><item>
+            <title>Codex</title>
+            <link>http://localhost:1313/tags/codex/</link>
+            <pubDate>Tue, 31 Mar 2026 16:15:00 +0800</pubDate>
+            <guid>http://localhost:1313/tags/codex/</guid>
+            <description></description>
+        </item><item>
+            <title>Efficiency Increasing</title>
+            <link>http://localhost:1313/tags/efficiency-increasing/</link>
+            <pubDate>Tue, 31 Mar 2026 16:15:00 +0800</pubDate>
+            <guid>http://localhost:1313/tags/efficiency-increasing/</guid>
+            <description></description>
+        </item><item>
+            <title>Full-Stack</title>
+            <link>http://localhost:1313/tags/full-stack/</link>
+            <pubDate>Tue, 31 Mar 2026 16:15:00 +0800</pubDate>
+            <guid>http://localhost:1313/tags/full-stack/</guid>
+            <description></description>
+        </item><item>
             <title>Cloud</title>
             <link>http://localhost:1313/tags/cloud/</link>
             <pubDate>Tue, 31 Mar 2026 11:39:23 +0800</pubDate>
@@ -82,6 +106,18 @@
             <link>http://localhost:1313/tags/netlify/</link>
             <pubDate>Fri, 20 Mar 2026 00:58:39 +0800</pubDate>
             <guid>http://localhost:1313/tags/netlify/</guid>
+            <description></description>
+        </item><item>
+            <title>Efficiency Improment</title>
+            <link>http://localhost:1313/tags/efficiency-improment/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/efficiency-improment/</guid>
+            <description></description>
+        </item><item>
+            <title>Efficiency Improvement</title>
+            <link>http://localhost:1313/tags/efficiency-improvement/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/efficiency-improvement/</guid>
             <description></description>
         </item></channel>
 </rss>

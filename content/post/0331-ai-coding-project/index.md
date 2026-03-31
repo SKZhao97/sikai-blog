@@ -2,7 +2,7 @@
 date = '2026-03-31T16:15:00+08:00'
 draft = false
 title = 'AI Coding：一个项目'
-description = "使用 AI Coding 做一个真实项目：一些经验总结"
+description = "使用 AI Coding 做一个真实项目的一些经验总结"
 
 categories= ["AI Coding","Thoughts", "Engineering"]
 tags= ["AI", "Agent","Claude Code", "Codex", "Efficiency increasing", "Full-stack"]
@@ -12,8 +12,6 @@ image = 'cover.png'
 
 作为一名软件工程师，我们对AI自然不会陌生，但我如今愈发感受到软件行业正在被AI逐渐改变，甚至可能彻底颠覆，写代码这件事，正在变化。
 
-
-# 使用 AI Coding 做一个真实项目：一些经验总结
 
 ## 0. 前言
 

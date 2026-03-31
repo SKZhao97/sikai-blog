@@ -1,116 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Vibe Coding on Sikai's Blog</title><link>https://www.sikaizhao.com/tags/vibe-coding/</link><description>Recent content in Vibe Coding on Sikai's Blog</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 27 Mar 2026 17:00:00 +0800</lastBuildDate><atom:link href="https://www.sikaizhao.com/tags/vibe-coding/index.xml" rel="self" type="application/rss+xml"/><item><title>Vibe coding VS Spec Coding</title><link>https://www.sikaizhao.com/post/0327-vibe-coding-vs-spec-coding/</link><pubDate>Fri, 27 Mar 2026 17:00:00 +0800</pubDate><guid>https://www.sikaizhao.com/post/0327-vibe-coding-vs-spec-coding/</guid><description>&lt;img src="https://www.sikaizhao.com/" alt="Featured image of post Vibe coding VS Spec Coding" /&gt;&lt;h2 id="核心原则"&gt;核心原则
-&lt;/h2&gt;&lt;p&gt;一句话描述，Vibe Coding 强调用自然语言驱动 AI 快速生成与迭代代码，追求“先做出可运行的东西”。Spec Coding强调先把行为边界写清楚，再让实现与测试去对齐，从而降低协作与维护成本.&lt;/p&gt;
-&lt;p&gt;在学术/业界，“vibe coding”“spec coding”并无统一、稳定的标准定义；本文采用常见社区类比：&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;vibe coding 的核心原则&lt;/strong&gt;：vibe=以直觉/体验驱动的 AI 生成式开发。概念通常追溯到在 2025 年前后对“把代码细节放到后台、用对话和反馈推进”的描述；实践上更像“多轮提示词→生成→运行→再提示词”的闭环，默认把大量实现细节交给模型，甚至不逐行阅读差异，以极快速度获得可用原型。
-&lt;strong&gt;spec coding 的核心原则&lt;/strong&gt;：spec=以规范/规格（契约、示例、可执行验收标准）驱动的开发，并在关键处以“API contract / Specification by Example”等成熟做法作为落地点来解释。先把“系统应该做什么”写成&lt;strong&gt;可沟通、可检验&lt;/strong&gt;的规格（如 API 契约、示例驱动的验收标准、测试用例），再写实现去满足它。&lt;/p&gt;
-&lt;h2 id="典型工作流程与团队协作"&gt;典型工作流程与团队协作
-&lt;/h2&gt;&lt;p&gt;Vibe Coding 更像“先产出→再修正”：目标清晰但规格未必完备时，用生成式改动快速逼近一个可运行版本；协作上往往依赖个人在对话中的隐性上下文与即时判断。
-Spec Coding 更像“先对齐→再并行”：把输入输出、错误码、边界条件、验收例子变成显式工件（spec/tests），再允许多人并行实现与联调；契约还能驱动 mock、自动生成文档/SDK 等，从一开始就减少集成摩擦。&lt;/p&gt;
-&lt;pre class="mermaid" style="visibility:hidden"&gt;flowchart TD
- A[需求/想法] --&gt; B{不确定性与风险}
- B --&gt;|低风险/探索| C[vibe: 口述意图]
- C --&gt; D[AI生成代码]
- D --&gt; E[运行&amp;回贴错误]
- E --&gt; F[再提示词/微调]
- F --&gt; G[可用原型/一次性工具]
-
- B --&gt;|高风险/多人协作| H[spec: 写规格/契约/示例]
- H --&gt; I[把示例变成测试/验收标准]
- I --&gt; J[实现代码]
- J --&gt; K[自动化验证+评审]
- K --&gt; L[发布&amp;持续演进]&lt;/pre&gt;&lt;h2 id="示例代码片段"&gt;示例代码片段
-&lt;/h2&gt;&lt;p&gt;下面用同一任务“把金额字符串转为分（int）”演示差异。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Vibe Coding 风格（快，但把规则留到事后）&lt;/strong&gt;：常见于“先让它跑起来”，但隐含了浮点误差、舍入规则不明、异常输入处理缺失等风险。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#75715e"&gt;# vibe: 快速可用版（示意）&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;to_cents_vibe&lt;/span&gt;(s: str) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; int:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; s &lt;span style="color:#f92672"&gt;=&lt;/span&gt; s&lt;span style="color:#f92672"&gt;.&lt;/span&gt;strip()&lt;span style="color:#f92672"&gt;.&lt;/span&gt;replace(&lt;span style="color:#e6db74"&gt;&amp;#34;,&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; int(float(s) &lt;span style="color:#f92672"&gt;*&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;) &lt;span style="color:#75715e"&gt;# 可能出现 0.29*100=28.999... 的问题&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Spec Coding 风格（先写清楚规则，再实现对齐）&lt;/strong&gt;：把“该如何舍入/允许什么输入/错误如何抛出”写进规格与测试，让后续维护者只需遵循工件即可。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"&gt;&lt;code class="language-python" data-lang="python"&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#f92672"&gt;from&lt;/span&gt; decimal &lt;span style="color:#f92672"&gt;import&lt;/span&gt; Decimal, ROUND_HALF_UP
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;to_cents_spec&lt;/span&gt;(s: str) &lt;span style="color:#f92672"&gt;-&amp;gt;&lt;/span&gt; int:
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; Spec:
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - 输入允许: &amp;#34;12&amp;#34;, &amp;#34;12.3&amp;#34;, &amp;#34;12.34&amp;#34;, &amp;#34;1,234.56&amp;#34;
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - 规则: 四舍五入(ROUND_HALF_UP)到2位小数，再转分
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; - 非法输入: 抛 ValueError
-&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#e6db74"&gt; &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; d &lt;span style="color:#f92672"&gt;=&lt;/span&gt; Decimal(s&lt;span style="color:#f92672"&gt;.&lt;/span&gt;replace(&lt;span style="color:#e6db74"&gt;&amp;#34;,&amp;#34;&lt;/span&gt;, &lt;span style="color:#e6db74"&gt;&amp;#34;&amp;#34;&lt;/span&gt;)&lt;span style="color:#f92672"&gt;.&lt;/span&gt;strip())&lt;span style="color:#f92672"&gt;.&lt;/span&gt;quantize(
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; Decimal(&lt;span style="color:#e6db74"&gt;&amp;#34;0.01&amp;#34;&lt;/span&gt;), rounding&lt;span style="color:#f92672"&gt;=&lt;/span&gt;ROUND_HALF_UP
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; )
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;return&lt;/span&gt; int(d &lt;span style="color:#f92672"&gt;*&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;100&lt;/span&gt;)
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt;&lt;span style="color:#66d9ef"&gt;def&lt;/span&gt; &lt;span style="color:#a6e22e"&gt;test_to_cents_spec&lt;/span&gt;():
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; to_cents_spec(&lt;span style="color:#e6db74"&gt;&amp;#34;12&amp;#34;&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1200&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; to_cents_spec(&lt;span style="color:#e6db74"&gt;&amp;#34;12.345&amp;#34;&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;1235&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;span style="display:flex;"&gt;&lt;span&gt; &lt;span style="color:#66d9ef"&gt;assert&lt;/span&gt; to_cents_spec(&lt;span style="color:#e6db74"&gt;&amp;#34;1,234.56&amp;#34;&lt;/span&gt;) &lt;span style="color:#f92672"&gt;==&lt;/span&gt; &lt;span style="color:#ae81ff"&gt;123456&lt;/span&gt;
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id="优缺点对比"&gt;优缺点对比
-&lt;/h2&gt;&lt;table&gt;
- &lt;thead&gt;
- &lt;tr&gt;
- &lt;th&gt;维度&lt;/th&gt;
- &lt;th&gt;Vibe Coding（直觉/体验驱动）&lt;/th&gt;
- &lt;th&gt;Spec Coding（规格/契约驱动）&lt;/th&gt;
- &lt;/tr&gt;
- &lt;/thead&gt;
- &lt;tbody&gt;
- &lt;tr&gt;
- &lt;td&gt;目标&lt;/td&gt;
- &lt;td&gt;快速得到“能跑的东西”&lt;/td&gt;
- &lt;td&gt;快速对齐“该跑成什么样”&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;速度&lt;/td&gt;
- &lt;td&gt;上手快、试错快&lt;/td&gt;
- &lt;td&gt;前期慢一些，后期返工少&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;质量/安全&lt;/td&gt;
- &lt;td&gt;容易引入不可见缺陷与安全坑&lt;/td&gt;
- &lt;td&gt;规格+测试把质量前移、可审计&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;协作&lt;/td&gt;
- &lt;td&gt;易变成“只有提示词作者懂”&lt;/td&gt;
- &lt;td&gt;规格工件成为共同语言与单一事实源&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;维护成本&lt;/td&gt;
- &lt;td&gt;原型可用，演进易失控&lt;/td&gt;
- &lt;td&gt;更利于长期演进与治理&lt;/td&gt;
- &lt;/tr&gt;
- &lt;tr&gt;
- &lt;td&gt;适合结果形态&lt;/td&gt;
- &lt;td&gt;一次性工具、探索性原型&lt;/td&gt;
- &lt;td&gt;核心服务、可持续产品与平台&lt;/td&gt;
- &lt;/tr&gt;
- &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;以上对“vibe 的快与风险”的判断，与对 vibe 的典型描述和其“更适合周末/一次性项目”的语境一致；对“spec 促进并行与减少集成摩擦”的判断，则与 API-first/contract-first 与示例驱动规格的实践总结一致。&lt;/p&gt;
-&lt;h2 id="适用场景实践建议与常见陷阱"&gt;适用场景、实践建议与常见陷阱
-&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：vibe 更适合“不确定但低风险”的探索（内部小工具、交互原型、数据一次性脚本）；spec 更适合“改错代价高”的领域（支付/权限/合规、对外 API、多人长期维护的核心模块）。当组织要把 AI 生成代码带入生产，安全机构也提醒需要更强的保障与默认安全的工程措施。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;三条可立即实践的建议（可直接落地到团队流程）&lt;/strong&gt;：&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;strong&gt;先分级再选法&lt;/strong&gt;：把需求按“风险×寿命×协作规模”分三类（低/中/高）。低风险直接 vibe；中风险 vibe 但必须补最小规格（输入输出+3个边界例子）；高风险必须 spec（契约+测试+评审）。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;把规格压缩成一页&lt;/strong&gt;：为 spec coding 设一个“1-page spec”模板：目标、非目标、接口/状态、错误边界、5个示例（含反例）、验收标准；示例直接转成自动化测试或可执行验收。&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;给 vibe 加护栏&lt;/strong&gt;：规定“Accept All 也行，但必须过关”：最少运行单测/静态检查；对外暴露接口必须补契约；关键路径引入变更必须有人类可读的差异摘要与回滚方案。&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;strong&gt;常见陷阱与规避&lt;/strong&gt;：&lt;br&gt;
-vibe 的典型陷阱是“能跑但没人说得清为什么能跑”，导致隐蔽 bug、维护困难与安全问题；规避要点是把不确定性留在探索期，把进入生产的部分迁移到可验证工件（测试/契约）上。
-spec 的典型陷阱是“过度规格化”与“规格漂移”（实现变了但规格没更新）；规避要点是让规格可执行、纳入 CI，且规格变更必须和代码变更同 PR/同评审，让规格自然成为“活文档”。&lt;/p&gt;
-&lt;h2 id="参考"&gt;参考
-&lt;/h2&gt;&lt;p&gt;&lt;a class="link" href="https://cloud.google.com/discover/what-is-vibe-coding" target="_blank" rel="noopener"
- &gt;What Is vibe coding?&lt;/a&gt;
-&lt;a class="link" href="https://en.wikipedia.org/wiki/Vibe_coding" target="_blank" rel="noopener"
- &gt;Wiki: Vibe coding&lt;/a&gt;
-&lt;a class="link" href="https://en.wikipedia.org/wiki/Spec-driven_development" target="_blank" rel="noopener"
- &gt;Wiki: Spec-driven development&lt;/a&gt;
-&lt;a class="link" href="https://github.com/Fission-AI/OpenSpec" target="_blank" rel="noopener"
- &gt;Github: OpenSpec&lt;/a&gt;
-&lt;a class="link" href="https://res.infoq.com/articles/specification-by-example-book/en/resources/SpecificationbyExampleCH12.pdf" target="_blank" rel="noopener"
- &gt;Specification by Example&lt;/a&gt;&lt;/p&gt;
-
- &lt;blockquote&gt;
- &lt;p&gt;文档包含AI辅助生成内容&lt;/p&gt;
-
- &lt;/blockquote&gt;</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Vibe Coding on Sikai&#39;s Blog</title>
+        <link>http://localhost:1313/tags/vibe-coding/</link>
+        <description>Recent content in Vibe Coding on Sikai&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Fri, 27 Mar 2026 17:00:00 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/vibe-coding/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Vibe coding VS Spec Coding</title>
+            <link>http://localhost:1313/post/0327-vibe-coding-vs-spec-coding/</link>
+            <pubDate>Fri, 27 Mar 2026 17:00:00 +0800</pubDate>
+            <guid>http://localhost:1313/post/0327-vibe-coding-vs-spec-coding/</guid>
+            <description>&lt;img src=&#34;http://localhost:1313/&#34; alt=&#34;Featured image of post Vibe coding VS Spec Coding&#34; /&gt;&lt;h2 id=&#34;核心原则&#34;&gt;核心原则&#xA;&lt;/h2&gt;&lt;p&gt;一句话描述，Vibe Coding 强调用自然语言驱动 AI 快速生成与迭代代码，追求“先做出可运行的东西”。Spec Coding强调先把行为边界写清楚，再让实现与测试去对齐，从而降低协作与维护成本.&lt;/p&gt;&#xA;&lt;p&gt;在学术/业界，“vibe coding”“spec coding”并无统一、稳定的标准定义；本文采用常见社区类比：&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;vibe coding 的核心原则&lt;/strong&gt;：vibe=以直觉/体验驱动的 AI 生成式开发。概念通常追溯到在 2025 年前后对“把代码细节放到后台、用对话和反馈推进”的描述；实践上更像“多轮提示词→生成→运行→再提示词”的闭环，默认把大量实现细节交给模型，甚至不逐行阅读差异，以极快速度获得可用原型。&#xA;&lt;strong&gt;spec coding 的核心原则&lt;/strong&gt;：spec=以规范/规格（契约、示例、可执行验收标准）驱动的开发，并在关键处以“API contract / Specification by Example”等成熟做法作为落地点来解释。先把“系统应该做什么”写成&lt;strong&gt;可沟通、可检验&lt;/strong&gt;的规格（如 API 契约、示例驱动的验收标准、测试用例），再写实现去满足它。&lt;/p&gt;&#xA;&lt;h2 id=&#34;典型工作流程与团队协作&#34;&gt;典型工作流程与团队协作&#xA;&lt;/h2&gt;&lt;p&gt;Vibe Coding 更像“先产出→再修正”：目标清晰但规格未必完备时，用生成式改动快速逼近一个可运行版本；协作上往往依赖个人在对话中的隐性上下文与即时判断。&#xA;Spec Coding 更像“先对齐→再并行”：把输入输出、错误码、边界条件、验收例子变成显式工件（spec/tests），再允许多人并行实现与联调；契约还能驱动 mock、自动生成文档/SDK 等，从一开始就减少集成摩擦。&lt;/p&gt;&#xA;&lt;pre class=&#34;mermaid&#34; style=&#34;visibility:hidden&#34;&gt;flowchart TD&#xA;    A[需求/想法] --&gt; B{不确定性与风险}&#xA;    B --&gt;|低风险/探索| C[vibe: 口述意图]&#xA;    C --&gt; D[AI生成代码]&#xA;    D --&gt; E[运行&amp;回贴错误]&#xA;    E --&gt; F[再提示词/微调]&#xA;    F --&gt; G[可用原型/一次性工具]&#xA;&#xA;    B --&gt;|高风险/多人协作| H[spec: 写规格/契约/示例]&#xA;    H --&gt; I[把示例变成测试/验收标准]&#xA;    I --&gt; J[实现代码]&#xA;    J --&gt; K[自动化验证+评审]&#xA;    K --&gt; L[发布&amp;持续演进]&lt;/pre&gt;&lt;h2 id=&#34;示例代码片段&#34;&gt;示例代码片段&#xA;&lt;/h2&gt;&lt;p&gt;下面用同一任务“把金额字符串转为分（int）”演示差异。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Vibe Coding 风格（快，但把规则留到事后）&lt;/strong&gt;：常见于“先让它跑起来”，但隐含了浮点误差、舍入规则不明、异常输入处理缺失等风险。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# vibe: 快速可用版（示意）&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;to_cents_vibe&lt;/span&gt;(s: str) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; int:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    s &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip()&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; int(float(s) &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)  &lt;span style=&#34;color:#75715e&#34;&gt;# 可能出现 0.29*100=28.999... 的问题&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Spec Coding 风格（先写清楚规则，再实现对齐）&lt;/strong&gt;：把“该如何舍入/允许什么输入/错误如何抛出”写进规格与测试，让后续维护者只需遵循工件即可。&lt;/p&gt;&#xA;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-python&#34; data-lang=&#34;python&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;from&lt;/span&gt; decimal &lt;span style=&#34;color:#f92672&#34;&gt;import&lt;/span&gt; Decimal, ROUND_HALF_UP&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;to_cents_spec&lt;/span&gt;(s: str) &lt;span style=&#34;color:#f92672&#34;&gt;-&amp;gt;&lt;/span&gt; int:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    Spec:&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    - 输入允许: &amp;#34;12&amp;#34;, &amp;#34;12.3&amp;#34;, &amp;#34;12.34&amp;#34;, &amp;#34;1,234.56&amp;#34;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    - 规则: 四舍五入(ROUND_HALF_UP)到2位小数，再转分&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    - 非法输入: 抛 ValueError&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;    &amp;#34;&amp;#34;&amp;#34;&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    d &lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt; Decimal(s&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;replace(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;,&amp;#34;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;)&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;strip())&lt;span style=&#34;color:#f92672&#34;&gt;.&lt;/span&gt;quantize(&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;        Decimal(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;0.01&amp;#34;&lt;/span&gt;), rounding&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;ROUND_HALF_UP&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    )&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;return&lt;/span&gt; int(d &lt;span style=&#34;color:#f92672&#34;&gt;*&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt;)&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;def&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;test_to_cents_spec&lt;/span&gt;():&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;assert&lt;/span&gt; to_cents_spec(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1200&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;assert&lt;/span&gt; to_cents_spec(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;12.345&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;1235&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;    &lt;span style=&#34;color:#66d9ef&#34;&gt;assert&lt;/span&gt; to_cents_spec(&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;1,234.56&amp;#34;&lt;/span&gt;) &lt;span style=&#34;color:#f92672&#34;&gt;==&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;123456&lt;/span&gt;&#xA;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;优缺点对比&#34;&gt;优缺点对比&#xA;&lt;/h2&gt;&lt;table&gt;&#xA;  &lt;thead&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;th&gt;维度&lt;/th&gt;&#xA;          &lt;th&gt;Vibe Coding（直觉/体验驱动）&lt;/th&gt;&#xA;          &lt;th&gt;Spec Coding（规格/契约驱动）&lt;/th&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/thead&gt;&#xA;  &lt;tbody&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;目标&lt;/td&gt;&#xA;          &lt;td&gt;快速得到“能跑的东西”&lt;/td&gt;&#xA;          &lt;td&gt;快速对齐“该跑成什么样”&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;速度&lt;/td&gt;&#xA;          &lt;td&gt;上手快、试错快&lt;/td&gt;&#xA;          &lt;td&gt;前期慢一些，后期返工少&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;质量/安全&lt;/td&gt;&#xA;          &lt;td&gt;容易引入不可见缺陷与安全坑&lt;/td&gt;&#xA;          &lt;td&gt;规格+测试把质量前移、可审计&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;协作&lt;/td&gt;&#xA;          &lt;td&gt;易变成“只有提示词作者懂”&lt;/td&gt;&#xA;          &lt;td&gt;规格工件成为共同语言与单一事实源&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;维护成本&lt;/td&gt;&#xA;          &lt;td&gt;原型可用，演进易失控&lt;/td&gt;&#xA;          &lt;td&gt;更利于长期演进与治理&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;      &lt;tr&gt;&#xA;          &lt;td&gt;适合结果形态&lt;/td&gt;&#xA;          &lt;td&gt;一次性工具、探索性原型&lt;/td&gt;&#xA;          &lt;td&gt;核心服务、可持续产品与平台&lt;/td&gt;&#xA;      &lt;/tr&gt;&#xA;  &lt;/tbody&gt;&#xA;&lt;/table&gt;&#xA;&lt;p&gt;以上对“vibe 的快与风险”的判断，与对 vibe 的典型描述和其“更适合周末/一次性项目”的语境一致；对“spec 促进并行与减少集成摩擦”的判断，则与 API-first/contract-first 与示例驱动规格的实践总结一致。&lt;/p&gt;&#xA;&lt;h2 id=&#34;适用场景实践建议与常见陷阱&#34;&gt;适用场景、实践建议与常见陷阱&#xA;&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：vibe 更适合“不确定但低风险”的探索（内部小工具、交互原型、数据一次性脚本）；spec 更适合“改错代价高”的领域（支付/权限/合规、对外 API、多人长期维护的核心模块）。当组织要把 AI 生成代码带入生产，安全机构也提醒需要更强的保障与默认安全的工程措施。&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;三条可立即实践的建议（可直接落地到团队流程）&lt;/strong&gt;：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;先分级再选法&lt;/strong&gt;：把需求按“风险×寿命×协作规模”分三类（低/中/高）。低风险直接 vibe；中风险 vibe 但必须补最小规格（输入输出+3个边界例子）；高风险必须 spec（契约+测试+评审）。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;把规格压缩成一页&lt;/strong&gt;：为 spec coding 设一个“1-page spec”模板：目标、非目标、接口/状态、错误边界、5个示例（含反例）、验收标准；示例直接转成自动化测试或可执行验收。&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;给 vibe 加护栏&lt;/strong&gt;：规定“Accept All 也行，但必须过关”：最少运行单测/静态检查；对外暴露接口必须补契约；关键路径引入变更必须有人类可读的差异摘要与回滚方案。&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;p&gt;&lt;strong&gt;常见陷阱与规避&lt;/strong&gt;：&lt;br&gt;&#xA;vibe 的典型陷阱是“能跑但没人说得清为什么能跑”，导致隐蔽 bug、维护困难与安全问题；规避要点是把不确定性留在探索期，把进入生产的部分迁移到可验证工件（测试/契约）上。&#xA;spec 的典型陷阱是“过度规格化”与“规格漂移”（实现变了但规格没更新）；规避要点是让规格可执行、纳入 CI，且规格变更必须和代码变更同 PR/同评审，让规格自然成为“活文档”。&lt;/p&gt;&#xA;&lt;h2 id=&#34;参考&#34;&gt;参考&#xA;&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cloud.google.com/discover/what-is-vibe-coding&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;What Is vibe coding?&lt;/a&gt;&#xA;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Vibe_coding&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;Wiki: Vibe coding&lt;/a&gt;&#xA;&lt;a class=&#34;link&#34; href=&#34;https://en.wikipedia.org/wiki/Spec-driven_development&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;Wiki: Spec-driven development&lt;/a&gt;&#xA;&lt;a class=&#34;link&#34; href=&#34;https://github.com/Fission-AI/OpenSpec&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;Github: OpenSpec&lt;/a&gt;&#xA;&lt;a class=&#34;link&#34; href=&#34;https://res.infoq.com/articles/specification-by-example-book/en/resources/SpecificationbyExampleCH12.pdf&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;&#xA;    &gt;Specification by Example&lt;/a&gt;&lt;/p&gt;&#xA;&#xA;    &lt;blockquote&gt;&#xA;        &lt;p&gt;文档包含AI辅助生成内容&lt;/p&gt;&#xA;&#xA;    &lt;/blockquote&gt;&#xA;</description>
+        </item></channel>
+</rss>

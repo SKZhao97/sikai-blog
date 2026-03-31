@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="使用 AI Coding 做一个真实项目：一些经验总结">
+<title>AI Coding：一个项目</title>
+
+
+<link rel="canonical" href="http://localhost:1313/post/0331-ai-coding-practice/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="AI Coding：一个项目">
+<meta property='og:description' content="使用 AI Coding 做一个真实项目：一些经验总结">
+<meta property='og:url' content='http://localhost:1313/post/0331-ai-coding-practice/'>
+<meta property='og:site_name' content='Sikai&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Agent' /><meta property='article:published_time' content='2026-03-31T16:15:00&#43;08:00'/><meta property='article:modified_time' content='2026-03-31T16:15:00&#43;08:00'/>
+<meta name="twitter:title" content="AI Coding：一个项目">
+<meta name="twitter:description" content="使用 AI Coding 做一个真实项目：一些经验总结"><link rel="alternate" type="application/json" href="http://localhost:1313/post/0331-ai-coding-practice/index.json">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <img src="/img/avatar.png" 
+                        width="1024"
+                        height="1024"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Sikai&#39;s Blog</a></h1>
+            <h2 class="site-description">Software Engineer</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/SKZhao97'
+                        
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:sikaizhao97@gmail.com'
+                        
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Categories</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/categories/ai-coding/" style="background-color: hsl(224, 58%, 86%); color: hsl(224, 52%, 18%);">
+                AI Coding
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/0331-ai-coding-practice/">AI Coding：一个项目</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            使用 AI Coding 做一个真实项目：一些经验总结
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-03-31T16:15:00&#43;08:00'>Tuesday, March 31, 2026</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        1 minute read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <p>作为一名软件工程师，我们对AI自然不会陌生，但我如今愈发感受到软件行业正在被AI逐渐改变，甚至可能彻底颠覆，写代码这件事，正在变化。</p>
+<h1 id="使用-ai-coding-做一个真实项目一些经验总结">使用 AI Coding 做一个真实项目：一些经验总结
+</h1><h2 id="0-前言">0. 前言
+</h2><p>最近投入了些休假时间在个人项目上，相对系统地把AI Coding工具真正用进了一个完整的软件工程过程里，体会颇多，浅分享一二。</p>
+<p>项目中主要使用的AI工具主要有：</p>
+<ul>
+<li><code>Codex: ChatGPT 5.4</code></li>
+<li><code>Claude Code: Deepseek-v3.2</code></li>
+</ul>
+<p>项目本身不只是一个demo，而是一个相对完善的软件生态，整体7万行左右包含：</p>
+<ul>
+<li>前后端开发</li>
+<li>数据库建设与定时数据同步策略</li>
+<li>多轮需求调整、 UI及体验重构</li>
+<li>i18n、本地化、浏览架构、交互状态等问题</li>
+</ul>
+<p>这次最大的收获，不是“AI 能不能写好代码”，而是<strong>当 AI 进入真实软件工程之后，什么使用方式最有效</strong>。</p>
+<h2 id="1-论功能实现ai-coding远远强于古法编程">1. 论功能实现，AI Coding远远强于古法编程
+</h2><p>自AI Coding从“补全”走向“对话式协作”起，“AI能不能写好代码”这个问题的讨论已逐渐成为历史。如果说Q1内公司仓库的日常需求迭代还未让我领略到AI的强大能力，那么本次的项目的0-&gt;1是一次很好的“火力展示”。从需求沟通开始，到方案设计与讨论，以及启动代码实现，AI工具尽显专业与细致，不仅能够设计多种方案分析优劣给出建议供选择，而且对于产品形态本身也有一定的贡献。</p>
+<p>举例来说，从整体开发能力上，前后端技术架构的搭建以及数据库、DTO的实现，AI仅用了1个多小时即完成了搭建并跑通，并且各环节单测完善、验收标准严格，这个速度着实比人工实现要快得多，古法编程的话，同样的时间恐怕尚无法写完全部的单测。并且，AI的调研和学习速度是工程师无法企及的，对于一个全栈项目，前端后端的各种框架、工具，拿来即用，这是巨大的效率优势。</p>
+<p>另一个例子，从具体的需求和实现平衡上看，本项目可以近似理解成足球领域的“豆瓣”，但由于官方的足球数据API均为付费资源，如果实时查询将产生较大的开销，笔者和AI达成共识不在此投入成本，因此AI在数据模块进行了较为深入的方案调研，提出了多个有效控制成本的方案，经过讨论确认方案为：异步查询、批量写入、自适应调整同步器。展开来说，AI调研了主流的API提供方及其计费规则，识别到免费的额度，由于不投入成本无法cover直接查询的开销，采取异步写入数据库的方式，并且设计了自适应的轮询策略：比赛开始前1天以上、比赛开始前1天、比赛开始后至结束后1小时内等多个区段调整同步器，尽可能在免费额度内保障数据实时性。</p>
+<p>同类的例子还有很多，总之，<strong>AI Coding的最直接的提效，就是在更短的时间内完成更高质量的开发</strong>。但这种提效存在诸多限制和规范，下文继续分析。</p>
+<h2 id="2-强大的模型才能真正激发强大的工具">2. 强大的模型才能真正激发强大的工具
+</h2><p>由于国内使用Claude Code原生模型的限制，最终选择了火山引擎的coding plan，提供的几个模型经过AI推荐，使用了deepseek-v3.2进行开发。平心而论，相比于搭载ChatGPT 5.4这种主流优秀模型的Codex，整体的表现水平存在一定的可见性的差距。</p>
+<p>具体来说，首先笔者尝试两个工具互相review：比如spec1交给CC来实现、Codex进行review，spec2交给Codex来实现，CC进行review，并且提出review意见后会继续询问开发者是否接受。结果上很直观地看到，Codex提出的意见更加中肯、更加合理，并且能够真正找到一些编码或者设计的问题；但Claude Code大多时候仅能围绕一些规范性、扩展性等P1/P2的环节提出意见，而这些意见Codex大多情况下并不十分接受，需要笔者来补充一些编程原则确认同意某一个规范。</p>
+<p>这个现象一方面可以理解为Codex的review能力强，另一方面也可以证明其代码实现较为符合预期导致CC无从下手挑错，但无论怎样，这说明了，在AI Coding比工程师手动编程强的基础上，通过<strong>使用更强大的模型能够取得更显著的提效</strong>。</p>
+<h2 id="3要把ai当成工程协作者进行持续的约束">3.要把AI当成工程协作者，进行持续的约束
+</h2><p>在以往的需求开发中，笔者基本都采用vibe coding的模式，把AI当作一个“我说一句，它帮我做完”的“许愿池”式的工具，但这种模式对于一个大型的项目或改动很可能会失效，比如：</p>
+<ul>
+<li>需求会变化</li>
+<li>设计会反复调整</li>
+<li>一次生成的方案往往不够稳定</li>
+<li>代码库是有上下文和历史包袱的，AI也存在滑动窗口的长度限制导致”变笨“</li>
+<li>模型可能在“看起来合理”和“真正对”之间摇摆，持续的提问可能导致偏差累积</li>
+</ul>
+<p>所以，本次项目笔者严格采用了spec coding模式，使用AI工具结合OpenSpec驱动进行开发，在这种模式下，我们<strong>把 AI 当成一个速度很快、上下文切换成本很低、但需要持续校准的工程协作者</strong>，对于项目进行拆解并基于spec约束和跟进。整体上，进行了以下的步骤：</p>
+<ul>
+<li>讨论项目需求</li>
+<li>拆分多个Spec并定义边界</li>
+<li>针对每一个Spec
+<ul>
+<li>/opsx:explore：详细分析当前模块的实现，对齐需求</li>
+<li>/opsx:propose：写出技术方案和实现方式，拆解任务</li>
+<li>/opsx:apply：完成方案的实施和验证，在这一步后会进行多模型交叉review</li>
+<li>/opsx:achive：通过验证和review后进行spce的归档</li>
+</ul>
+</li>
+<li>持续分析产品迭代方向并补充新的Spec</li>
+</ul>
+<p>在每个spec的开发中，我们要持续的给AI明确的约束，比如</p>
+<ul>
+<li>这次只改什么</li>
+<li>哪些内容不做</li>
+<li>完成标准是什么</li>
+<li>改完要跑哪些验证</li>
+</ul>
+<p>通过以上的spec coding流程，AI工具能够有充分的上下文可验证、可复现，避免了项目出现调整时AI出现“失忆”的现象。并且每一个spec的每一个task都有迹可循，对于大型项目的管理提效明显，。另外，由于大量spec相关文档均可由AI工具进行产出，整体效率仍然较高，不会出现所谓的文档堆叠等现象，但是由于信息量较大，对reviewer提出了较高的要求。</p>
+<p>总结来说，虽然 <strong>AI提高的是速度，但工程方法决定的是结果</strong>，即使使用了强大的AI工具和模型，如果工程方法混乱，也很难得到预期中的效率提升。</p>
+<h2 id="4-最有效的节奏小闭环快验证再纠偏">4. 最有效的节奏：小闭环、快验证、再纠偏
+</h2><p>这次项目中最有效的工作方式不是一次性做大改，而是：</p>
+<ol>
+<li>先做一个小闭环</li>
+<li>让它跑起来</li>
+<li>人工体验</li>
+<li>直接指出问题</li>
+<li>再让 AI 收下一轮</li>
+</ol>
+<p>尤其对前端交互和用户体验问题，这个节奏非常有效。因为很多问题不是“代码不能运行”，而是必须靠一轮轮真实体验来校准的问题，比如：</p>
+<ul>
+<li>方向不对</li>
+<li>文案不自然</li>
+<li>看不清</li>
+<li>不够高级</li>
+<li>没有产品感</li>
+</ul>
+<p>另外， 小量级闭环相比大量级具备更高的确定性，并且减少“幻觉”的堆积，又易于验证，而且避免了大步快走引入问题和偏移导致返工从而降效。总之，<strong>小闭环、快验证、再纠偏能够避免AI编程的提效效果被浪费</strong>。</p>
+<h2 id="4-人工判断依然非常重要尤其是产品和设计">4. 人工判断依然非常重要，尤其是产品和设计
+</h2><p>本次开发一个很强的感受是：<strong>AI 可以给出很多“像答案”的东西，但产品方向和审美判断依然需要人来拍板。</strong></p>
+<p>比如：</p>
+<ul>
+<li>产品方向到底应该功能深度为主还是社区化优先</li>
+<li>提交数据是否应该拆分借口</li>
+<li>主页导航栏设计是否是喧宾夺主</li>
+<li>产品 logo 是不是有品牌感</li>
+</ul>
+<p>这些都不是模型应该替人决定的，即使AI提出了充分的说明，但它的上下文基本都是通过和我们的沟通获取的，人的认知和判断理想情况下是要优于AI的，如果一味的点击“yes”、回复“同意”，那么工程师就成了跟着AI走的助手，而并不是把AI当作助手。对于小改动尚且可以，但大体量的项目如果工程师毫无参与，那么后续很难维护，也极易产生偏离，所以，<strong>AI编程的提效本质是给人提效，人工判断不可或缺</strong>。</p>
+<h2 id="5-不同模型可以分工而不是互相替代">5. 不同模型可以分工，而不是互相替代
+</h2><p>在开发过程中，笔者同时使用了两个进行coding，由于Claude Code模型相对稍差，总体的分工为：</p>
+<p>Codex：</p>
+<ul>
+<li>方案产出</li>
+<li>主线推进及Spec撰写</li>
+<li>主要代码实现</li>
+<li>代码Review</li>
+</ul>
+<p>Claude Code：</p>
+<ul>
+<li>辅助方案产出</li>
+<li>部分代码实现</li>
+<li>细节代码修改及优化</li>
+<li>方案、Spec及代码Review</li>
+</ul>
+<p>在实际开发过程中，由于存在两个模型同时运行或者等待其中一个结果的情况，时间有浪费，未能充分利用开发者的全部时间及注意力。后续尝试了Codex多线程编程，同时实现多个功能等方式，但仍然有一定的等待时间浪费，且并非所有的任务均可拆分并行。因此，笔者认为，<strong>如何更好的拆分任务分配给多个AI工具执行是提效的关键因素，且这个因素取决于人</strong>。</p>
+<h2 id="6-一些非常实用的-ai-coding-技巧">6. 一些非常实用的 AI Coding 技巧
+</h2><h3 id="1-先让-ai-复述需求">1. 先让 AI 复述需求
+</h3><p>这是一个很朴素的技巧，其实在工作场景下很常见，当我们给AI安排任务并且这个任务并非一句话诉求的情况下， 可以先让它说：</p>
+<ul>
+<li>它理解了什么</li>
+<li>哪些在范围内</li>
+<li>哪些不在范围内</li>
+<li>它准备先做什么</li>
+</ul>
+<p>有效地执行这一步可以显著减少跑偏，毕竟AI写代码即使很快也需要等待。</p>
+<h3 id="2-每次都给完成标准并要求它自己验证">2. 每次都给完成标准并要求它自己验证
+</h3><p>这一步可以耦合进spec的定义流程，告诉AI让他显性的定义一些完成的标准，并要求它验证，例如：</p>
+<ul>
+<li>页面能有效展现和跳转</li>
+<li>数据库能够完成同步</li>
+<li>dark/light mode争吵切换</li>
+<li>API 返回正确</li>
+</ul>
+<p>AI 很容易把“改完了”当成“完成了”，所以一定要明确“完成”的定义，AI自行执行lint、build等功能效率非常高。前置划定完成标准再结合多AI模型互相review，能够更大程度上保障执行结果不跑偏。</p>
+<h3 id="3-ui-问题要直接给主观反馈">3. UI 问题要直接给主观反馈
+</h3><p>对于UI类的问题，笔者的经验是直接提供主观的反馈，某种程度上，AI很难拥有主观的体验，比如</p>
+<ul>
+<li>太丑</li>
+<li>看不清</li>
+<li>太黑</li>
+<li>不够足球</li>
+<li>不够高级</li>
+</ul>
+<p>这类直接反馈比让AI自己优化更有效，但整体体感上仍然不够智能，比如深色模式按钮颜色太浅导致文案看不清的问题，与AI沟通多次才完成调整，可能后续提供更语义化的描述更有效（比如找到前端hmtl并发送给ai等等）</p>
+<h3 id="4-会话太长时要主动总结">4. 会话太长时要主动总结
+</h3><p>AI对超长上下文并不是无限稳定。从体感上，Claude Code遇到过几次超过最大窗口长度的报错，需要执行/reset命令，Codex未遇到相关报错。一个很有效的习惯是阶段性总结当前状态，把重要结论重新显式化，这个总结也可以交给AI工具执行。另外，对于需求调研和方案讨论过程中的一些思路和产出，也可以让AI工具沉淀为单独的文档，一方面可供工程师单点查看，另一方面也可以为AI工具提供总结性的上下文。</p>
+<h2 id="7-总结">7. 总结
+</h2><p>用一句话总结：</p>
+<p><strong>AI Coding已经足够强大，但它不会自动带来高质量工程，它真正带来的，是在好的工程方法之上，显著提高推进速度，而软件工程师的意义就是去用好AI Coding实现提效</strong>。</p>
+<p>这一点需要包括笔者在内的所有AI时代下的软件工程师不断的去思考和领悟。</p>
+
+    <blockquote>
+        <p>以上思考均为本人个人观点，难免存在纰漏，虚心向大家请教，欢迎随时交流</p>
+
+    </blockquote>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ai/">AI</a>
+        
+            <a href="/tags/agent/">Agent</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside>
+    <h2 class="section-title">Related content</h2>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/0325-ai-coding-definition/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post AI Coding：一些观察" height="150" loading="lazy" src="/post/0325-ai-coding-definition/cover_hu_5a4d1a1986645de.png" srcset="/post/0325-ai-coding-definition/cover_hu_5a4d1a1986645de.png 1x, /post/0325-ai-coding-definition/cover_hu_599569dc56f3a686.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #bab8ba80 0%, #111417C0 100%);">
+            <h2 class="article-title">AI Coding：一些观察</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/2026-w14-tech-weekly/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Tech Weekly | 2026 W14" loading="lazy" src="/post/2026-w14-tech-weekly/cover.svg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tech Weekly | 2026 W14</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/2026-w13-tech-weekly/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Tech Weekly | 2026 W13" loading="lazy" src="/post/2026-w13-tech-weekly/cover.svg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tech Weekly | 2026 W13</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0327-vibe-coding-vs-spec-coding/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Vibe coding VS Spec Coding" height="150" loading="lazy" src="/post/0327-vibe-coding-vs-spec-coding/cover_hu_52dde742f6d0bb02.png" srcset="/post/0327-vibe-coding-vs-spec-coding/cover_hu_52dde742f6d0bb02.png 1x, /post/0327-vibe-coding-vs-spec-coding/cover_hu_aa64cc19f37f71ff.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #d2d9cb80 0%, #261c24C0 100%);">
+            <h2 class="article-title">Vibe coding VS Spec Coding</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0326-how-software-enginer-survive/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post 从写代码到做判断" height="150" loading="lazy" src="/post/0326-how-software-enginer-survive/cover_hu_41432df0849214df.png" srcset="/post/0326-how-software-enginer-survive/cover_hu_41432df0849214df.png 1x, /post/0326-how-software-enginer-survive/cover_hu_86cd89590aed5ddc.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #c1b7aa80 0%, #1b222cC0 100%);">
+            <h2 class="article-title">从写代码到做判断</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Sikai&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        
+
+        
+
+        <section class="motto" style="
+            font-family: 'Georgia', serif; 
+            font-size: 0.9em; 
+            color: var(--body-text-color); 
+            margin-bottom: 15px;
+            letter-spacing: 1px;">
+            Stay Hungury, Stay Foolish
+        </section>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.5a24df1f5f9f291c62930d530bc120c733c78822bed03680058ec672123e5b63.js" defer></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Tech Weekly | 2026 W14 generated from curated public RSS feeds.">
+<title>Tech Weekly | 2026 W14</title>
+
+
+<link rel="canonical" href="http://localhost:1313/post/2026-w14-tech-weekly/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="Tech Weekly | 2026 W14">
+<meta property='og:description' content="Tech Weekly | 2026 W14 generated from curated public RSS feeds.">
+<meta property='og:url' content='http://localhost:1313/post/2026-w14-tech-weekly/'>
+<meta property='og:site_name' content='Sikai&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Tech News' /><meta property='article:tag' content='Weekly' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Cloud' /><meta property='article:tag' content='Security' /><meta property='article:tag' content='Developer Tools' /><meta property='article:published_time' content='2026-03-31T11:39:23&#43;08:00'/><meta property='article:modified_time' content='2026-03-31T11:39:23&#43;08:00'/><meta property='og:image' content='http://localhost:1313/' />
+<meta name="twitter:title" content="Tech Weekly | 2026 W14">
+<meta name="twitter:description" content="Tech Weekly | 2026 W14 generated from curated public RSS feeds."><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='http://localhost:1313/' /><link rel="alternate" type="application/json" href="http://localhost:1313/post/2026-w14-tech-weekly/index.json">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <img src="/img/avatar.png" 
+                        width="1024"
+                        height="1024"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Sikai&#39;s Blog</a></h1>
+            <h2 class="site-description">Software Engineer</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/SKZhao97'
+                        
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:sikaizhao97@gmail.com'
+                        
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Categories</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+    <div class="article-image">
+        <a href="/post/2026-w14-tech-weekly/">
+            <img alt="Featured image of post Tech Weekly | 2026 W14" loading="lazy" sizes="(max-width: 767px) calc(100vw - 30px), (max-width: 1023px) 700px, (max-width: 1279px) 950px, 1232px" src="/post/2026-w14-tech-weekly/cover.svg">
+        </a>
+    </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/categories/tech-digest/" style="background-color: hsl(235, 58%, 86%); color: hsl(235, 52%, 18%);">
+                Tech Digest
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/2026-w14-tech-weekly/">Tech Weekly | 2026 W14</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Tech Weekly | 2026 W14 generated from curated public RSS feeds.
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-03-31T11:39:23&#43;08:00'>Tuesday, March 31, 2026</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        4 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <p>This weekly post collects notable tech news from curated public RSS feeds and is updated daily.</p>
+<h2 id="2026-03-31">2026-03-31
+</h2><h3 id="cloudflare-client-side-security-smarter-detection-now-open-to-everyone">Cloudflare Client-Side Security: smarter detection, now open to everyone
+</h3><p>Source: Cloudflare Blog
+Published: 2026-03-30 14:00 GMT+8</p>
+<p><strong>English Summary:</strong>
+We are opening our advanced Client-Side Security tools to all users, featuring a new cascading AI detection system. By combining graph neural networks and LLMs, we&rsquo;ve reduced false positives by up to 200x while catching sophisticated zero-day exploits.</p>
+<p>Link:
+<a class="link" href="https://blog.cloudflare.com/client-side-security-open-to-everyone/"  target="_blank" rel="noopener"
+    >https://blog.cloudflare.com/client-side-security-open-to-everyone/</a></p>
+<h3 id="aws-weekly-roundup-aws-aiml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026">AWS Weekly Roundup: AWS AI/ML Scholars program, Agent Plugin for AWS Serverless, and more (March 30, 2026)
+</h3><p>Source: AWS News Blog
+Published: 2026-03-31 00:11 GMT+8</p>
+<p><strong>English Summary:</strong>
+Last week, what excited me most was the launch of the 2026 AWS AI &amp; ML Scholars program by Swami Sivasubramanian, VP of AWS Agentic AI, to provide free AI education to up to 100,000 learners worldwide. The program has two phases: a Challenge phase where you’ll learn foundational generative AI skills, followed by a […]</p>
+<p>Link:
+<a class="link" href="https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/"  target="_blank" rel="noopener"
+    >https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-ai-ml-scholars-program-agent-plugin-for-aws-serverless-and-more-march-30-2026/</a></p>
+<h3 id="create-issues-from-slack-with-copilot">Create issues from Slack with Copilot
+</h3><p>Source: GitHub Blog Changelog
+Published: 2026-03-30 17:32 GMT+8</p>
+<p><strong>English Summary:</strong>
+You can now create GitHub Issues directly from Slack using natural language with the GitHub app for Slack. Mention @GitHub in any channel, describe the work you need to track,… The post Create issues from Slack with Copilot appeared first on The GitHub Blog .</p>
+<p>Link:
+<a class="link" href="https://github.blog/changelog/2026-03-30-create-issues-from-slack-with-copilot"  target="_blank" rel="noopener"
+    >https://github.blog/changelog/2026-03-30-create-issues-from-slack-with-copilot</a></p>
+<h3 id="evolving-expectations-of-whats-possible">Evolving expectations of what’s possible
+</h3><p>Source: Google Blog Technology
+Published: 2026-03-30 23:00 GMT+8</p>
+<p><strong>English Summary:</strong>
+Gemini said A collage featuring a woman writing on a whiteboard, a blue growth arrow, abstract data light trails, and a security padlock icon.</p>
+<p>Link:
+<a class="link" href="https://blog.google/innovation-and-ai/technology/safety-security/evolving-expectations-of-whats-possible/"  target="_blank" rel="noopener"
+    >https://blog.google/innovation-and-ai/technology/safety-security/evolving-expectations-of-whats-possible/</a></p>
+<h3 id="scaleops-raises-130m-to-improve-computing-efficiency-amid-ai-demand">ScaleOps raises $130M to improve computing efficiency amid AI demand
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 21:52 GMT+8</p>
+<p><strong>English Summary:</strong>
+ScaleOps just raised $130M to tackle GPU shortages and soaring AI cloud costs by automating infrastructure in real time.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/30/scaleops-130m-series-c-kubernetes-efficiency-ai-demand-funding/</a></p>
+<h3 id="starcloud-raises-170-million-series-a-to-build-data-centers-in-space">Starcloud raises $170 million Series A to build data centers in space
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 19:00 GMT+8</p>
+<p><strong>English Summary:</strong>
+Starcloud becomes the fastest Y Combinator startup to reach unicorn status, just 17 months after demo day.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/30/starcloud-raises-170-million-series-ato-build-data-centers-in-space/</a></p>
+<h3 id="why-openai-really-shut-down-sora">Why OpenAI really shut down Sora
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 11:09 GMT+8</p>
+<p><strong>English Summary:</strong>
+OpenAI&rsquo;s decision last week to shut down Sora, its AI video-generation tool, just six months after releasing it to the public, raised immediate suspicions. The app had invited users to upload their own faces — so was this some kind of elaborate data grab?</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/29/why-openai-really-shut-down-sora/</a></p>
+<h3 id="popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve">Popular AI gateway startup LiteLLM ditches controversial startup Delve
+</h3><p>Source: TechCrunch
+Published: 2026-03-31 07:08 GMT+8</p>
+<p><strong>English Summary:</strong>
+LiteLLM had obtained two security compliance certifications via Delve and fell victim to some horrific credential-stealing malware last week.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/30/popular-ai-gateway-startup-litellm-ditches-controversial-startup-delve/</a></p>
+<h2 id="2026-03-30">2026-03-30
+</h2><h3 id="the-pixel-10a-doesnt-have-a-camera-bump-and-its-great">The Pixel 10a doesn’t have a camera bump, and it’s great
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 05:30 GMT+8</p>
+<p><strong>English Summary:</strong>
+The Google Pixel 10a can lay flat on a table, but otherwise the company hasn&rsquo;t brought a ton of upgrades to its newest budget smartphone.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/29/google-pixel-10a-review-camera-bump-performance-ai-chip/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/29/google-pixel-10a-review-camera-bump-performance-ai-chip/</a></p>
+<h3 id="blueskys-new-app-is-an-ai-for-customizing-your-feed">Bluesky’s new app is an AI for customizing your feed
+</h3><p>Source: The Verge Tech
+Published: 2026-03-30 05:44 GMT+8</p>
+<p><strong>English Summary:</strong>
+The latest app from the team behind Bluesky is Attie, an AI assistant that lets you build your own algorithm. At the Atmosphere conference, Bluesky&rsquo;s former CEO, Jay Graber, and CTO Paul Frazee, unveiled Attie, which is powered by Anthropic&rsquo;s Claude and built on top of Bluesky&rsquo;s underlying AT Protocol (atproto). Attie allows users to […]</p>
+<p>Link:
+<a class="link" href="https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds"  target="_blank" rel="noopener"
+    >https://www.theverge.com/ai-artificial-intelligence/903190/bluesky-attie-ai-custom-feeds</a></p>
+<h3 id="polygraphs-have-major-flaws-are-there-better-options">Polygraphs have major flaws. Are there better options?
+</h3><p>Source: Ars Technica
+Published: 2026-03-29 19:01 GMT+8</p>
+<p><strong>English Summary:</strong>
+Research proceeds on alternatives, but some doubt whether true lie detection is possible.</p>
+<p>Link:
+<a class="link" href="https://arstechnica.com/science/2026/03/polygraphs-have-major-flaws-are-there-better-options/"  target="_blank" rel="noopener"
+    >https://arstechnica.com/science/2026/03/polygraphs-have-major-flaws-are-there-better-options/</a></p>
+<h3 id="youtube-ceo-says-the-best-youtubers-will-never-leave-their-home">YouTube CEO says the best YouTubers will ‘never leave their home’
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 05:17 GMT+8</p>
+<p><strong>English Summary:</strong>
+CEO Neal Mohan insisted that he isn’t worried about Netflix luring away YouTube&rsquo;s most popular creators.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/29/youtube-ceo-says-the-best-youtubers-will-never-leave-their-home/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/29/youtube-ceo-says-the-best-youtubers-will-never-leave-their-home/</a></p>
+<h3 id="project-hail-mary-becomes-amazon-mgms-biggest-box-office-hit">‘Project Hail Mary’ becomes Amazon MGM’s biggest box office hit
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 03:50 GMT+8</p>
+<p><strong>English Summary:</strong>
+Amazon’s bet on “Project Hail Mary” has paid off handsomely.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/29/project-hail-mary-becomes-amazon-mgms-biggest-box-office-hit/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/29/project-hail-mary-becomes-amazon-mgms-biggest-box-office-hit/</a></p>
+<h3 id="soras-shutdown-could-be-a-reality-check-moment-for-ai-video">Sora’s shutdown could be a reality check moment for AI video
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 00:30 GMT+8</p>
+<p><strong>English Summary:</strong>
+Is this just normal corporate strategy, or are we about to see a broader pullback on AI-generated video?</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/29/soras-shutdown-could-be-a-reality-check-moment-for-ai-video/</a></p>
+<h3 id="techcrunch-mobility-when-a-robotaxi-has-to-call-911">TechCrunch Mobility: When a robotaxi has to call 911
+</h3><p>Source: TechCrunch
+Published: 2026-03-30 00:05 GMT+8</p>
+<p><strong>English Summary:</strong>
+Welcome back to TechCrunch Mobility — your central hub for news and insights on the future of transportation.</p>
+<p>Link:
+<a class="link" href="https://techcrunch.com/2026/03/29/techcrunch-mobility-when-a-robotaxi-has-to-call-911/"  target="_blank" rel="noopener"
+    >https://techcrunch.com/2026/03/29/techcrunch-mobility-when-a-robotaxi-has-to-call-911/</a></p>
+<h3 id="can-my-favorite-game-boy-gadget-tell-fake-cartridges-from-real">Can my favorite Game Boy gadget tell fake cartridges from real?
+</h3><p>Source: The Verge Tech
+Published: 2026-03-29 23:00 GMT+8</p>
+<p><strong>English Summary:</strong>
+The $50 Epilogue GB Operator has a brand-new trick up its sleeve. In addition to backing up Game Boy, Game Boy Color and Game Boy Advance cartridges and saves to a PC (and writing saves back to carts again!), it can now plug into your phone with a brand-new Retrace app for Android and iOS. […]</p>
+<p>Link:
+<a class="link" href="https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection"  target="_blank" rel="noopener"
+    >https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection</a></p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/tech-news/">Tech News</a>
+        
+            <a href="/tags/weekly/">Weekly</a>
+        
+            <a href="/tags/ai/">AI</a>
+        
+            <a href="/tags/cloud/">Cloud</a>
+        
+            <a href="/tags/security/">Security</a>
+        
+            <a href="/tags/developer-tools/">Developer Tools</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside>
+    <h2 class="section-title">Related content</h2>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/2026-w13-tech-weekly/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Tech Weekly | 2026 W13" loading="lazy" src="/post/2026-w13-tech-weekly/cover.svg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tech Weekly | 2026 W13</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0327-vibe-coding-vs-spec-coding/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Vibe coding VS Spec Coding" height="150" loading="lazy" src="/post/0327-vibe-coding-vs-spec-coding/cover_hu_52dde742f6d0bb02.png" srcset="/post/0327-vibe-coding-vs-spec-coding/cover_hu_52dde742f6d0bb02.png 1x, /post/0327-vibe-coding-vs-spec-coding/cover_hu_aa64cc19f37f71ff.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #d2d9cb80 0%, #261c24C0 100%);">
+            <h2 class="article-title">Vibe coding VS Spec Coding</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0326-how-software-enginer-survive/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post 从写代码到做判断" height="150" loading="lazy" src="/post/0326-how-software-enginer-survive/cover_hu_41432df0849214df.png" srcset="/post/0326-how-software-enginer-survive/cover_hu_41432df0849214df.png 1x, /post/0326-how-software-enginer-survive/cover_hu_86cd89590aed5ddc.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #c1b7aa80 0%, #1b222cC0 100%);">
+            <h2 class="article-title">从写代码到做判断</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0325-ai-coding-definition/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post AI Coding：一些观察" height="150" loading="lazy" src="/post/0325-ai-coding-definition/cover_hu_5a4d1a1986645de.png" srcset="/post/0325-ai-coding-definition/cover_hu_5a4d1a1986645de.png 1x, /post/0325-ai-coding-definition/cover_hu_599569dc56f3a686.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #bab8ba80 0%, #111417C0 100%);">
+            <h2 class="article-title">AI Coding：一些观察</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Sikai&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        
+
+        
+
+        <section class="motto" style="
+            font-family: 'Georgia', serif; 
+            font-size: 0.9em; 
+            color: var(--body-text-color); 
+            margin-bottom: 15px;
+            letter-spacing: 1px;">
+            Stay Hungury, Stay Foolish
+        </section>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.5a24df1f5f9f291c62930d530bc120c733c78822bed03680058ec672123e5b63.js" defer></script>
+
+
+    </body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Creates folder content/post/0401-ai-coding-tools-comparison/",
+      "passed": true,
+      "evidence": "Folder exists at /Users/sz/Code/blog/blog-writer-workspace/iteration-1/ai-coding-tools-comparison/with_skill/outputs/content/post/0401-ai-coding-tools-comparison/"
+    },
+    {
+      "text": "Copies static/cover.png to post folder as cover.png",
+      "passed": true,
+      "evidence": "cover.png file exists in post folder (2,602,552 bytes)"
+    },
+    {
+      "text": "Creates index.md with correct TOML frontmatter including date, draft=true, title, description, categories, tags, and image fields",
+      "passed": true,
+      "evidence": "index.md contains all required fields: date, draft=true, title, description, categories, tags, image"
+    },
+    {
+      "text": "Frontmatter uses single quotes for string values",
+      "passed": true,
+      "evidence": "date, title, description, and image fields are wrapped in single quotes in TOML frontmatter"
+    },
+    {
+      "text": "Initial content includes the provided description and section headers",
+      "passed": true,
+      "evidence": "Content starts with 'Comparing different AI coding tools...' and includes ## Introduction, ## Main Content sections"
+    },
+    {
+      "text": "Folder name follows MMDD-title-slug pattern with current date",
+      "passed": true,
+      "evidence": "Folder name is '0401-ai-coding-tools-comparison' (MMDD = 0401 for April 1, title slug = ai-coding-tools-comparison)"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}

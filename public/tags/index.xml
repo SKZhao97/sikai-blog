@@ -108,16 +108,46 @@
             <guid>http://localhost:1313/tags/netlify/</guid>
             <description></description>
         </item><item>
-            <title>Efficiency Improment</title>
-            <link>http://localhost:1313/tags/efficiency-improment/</link>
+            <title>Comparison</title>
+            <link>http://localhost:1313/tags/comparison/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/tags/efficiency-improment/</guid>
+            <guid>http://localhost:1313/tags/comparison/</guid>
             <description></description>
         </item><item>
-            <title>Efficiency Improvement</title>
-            <link>http://localhost:1313/tags/efficiency-improvement/</link>
+            <title>GitHub Copilot</title>
+            <link>http://localhost:1313/tags/github-copilot/</link>
             <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-            <guid>http://localhost:1313/tags/efficiency-improvement/</guid>
+            <guid>http://localhost:1313/tags/github-copilot/</guid>
+            <description></description>
+        </item><item>
+            <title>Skill</title>
+            <link>http://localhost:1313/tags/skill/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/skill/</guid>
+            <description></description>
+        </item><item>
+            <title>Tech</title>
+            <link>http://localhost:1313/tags/tech/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/tech/</guid>
+            <description></description>
+        </item><item>
+            <title>Test</title>
+            <link>http://localhost:1313/tags/test/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/test/</guid>
+            <description></description>
+        </item><item>
+            <title>Tools</title>
+            <link>http://localhost:1313/tags/tools/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/tools/</guid>
+            <description></description>
+        </item><item>
+            <title>Updates</title>
+            <link>http://localhost:1313/tags/updates/</link>
+            <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+            <guid>http://localhost:1313/tags/updates/</guid>
             <description></description>
         </item></channel>
 </rss>

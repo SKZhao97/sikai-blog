@@ -1,0 +1,6 @@
+{
+  "eval_id": 3,
+  "eval_name": "test-post-skill",
+  "prompt": "Create a simple test post. Title: 'Test Post for Blog Writer Skill', description: 'Testing the blog writer skill functionality', categories: ['Test'], tags: ['test', 'skill']",
+  "assertions": []
+}

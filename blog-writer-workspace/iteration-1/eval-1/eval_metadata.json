@@ -1,0 +1,6 @@
+{
+  "eval_id": 1,
+  "eval_name": "ai-coding-tools-comparison",
+  "prompt": "Create a new blog post about my experience with AI coding tools. Title: 'AI Coding Tools Comparison', description: 'Comparing different AI coding tools like Claude Code, Codex, and GitHub Copilot', categories: ['AI', 'Tools', 'Programming'], tags: ['AI', 'Claude Code', 'Codex', 'GitHub Copilot', 'Comparison']",
+  "assertions": []
+}

@@ -1,0 +1,6 @@
+{
+  "eval_id": 2,
+  "eval_name": "tech-weekly-updates",
+  "prompt": "I want to write a tech weekly post. Title: '2026 Week 15 Tech Updates', description: 'Weekly updates on tech news, tools, and interesting developments from week 15 of 2026', categories: ['Tech Weekly', 'News'], tags: ['weekly', 'updates', 'tech', 'tools']",
+  "assertions": []
+}

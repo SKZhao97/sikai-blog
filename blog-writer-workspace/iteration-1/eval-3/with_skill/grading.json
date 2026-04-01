@@ -1,0 +1,40 @@
+{
+  "expectations": [
+    {
+      "text": "Creates folder content/post/0401-test-post-for-blog-writer-skill/",
+      "passed": true,
+      "evidence": "Folder exists at /Users/sz/Code/blog/blog-writer-workspace/iteration-1/test-post-skill/with_skill/outputs/content/post/0401-test-post-for-blog-writer-skill/"
+    },
+    {
+      "text": "Copies cover image to post folder",
+      "passed": true,
+      "evidence": "cover.png file exists in post folder"
+    },
+    {
+      "text": "Creates index.md with proper frontmatter",
+      "passed": true,
+      "evidence": "index.md contains TOML frontmatter with all required fields"
+    },
+    {
+      "text": "Date field uses current date and time in ISO 8601 with timezone",
+      "passed": true,
+      "evidence": "date field is '2026-04-01T21:59:31+08:00'"
+    },
+    {
+      "text": "draft field is set to true",
+      "passed": true,
+      "evidence": "draft = true in frontmatter"
+    },
+    {
+      "text": "Categories and tags match user input",
+      "passed": true,
+      "evidence": "categories = ['Test'], tags = ['test', 'skill']"
+    }
+  ],
+  "summary": {
+    "passed": 6,
+    "failed": 0,
+    "total": 6,
+    "pass_rate": 1.0
+  }
+}

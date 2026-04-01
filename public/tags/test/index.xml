@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Test on Sikai&#39;s Blog</title>
+        <link>http://localhost:1313/tags/test/</link>
+        <description>Recent content in Test on Sikai&#39;s Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Wed, 01 Apr 2026 21:59:31 +0800</lastBuildDate><atom:link href="http://localhost:1313/tags/test/index.xml" rel="self" type="application/rss+xml" /><item>
+            <title>Test Post for Blog Writer Skill</title>
+            <link>http://localhost:1313/post/0401-test-post-for-blog-writer-skill/</link>
+            <pubDate>Wed, 01 Apr 2026 21:59:31 +0800</pubDate>
+            <guid>http://localhost:1313/post/0401-test-post-for-blog-writer-skill/</guid>
+            <description>&lt;img src=&#34;http://localhost:1313/&#34; alt=&#34;Featured image of post Test Post for Blog Writer Skill&#34; /&gt;&lt;p&gt;Testing the blog writer skill functionality&lt;/p&gt;&#xA;&lt;h2 id=&#34;introduction&#34;&gt;Introduction&#xA;&lt;/h2&gt;&lt;p&gt;[Start writing the introduction here&amp;hellip;]&lt;/p&gt;&#xA;&lt;h2 id=&#34;main-content&#34;&gt;Main Content&#xA;&lt;/h2&gt;&lt;p&gt;[Add your main content sections here&amp;hellip;]&lt;/p&gt;&#xA;&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion&#xA;&lt;/h2&gt;&lt;p&gt;[Wrap up your post here&amp;hellip;]&lt;/p&gt;&#xA;</description>
+        </item></channel>
+</rss>

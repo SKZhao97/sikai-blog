@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="Comparing different AI coding tools like Claude Code, Codex, and GitHub Copilot">
+<title>AI Coding Tools Comparison</title>
+
+
+<link rel="canonical" href="http://localhost:1313/post/0401-ai-coding-tools-comparison/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap">
+
+
+<link rel="stylesheet" href="/scss/style.min.389e156f5e9bb13df5a924cfa99dfb9c39f3e01e68d9e146cd65bdae963be145.css"><meta property='og:title' content="AI Coding Tools Comparison">
+<meta property='og:description' content="Comparing different AI coding tools like Claude Code, Codex, and GitHub Copilot">
+<meta property='og:url' content='http://localhost:1313/post/0401-ai-coding-tools-comparison/'>
+<meta property='og:site_name' content='Sikai&#39;s Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='AI' /><meta property='article:tag' content='Claude Code' /><meta property='article:tag' content='Codex' /><meta property='article:tag' content='GitHub Copilot' /><meta property='article:tag' content='Comparison' /><meta property='article:published_time' content='2026-04-01T21:47:18&#43;08:00'/><meta property='article:modified_time' content='2026-04-01T21:47:18&#43;08:00'/>
+<meta name="twitter:title" content="AI Coding Tools Comparison">
+<meta name="twitter:description" content="Comparing different AI coding tools like Claude Code, Codex, and GitHub Copilot"><link rel="alternate" type="application/json" href="http://localhost:1313/post/0401-ai-coding-tools-comparison/index.json">
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column compact"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        <figure class="site-avatar">
+                <a href="/">
+                    <img src="/img/avatar.png" 
+                        width="1024"
+                        height="1024"
+                        class="site-logo"
+                        loading="lazy"
+                        alt="Avatar">
+                </a>
+                
+            </figure>
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">Sikai&#39;s Blog</a></h1>
+            <h2 class="site-description">Software Engineer</h2>
+        </div>
+    </header><ol class="menu-social">
+            
+                <li>
+                    <a 
+                        href='https://github.com/SKZhao97'
+                        
+                        title="GitHub"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+                <li>
+                    <a 
+                        href='mailto:sikaizhao97@gmail.com'
+                        
+                        title="Email"
+                        rel="me"
+                    >
+                        
+                        
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                        
+                    </a>
+                </li>
+            
+        </ol><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/archives/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Categories</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/tags/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>Tags</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/search/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about/' >
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="main-article">
+    <header class="article-header">
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            
+            
+            
+            <a href="/categories/ai/" style="background-color: hsl(197, 58%, 86%); color: hsl(197, 52%, 18%);">
+                AI
+            </a>
+        
+            
+            
+            
+            <a href="/categories/tools/" style="background-color: hsl(217, 58%, 86%); color: hsl(217, 52%, 18%);">
+                Tools
+            </a>
+        
+            
+            
+            
+            <a href="/categories/programming/" style="background-color: hsl(232, 58%, 86%); color: hsl(232, 52%, 18%);">
+                Programming
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/0401-ai-coding-tools-comparison/">AI Coding Tools Comparison</a>
+        </h2>
+    
+        
+        <h3 class="article-subtitle">
+            Comparing different AI coding tools like Claude Code, Codex, and GitHub Copilot
+        </h3>
+        
+    </div>
+
+    
+    
+    
+    
+    
+    
+    
+    <footer class="article-meta">
+        
+            <div class="inline-meta">
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                    <time class="article-time--published" datetime='2026-04-01T21:47:18&#43;08:00'>Wednesday, April 1, 2026</time>
+                
+
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                    <time class="article-time--reading">
+                        3 minutes read
+                    </time>
+                
+            </div>
+        
+
+        
+
+        
+    </footer>
+    
+</div>
+
+</header>
+
+    
+
+    <section class="article-content">
+    
+    
+    <h1 id="ai-coding-tools-comparison">AI Coding Tools Comparison
+</h1><p>In the rapidly evolving landscape of software development, AI-powered coding tools have become indispensable companions for developers. As someone who has experimented with several of these tools, I wanted to share my experiences and comparisons between Claude Code, OpenAI&rsquo;s Codex, and GitHub Copilot.</p>
+<h2 id="overview-of-each-tool">Overview of Each Tool
+</h2><h3 id="claude-code">Claude Code
+</h3><p>Claude Code is Anthropic&rsquo;s official CLI tool that integrates with their Claude models. It provides a seamless command-line interface for coding tasks, with strong capabilities in understanding code context and providing intelligent suggestions.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Command-line interface optimized for developers</li>
+<li>Strong contextual understanding</li>
+<li>Good at explaining code and suggesting improvements</li>
+<li>Integration with existing development workflows</li>
+</ul>
+<h3 id="openai-codex">OpenAI Codex
+</h3><p>Codex powers GitHub Copilot and is the engine behind OpenAI&rsquo;s code generation capabilities. It&rsquo;s trained on a massive corpus of public code and can generate code snippets, complete functions, and even entire programs.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>Powers GitHub Copilot</li>
+<li>Excellent at code completion</li>
+<li>Strong multi-language support</li>
+<li>Can handle complex coding challenges</li>
+</ul>
+<h3 id="github-copilot">GitHub Copilot
+</h3><p>GitHub Copilot, powered by Codex, integrates directly into popular IDEs like VS Code, JetBrains IDEs, and others. It provides real-time code suggestions and can generate entire functions based on comments.</p>
+<p><strong>Key Features:</strong></p>
+<ul>
+<li>IDE integration</li>
+<li>Real-time suggestions</li>
+<li>Context-aware completions</li>
+<li>Support for multiple programming languages</li>
+</ul>
+<h2 id="performance-comparison">Performance Comparison
+</h2><h3 id="code-quality">Code Quality
+</h3><ul>
+<li><strong>Claude Code</strong>: Excellent at understanding context and providing well-explained solutions</li>
+<li><strong>Codex/Copilot</strong>: Very good at generating syntactically correct code, but sometimes lacks deeper understanding</li>
+</ul>
+<h3 id="speed">Speed
+</h3><ul>
+<li><strong>Claude Code</strong>: Slightly slower due to more comprehensive analysis</li>
+<li><strong>Codex/Copilot</strong>: Extremely fast with near-instant suggestions</li>
+</ul>
+<h3 id="integration">Integration
+</h3><ul>
+<li><strong>Claude Code</strong>: CLI-based, works across different editors</li>
+<li><strong>Codex/Copilot</strong>: Deep IDE integration for seamless workflow</li>
+</ul>
+<h2 id="use-cases">Use Cases
+</h2><h3 id="best-for-learning">Best for Learning
+</h3><p>Claude Code excels at explaining concepts and helping developers understand code better, making it ideal for learning and code review.</p>
+<h3 id="best-for-productivity">Best for Productivity
+</h3><p>GitHub Copilot with its IDE integration provides the fastest workflow for experienced developers who need quick code completions.</p>
+<h3 id="best-for-complex-problems">Best for Complex Problems
+</h3><p>Codex (through various interfaces) handles complex algorithmic challenges well due to its extensive training on diverse codebases.</p>
+<h2 id="limitations">Limitations
+</h2><p>Each tool has its limitations:</p>
+<ul>
+<li><strong>Claude Code</strong>: Not as deeply integrated into IDEs</li>
+<li><strong>Codex/Copilot</strong>: Can sometimes suggest incorrect or insecure code</li>
+<li>All tools require careful review of generated code</li>
+</ul>
+<h2 id="conclusion">Conclusion
+</h2><p>Choosing the right AI coding tool depends on your specific needs:</p>
+<ul>
+<li>For learning and understanding code: <strong>Claude Code</strong></li>
+<li>For maximum productivity in familiar IDEs: <strong>GitHub Copilot</strong></li>
+<li>For API integration and custom applications: <strong>Codex API</strong></li>
+</ul>
+<p>The future of AI-assisted coding looks promising, and these tools are only getting better. I recommend trying each to see which fits your workflow best.</p>
+<p>What has been your experience with AI coding tools? Share your thoughts in the comments!</p>
+
+</section>
+
+
+    <footer class="article-meta article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/ai/">AI</a>
+        
+            <a href="/tags/claude-code/">Claude Code</a>
+        
+            <a href="/tags/codex/">Codex</a>
+        
+            <a href="/tags/github-copilot/">GitHub Copilot</a>
+        
+            <a href="/tags/comparison/">Comparison</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside>
+    <h2 class="section-title">Related content</h2>
+    <div class="subsection-list">
+        <div class="article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/0331-ai-coding-project/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post AI Coding：一个项目" height="150" loading="lazy" src="/post/0331-ai-coding-project/cover_hu_27d1c9c19cd78825.png" srcset="/post/0331-ai-coding-project/cover_hu_27d1c9c19cd78825.png 1x, /post/0331-ai-coding-project/cover_hu_3e2da0f200493156.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #a3aaaf80 0%, #181d22C0 100%);">
+            <h2 class="article-title">AI Coding：一个项目</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/2026-w14-tech-weekly/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Tech Weekly | 2026 W14" loading="lazy" src="/post/2026-w14-tech-weekly/cover.svg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tech Weekly | 2026 W14</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/2026-w13-tech-weekly/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Tech Weekly | 2026 W13" loading="lazy" src="/post/2026-w13-tech-weekly/cover.svg">
+
+        </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Tech Weekly | 2026 W13</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0327-vibe-coding-vs-spec-coding/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post Vibe coding VS Spec Coding" height="150" loading="lazy" src="/post/0327-vibe-coding-vs-spec-coding/cover_hu_52dde742f6d0bb02.png" srcset="/post/0327-vibe-coding-vs-spec-coding/cover_hu_52dde742f6d0bb02.png 1x, /post/0327-vibe-coding-vs-spec-coding/cover_hu_aa64cc19f37f71ff.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #d2d9cb80 0%, #261c24C0 100%);">
+            <h2 class="article-title">Vibe coding VS Spec Coding</h2>
+        </div>
+    </a>
+</article>
+            
+                
+<article class="has-image">
+    <a href="/post/0326-how-software-enginer-survive/">
+        
+        <div class="article-image">
+            <img alt="Featured image of post 从写代码到做判断" height="150" loading="lazy" src="/post/0326-how-software-enginer-survive/cover_hu_41432df0849214df.png" srcset="/post/0326-how-software-enginer-survive/cover_hu_41432df0849214df.png 1x, /post/0326-how-software-enginer-survive/cover_hu_86cd89590aed5ddc.png 2x" width="250">
+
+        </div>
+        
+
+        <div class="article-details"style="background: linear-gradient(0deg, #c1b7aa80 0%, #1b222cC0 100%);">
+            <h2 class="article-title">从写代码到做判断</h2>
+        </div>
+    </a>
+</article>
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+        2026 Sikai&#39;s Blog
+    </section>
+    
+    <section class="powerby">
+        
+
+        
+
+        <section class="motto" style="
+            font-family: 'Georgia', serif; 
+            font-size: 0.9em; 
+            color: var(--body-text-color); 
+            margin-bottom: 15px;
+            letter-spacing: 1px;">
+            Stay Hungury, Stay Foolish
+        </section>
+    </section>
+</footer>
+
+
+    
+
+
+
+<script type="module">
+    import gallery from '\/ts\/gallery.js';
+
+    const articleContent = document.querySelector('.article-content');
+    const shouldLoad = articleContent && (articleContent.querySelectorAll('figure').length > 0 || articleContent.querySelectorAll('img.gallery-image').length > 0);
+    
+    if (shouldLoad) {
+        gallery(articleContent);
+
+        const PhotoSwipeLightbox = (await import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe-lightbox.esm.min.js")).default;
+        const styleHref = "https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.css";
+
+        const styleTag = document.createElement('link');
+        styleTag.rel = 'stylesheet';
+        styleTag.href = styleHref;
+        document.head.appendChild(styleTag);
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallerySelector: '.article-content',
+            childSelector: 'figure a.image-link',
+            pswpModule: () => import("https:\/\/cdn.jsdelivr.net\/npm\/photoswipe@5.4.4\/dist\/photoswipe.esm.min.js")
+        });
+        lightbox.init();
+    }
+</script>
+    
+
+            </main>
+        </div>
+        
+<script type="text/javascript" src="/ts/main.5a24df1f5f9f291c62930d530bc120c733c78822bed03680058ec672123e5b63.js" defer></script>
+
+
+    </body>
+</html>

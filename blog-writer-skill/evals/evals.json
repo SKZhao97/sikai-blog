@@ -1,0 +1,47 @@
+{
+  "skill_name": "blog-writer",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create a new blog post about my experience with AI coding tools. Title: 'AI Coding Tools Comparison', description: 'Comparing different AI coding tools like Claude Code, Codex, and GitHub Copilot', categories: ['AI', 'Tools', 'Programming'], tags: ['AI', 'Claude Code', 'Codex', 'GitHub Copilot', 'Comparison']",
+      "expected_output": "Creates a folder content/post/0401-ai-coding-tools-comparison/ with cover.png and index.md containing proper frontmatter and initial content",
+      "files": [],
+      "expectations": [
+        "Creates folder content/post/0401-ai-coding-tools-comparison/",
+        "Copies static/cover.png to post folder as cover.png",
+        "Creates index.md with correct TOML frontmatter including date, draft=true, title, description, categories, tags, and image fields",
+        "Frontmatter uses single quotes for string values",
+        "Initial content includes the provided description and section headers",
+        "Folder name follows MMDD-title-slug pattern with current date"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "I want to write a tech weekly post. Title: '2026 Week 15 Tech Updates', description: 'Weekly updates on tech news, tools, and interesting developments from week 15 of 2026', categories: ['Tech Weekly', 'News'], tags: ['weekly', 'updates', 'tech', 'tools']",
+      "expected_output": "Creates a folder content/post/0401-2026-week-15-tech-updates/ with cover.png and index.md containing proper frontmatter and initial content",
+      "files": [],
+      "expectations": [
+        "Creates folder content/post/0401-2026-week-15-tech-updates/",
+        "Copies static/cover.png to post folder as cover.png",
+        "Creates index.md with correct TOML frontmatter",
+        "Frontmatter includes all required fields with proper formatting",
+        "Initial content starts with the provided description",
+        "Folder name contains correct date prefix and slugified title"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Create a simple test post. Title: 'Test Post for Blog Writer Skill', description: 'Testing the blog writer skill functionality', categories: ['Test'], tags: ['test', 'skill']",
+      "expected_output": "Creates a folder content/post/0401-test-post-for-blog-writer-skill/ with cover.png and index.md containing proper frontmatter and initial content",
+      "files": [],
+      "expectations": [
+        "Creates folder content/post/0401-test-post-for-blog-writer-skill/",
+        "Copies cover image to post folder",
+        "Creates index.md with proper frontmatter",
+        "Date field uses current date and time in ISO 8601 with timezone",
+        "draft field is set to true",
+        "Categories and tags match user input"
+      ]
+    }
+  ]
+}

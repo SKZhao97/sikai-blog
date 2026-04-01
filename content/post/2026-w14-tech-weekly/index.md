@@ -1,13 +1,103 @@
 +++
-date = '2026-03-31T11:39:23+08:00'
+date = '2026-04-01T11:50:35+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W14'
 description = 'Tech Weekly | 2026 W14 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Cloud', 'Security', 'Developer Tools']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Security', 'Cloud']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-01
+
+### GitHub secret scanning — coverage update
+
+Source: GitHub Blog Changelog
+Published: 2026-04-01 01:01 GMT+8
+
+**English Summary:**
+GitHub secret scanning continually updates its detectors, validators, and analyzers. Here’s what’s new. Nine new secret detectors from seven providers, including Langchain, Salesforce, and Figma. Secrets from Figma, Google, OpenVSX,… The post GitHub secret scanning — coverage update appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-03-31-github-secret-scanning-nine-new-types-and-more
+
+### Accelerating the next phase of AI
+
+Source: OpenAI Blog
+Published: 2026-03-31 21:00 GMT+8
+
+**English Summary:**
+OpenAI raises $122 billion in new funding to expand frontier AI globally, invest in next-generation compute, and meet growing demand for ChatGPT, Codex, and enterprise AI.
+
+Link:
+https://openai.com/index/accelerating-the-next-phase-ai
+
+### Upcoming deprecation of Claude Sonnet 4 in GitHub Copilot
+
+Source: GitHub Blog Changelog
+Published: 2026-04-01 08:14 GMT+8
+
+**English Summary:**
+We will deprecate the following model across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on 5/1/2026: Model Deprecation date Suggested alternative… The post Upcoming deprecation of Claude Sonnet 4 in GitHub Copilot appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-03-31-upcoming-deprecation-of-claude-sonnet-4-in-github-copilot
+
+### CodeQL 2.25.0 adds Swift 6.2.4 support
+
+Source: GitHub Blog Changelog
+Published: 2026-03-31 22:05 GMT+8
+
+**English Summary:**
+CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. We’ve recently released CodeQL 2.25.0, which upgrades Swift analysis to 6.2.4,… The post CodeQL 2.25.0 adds Swift 6.2.4 support appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-03-31-codeql-2-25-0-adds-swift-6-2-4-support
+
+### CodeQL pull requests insights on security overview now cover all protected branches
+
+Source: GitHub Blog Changelog
+Published: 2026-03-31 20:07 GMT+8
+
+**English Summary:**
+The CodeQL pull request insights tab in GitHub security overview now reports Copilot Autofix and alert statistics from all protected branches, not just the default branch. This gives you a… The post CodeQL pull requests insights on security overview now cover all protected branches appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-03-31-codeql-pull-requests-insights-on-security-overview-now-cover-all-protected-branches
+
+### OpenAI, not yet public, raises $3B from retail investors in monster $122B fund raise
+
+Source: TechCrunch
+Published: 2026-04-01 05:25 GMT+8
+
+**English Summary:**
+OpenAI's latest funding round, led by Amazon, Nvidia, and SoftBank, values the AI lab at $852 billion as it nears an IPO.
+
+Link:
+https://techcrunch.com/2026/03/31/openai-not-yet-public-raises-3b-from-retail-investors-in-monster-122b-fund-raise/
+
+### Announcing the AWS Sustainability console: Programmatic access, configurable CSV reports, and Scope 1–3 reporting in one place
+
+Source: AWS News Blog
+Published: 2026-04-01 03:04 GMT+8
+
+**English Summary:**
+AWS announces the Sustainability console, a new standalone service that consolidates carbon emissions reporting and resources, giving sustainability teams independent access to Scope 1, 2, and 3 emissions data without requiring billing permissions.
+
+Link:
+https://aws.amazon.com/blogs/aws/announcing-the-aws-sustainability-console-programmatic-access-configurable-csv-reports-and-scope-1-3-reporting-in-one-place/
+
+### Build with Veo 3.1 Lite, our most cost-effective video generation model
+
+Source: Google Blog Technology
+Published: 2026-04-01 00:00 GMT+8
+
+**English Summary:**
+Build with Veo 3.1 Lite
+
+Link:
+https://blog.google/innovation-and-ai/technology/ai/veo-3-1-lite/
 
 ## 2026-03-31
 
@@ -188,4 +278,5 @@ The $50 Epilogue GB Operator has a brand-new trick up its sleeve. In addition to
 
 Link:
 https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection
+
 

@@ -1,13 +1,103 @@
 +++
-date = '2026-04-01T11:50:35+08:00'
+date = '2026-04-02T11:33:08+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W14'
 description = 'Tech Weekly | 2026 W14 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Security', 'Cloud']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Cloud', 'Open Source']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-02
+
+### Anthropic took down thousands of GitHub repos trying to yank its leaked source code — a move the company says was an accident
+
+Source: TechCrunch
+Published: 2026-04-02 06:12 GMT+8
+
+**English Summary:**
+Anthropic executives said it was an accident and retracted the bulk of the takedown notices.
+
+Link:
+https://techcrunch.com/2026/04/01/anthropic-took-down-thousands-of-github-repos-trying-to-yank-its-leaked-source-code-a-move-the-company-says-was-an-accident/
+
+### Codespaces is now generally available for GitHub Enterprise with data residency
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 01:16 GMT+8
+
+**English Summary:**
+GitHub Codespaces is now generally available for GitHub Enterprise Cloud with data residency. You can create secure, configurable, instantly available cloud development environments while maintaining strict compliance with your data… The post Codespaces is now generally available for GitHub Enterprise with data residency appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-01-codespaces-is-now-generally-available-for-github-enterprise-with-data-residency
+
+### GPT-5.4 mini is now available in Copilot Student auto model selection
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 00:46 GMT+8
+
+**English Summary:**
+GPT-5.4 mini is now generally available to Copilot Student plan via Copilot auto model selection. This model is part of Auto in GitHub Copilot Chat on Visual Studio Code, Visual… The post GPT-5.4 mini is now available in Copilot Student auto model selection appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-01-gpt-5-4-mini-is-now-available-in-copilot-student-auto-model-selection
+
+### Improve coding agents’ performance with Gemini API Docs MCP and Agent Skills.
+
+Source: Google Blog Technology
+Published: 2026-04-01 20:54 GMT+8
+
+**English Summary:**
+Gemini API Skills
+
+Link:
+https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-docsmcp-agent-skills/
+
+### Apple releases security fix for older iPhones and iPads to protect against DarkSword attacks
+
+Source: TechCrunch
+Published: 2026-04-02 03:02 GMT+8
+
+**English Summary:**
+The security update protects a raft of older iPhones and iPads from attacks linked to leaked hacking tools called DarkSword.
+
+Link:
+https://techcrunch.com/2026/04/01/apple-releases-security-fix-for-older-iphones-and-ipads-to-protect-against-darksword-attacks/
+
+### GitHub Mobile: Stay in flow with a refreshed Copilot tab and native session logs
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 00:36 GMT+8
+
+**English Summary:**
+GitHub Mobile now makes it easier to manage agentic workflows on the go with a refreshed Copilot tab, native session logs, and more in-app controls for agent sessions. On Android,… The post GitHub Mobile: Stay in flow with a refreshed Copilot tab and native session logs appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-01-github-mobile-stay-in-flow-with-a-refreshed-copilot-tab-and-native-session-logs
+
+### GitHub Mobile: Faster, more flexible agent assignment from issues
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 00:34 GMT+8
+
+**English Summary:**
+GitHub Mobile now makes it easier to delegate work with a new Assign an Agent option in the issue overflow menu, so you can get started more quickly. When assigning… The post GitHub Mobile: Faster, more flexible agent assignment from issues appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-01-github-mobile-faster-more-flexible-agent-assignment-from-issues
+
+### Research, plan, and code with Copilot cloud agent
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 02:36 GMT+8
+
+**English Summary:**
+Copilot cloud agent (formerly known as Copilot coding agent) is no longer limited to pull-request workflows, unlocking a broader range of ways to put Copilot to work. More control over… The post Research, plan, and code with Copilot cloud agent appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-01-research-plan-and-code-with-copilot-cloud-agent
 
 ## 2026-04-01
 
@@ -278,5 +368,6 @@ The $50 Epilogue GB Operator has a brand-new trick up its sleeve. In addition to
 
 Link:
 https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection
+
 
 

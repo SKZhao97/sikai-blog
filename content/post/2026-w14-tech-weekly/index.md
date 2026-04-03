@@ -1,13 +1,103 @@
 +++
-date = '2026-04-02T11:33:08+08:00'
+date = '2026-04-03T11:34:28+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W14'
 description = 'Tech Weekly | 2026 W14 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Cloud', 'Open Source']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Security', 'Open Source']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-03
+
+### Copilot SDK in public preview
+
+Source: GitHub Blog Changelog
+Published: 2026-04-03 05:26 GMT+8
+
+**English Summary:**
+The GitHub Copilot SDK is now available in public preview. This gives you the building blocks to embed Copilot’s agentic capabilities directly into your own applications, workflows, and platform services.… The post Copilot SDK in public preview appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-02-copilot-sdk-in-public-preview
+
+### GitHub Copilot in Visual Studio — March update
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 23:00 GMT+8
+
+**English Summary:**
+March 2026 brought a major step forward for GitHub Copilot extensibility in Visual Studio, with custom agents, agent skills, and new tools that make the agent smarter and more capable.… The post GitHub Copilot in Visual Studio — March update appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-02-github-copilot-in-visual-studio-march-update
+
+### OpenAI acquires TBPN
+
+Source: OpenAI Blog
+Published: 2026-04-02 18:30 GMT+8
+
+**English Summary:**
+OpenAI acquires TBPN to accelerate global conversations around AI and support independent media, expanding dialogue with builders, businesses, and the broader tech community.
+
+Link:
+https://openai.com/index/openai-acquires-tbpn
+
+### GitHub Actions: Early April 2026 updates
+
+Source: GitHub Blog Changelog
+Published: 2026-04-03 01:11 GMT+8
+
+**English Summary:**
+This month, GitHub Actions adds entrypoint and command overrides for service containers and new security features including OIDC custom properties and VNET failover. Customizing entrypoints for service containers Many GitHub… The post GitHub Actions: Early April 2026 updates appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-02-github-actions-early-april-2026-updates
+
+### Google announces Gemma 4 open AI models, switches to Apache 2.0 license
+
+Source: Ars Technica
+Published: 2026-04-03 00:01 GMT+8
+
+**English Summary:**
+Gemma 4 brings the first major update to Google's open models in a year.
+
+Link:
+https://arstechnica.com/ai/2026/04/google-announces-gemma-4-open-ai-models-switches-to-apache-2-0-license/
+
+### New ways to balance cost and reliability in the Gemini API
+
+Source: Google Blog Technology
+Published: 2026-04-03 00:00 GMT+8
+
+**English Summary:**
+Gemini API Dials
+
+Link:
+https://blog.google/innovation-and-ai/technology/developers-tools/introducing-flex-and-priority-inference/
+
+### The Security tab is now Security & quality
+
+Source: GitHub Blog Changelog
+Published: 2026-04-02 21:57 GMT+8
+
+**English Summary:**
+The top-level Security tab across repositories, organizations, and enterprises has been renamed to Security & quality on github.com. This change restructures the navigation to colocate code quality findings alongside security… The post The Security tab is now Security & quality appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-02-the-security-tab-is-now-security-quality
+
+### Google Vids gets AI upgrade with Veo and Lyria models, directable AI avatars
+
+Source: Ars Technica
+Published: 2026-04-03 03:58 GMT+8
+
+**English Summary:**
+Google Vids brings together Google's most capable AI creation tools.
+
+Link:
+https://arstechnica.com/ai/2026/04/google-vids-gets-ai-upgrade-with-veo-and-lyria-models-directable-ai-avatars/
 
 ## 2026-04-02
 
@@ -368,6 +458,7 @@ The $50 Epilogue GB Operator has a brand-new trick up its sleeve. In addition to
 
 Link:
 https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection
+
 
 
 

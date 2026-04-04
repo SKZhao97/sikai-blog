@@ -1,13 +1,103 @@
 +++
-date = '2026-04-03T11:34:28+08:00'
+date = '2026-04-04T11:22:02+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W14'
 description = 'Tech Weekly | 2026 W14 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Security', 'Open Source']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'Cloud', 'AI']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-04
+
+### Organization runner controls for Copilot cloud agent
+
+Source: GitHub Blog Changelog
+Published: 2026-04-04 03:15 GMT+8
+
+**English Summary:**
+Each time Copilot cloud agent works on a task, it starts a new development environment powered by GitHub Actions. By default, this runs on a standard GitHub-hosted runner, but teams… The post Organization runner controls for Copilot cloud agent appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-03-organization-runner-controls-for-copilot-cloud-agent
+
+### GPT-5.1 Codex, GPT-5.1-Codex-Max, and GPT-5.1-Codex-Mini deprecated
+
+Source: GitHub Blog Changelog
+Published: 2026-04-04 01:11 GMT+8
+
+**English Summary:**
+We have deprecated the following models across all GitHub Copilot experiences (including Copilot Chat, inline edits, ask and agent modes, and code completions) on April 1, 2026. Model Deprecation date… The post GPT-5.1 Codex, GPT-5.1-Codex-Max, and GPT-5.1-Codex-Mini deprecated appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-03-gpt-5-1-codex-gpt-5-1-codex-max-and-gpt-5-1-codex-mini-deprecated
+
+### Organization firewall settings for Copilot cloud agent
+
+Source: GitHub Blog Changelog
+Published: 2026-04-03 22:12 GMT+8
+
+**English Summary:**
+Copilot cloud agent includes a built-in agent firewall to control Copilot’s internet access and help protect against prompt injection and data exfiltration. Until now, the firewall was configured at the… The post Organization firewall settings for Copilot cloud agent appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-03-organization-firewall-settings-for-copilot-cloud-agent
+
+### Copilot cloud agent signs its commits
+
+Source: GitHub Blog Changelog
+Published: 2026-04-03 20:05 GMT+8
+
+**English Summary:**
+Copilot cloud agent now signs every commit it makes. Signed commits appear as Verified on GitHub, giving you confidence that the commit was genuinely made by the agent and hasn’t… The post Copilot cloud agent signs its commits appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-03-copilot-cloud-agent-signs-its-commits
+
+### Amazon Bedrock Guardrails supports cross-account safeguards with centralized control and management
+
+Source: AWS News Blog
+Published: 2026-04-04 04:36 GMT+8
+
+**English Summary:**
+Organizational safeguards are now generally available in Amazon Bedrock Guardrails, enabling centralized enforcement and management of safety controls across multiple AWS accounts within an AWS Organization.
+
+Link:
+https://aws.amazon.com/blogs/aws/amazon-bedrock-guardrails-supports-cross-account-safeguards-with-centralized-control-and-management/
+
+### OpenAI executive shuffle includes new role for COO Brad Lightcap to lead ‘special projects’
+
+Source: TechCrunch
+Published: 2026-04-04 04:35 GMT+8
+
+**English Summary:**
+In addition to Lightcap's new role, OpenAI CMO Kate Rouch will be stepping away from the company to focus on cancer recovery, with a plan to return when her health allows.
+
+Link:
+https://techcrunch.com/2026/04/03/openai-executive-shuffle-new-roles-coo-brad-lightcap-fidji-simo-kate-rouch/
+
+### Anthropic buys biotech startup Coefficient Bio in $400M deal: Reports
+
+Source: TechCrunch
+Published: 2026-04-04 04:28 GMT+8
+
+**English Summary:**
+Anthropic has purchased the stealth biotech AI startup Coefficient Bio in a $400 million stock deal, according to The Information and Eric Newcomer.
+
+Link:
+https://techcrunch.com/2026/04/03/anthropic-buys-biotech-startup-coefficient-bio-in-400m-deal-reports/
+
+### Anthropic ramps up its political activities with a new PAC
+
+Source: TechCrunch
+Published: 2026-04-04 04:22 GMT+8
+
+**English Summary:**
+With the midterms right around the corner, the new group is positioned to back candidates who support the AI company's policy agenda.
+
+Link:
+https://techcrunch.com/2026/04/03/anthropic-ramps-up-its-political-activities-with-a-new-pac/
 
 ## 2026-04-03
 
@@ -458,6 +548,7 @@ The $50 Epilogue GB Operator has a brand-new trick up its sleeve. In addition to
 
 Link:
 https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection
+
 
 
 

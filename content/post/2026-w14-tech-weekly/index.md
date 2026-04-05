@@ -1,13 +1,103 @@
 +++
-date = '2026-04-04T11:22:02+08:00'
+date = '2026-04-05T11:43:55+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W14'
 description = 'Tech Weekly | 2026 W14 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'Cloud', 'AI']
+tags = ['Tech News', 'Weekly', 'AI', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-05
+
+### Anthropic says Claude Code subscribers will need to pay extra for OpenClaw usage
+
+Source: TechCrunch
+Published: 2026-04-05 00:32 GMT+8
+
+**English Summary:**
+It’s about to become more expensive for Claude Code subscribers to use Anthropic’s coding assistant with OpenClaw and other third-party tools.
+
+Link:
+https://techcrunch.com/2026/04/04/anthropic-says-claude-code-subscribers-will-need-to-pay-extra-for-openclaw-support/
+
+### Anthropic is having a moment in the private markets; SpaceX could spoil the party
+
+Source: TechCrunch
+Published: 2026-04-04 09:31 GMT+8
+
+**English Summary:**
+Glen Anderson, president of Rainmaker Securities, says the secondary market for private shares has never been more active — with Anthropic the hottest trade around, OpenAI losing ground, and SpaceX's looming IPO poised to reshape the landscape for everyone.
+
+Link:
+https://techcrunch.com/2026/04/03/anthropic-is-having-a-moment-in-the-private-markets-spacex-could-spoil-the-party/
+
+### After fighting malware for decades, this cybersecurity veteran is now hacking drones
+
+Source: TechCrunch
+Published: 2026-04-04 21:00 GMT+8
+
+**English Summary:**
+Mikko Hyppönen is one of the most recognizable faces of the cybersecurity industry. After fighting computer viruses, worms, and malware, for more than 35 years, he tells TechCrunch why he is now working on systems to stop killer drones.
+
+Link:
+https://techcrunch.com/2026/04/04/after-fighting-malware-for-decades-this-cybersecurity-veteran-is-now-hacking-drones/
+
+### Artemis II is going so well that we're left to talk about frozen urine
+
+Source: Ars Technica
+Published: 2026-04-05 08:12 GMT+8
+
+**English Summary:**
+"I think the fixation on the toilet is kind of human nature."
+
+Link:
+https://arstechnica.com/space/2026/04/artemis-ii-is-going-so-well-that-were-left-to-talk-about-frozen-urine/
+
+### Peter Thiel’s big bet on solar-powered cow collars
+
+Source: TechCrunch
+Published: 2026-04-05 05:30 GMT+8
+
+**English Summary:**
+Why did Founders Fund invest $220 million in cattle management startup Halter?
+
+Link:
+https://techcrunch.com/2026/04/04/unpacking-peter-thiels-big-bet-on-solar-powered-cow-collars/
+
+### Embattled startup Delve has ‘parted ways’ with Y Combinator
+
+Source: TechCrunch
+Published: 2026-04-05 05:03 GMT+8
+
+**English Summary:**
+The controversy around Delve appears to have cost the compliance startup its relationship with accelerator Y Combinator.
+
+Link:
+https://techcrunch.com/2026/04/04/embattled-startup-delve-has-parted-ways-with-y-combinator/
+
+### Tech companies are trying to neuter Colorado’s landmark right-to-repair law
+
+Source: Ars Technica
+Published: 2026-04-05 04:36 GMT+8
+
+**English Summary:**
+A state bill is a glimpse of how corporations are limiting people's ability to make their own fixes and upgrades.
+
+Link:
+https://arstechnica.com/tech-policy/2026/04/tech-companies-are-trying-to-neuter-colorados-landmark-right-to-repair-law/
+
+### Really, you made this without AI? Prove it
+
+Source: The Verge Tech
+Published: 2026-04-04 21:00 GMT+8
+
+**English Summary:**
+"This looks like AI." It's a phrase I dread seeing as a writer who dabbles in illustration and amateur photography. In a world where generative AI technology is increasingly adept at mimicking the work of humans, people are naturally skeptical when online platforms refuse to label even obvious AI content. This leads me to one […]
+
+Link:
+https://www.theverge.com/tech/906453/human-made-ai-free-logo-creative-content
 
 ## 2026-04-04
 
@@ -548,6 +638,7 @@ The $50 Epilogue GB Operator has a brand-new trick up its sleeve. In addition to
 
 Link:
 https://www.theverge.com/games/902910/epilogue-gb-operator-phone-counterfeit-fake-cartridge-detection
+
 
 
 

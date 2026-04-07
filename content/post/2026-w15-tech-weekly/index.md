@@ -1,13 +1,103 @@
 +++
-date = '2026-04-06T11:47:23+08:00'
+date = '2026-04-07T11:38:21+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W15'
 description = 'Tech Weekly | 2026 W15 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Security']
+tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Cloud', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-07
+
+### AWS Weekly Roundup: AWS DevOps Agent & Security Agent GA, Product Lifecycle updates, and more (April 6, 2026)
+
+Source: AWS News Blog
+Published: 2026-04-07 00:51 GMT+8
+
+**English Summary:**
+Last week, I visited AWS Hong Kong User Group with my team. Hong Kong has a small but strong community, and their energy and passion are high. They recently started a new AI user group, and we hope more people will join. I was able to strengthen my bond with the community through great food […]
+
+Link:
+https://aws.amazon.com/blogs/aws/aws-weekly-roundup-aws-devops-agent-security-agent-ga-product-lifecycle-updates-and-more-april-6-2026/
+
+### How we built Organizations to help enterprises manage Cloudflare at scale
+
+Source: Cloudflare Blog
+Published: 2026-04-07 05:00 GMT+8
+
+**English Summary:**
+Cloudflare Organizations is now in public beta, introducing a new management layer for enterprise customers with multiple accounts. Learn how we consolidated our authorization systems to enable org-wide management.
+
+Link:
+https://blog.cloudflare.com/organizations-beta/
+
+### Google quietly launched an AI dictation app that works offline
+
+Source: TechCrunch
+Published: 2026-04-07 02:54 GMT+8
+
+**English Summary:**
+Google's new offline-first dictation app uses Gemma AI models to take on the apps like Wispr Flow.
+
+Link:
+https://techcrunch.com/2026/04/06/google-quietly-releases-an-offline-first-ai-dictation-app-on-ios/
+
+### Announcing the OpenAI Safety Fellowship
+
+Source: OpenAI Blog
+Published: 2026-04-06 18:00 GMT+8
+
+**English Summary:**
+A pilot program to support independent safety and alignment research and develop the next generation of talent
+
+Link:
+https://openai.com/index/introducing-openai-safety-fellowship
+
+### OpenAI alums have been quietly investing from a new, potentially $100M fund
+
+Source: TechCrunch
+Published: 2026-04-07 05:54 GMT+8
+
+**English Summary:**
+Zero Shot, a new venture capital fund with deep ties to OpenAI, is aiming to raise $100 million for its first fund. It has already written some checks.
+
+Link:
+https://techcrunch.com/2026/04/06/openai-alums-have-been-quietly-investing-from-a-new-potentially-100m-fund/
+
+### Google Broadcom Partnership Compute
+
+Source: Anthropic News
+Published: 2026-04-07 05:43 GMT+8
+
+**English Summary:**
+See the source link for the full update.
+
+Link:
+https://www.anthropic.com/news/google-broadcom-partnership-compute
+
+### OpenAI’s vision for the AI economy: public wealth funds, robot taxes, and a four-day workweek
+
+Source: TechCrunch
+Published: 2026-04-06 23:55 GMT+8
+
+**English Summary:**
+OpenAI proposes taxes on AI profits, public wealth funds, and expanded safety nets to address job loss and inequality, blending redistribution with capitalism as policymakers debate AI’s economic impact.
+
+Link:
+https://techcrunch.com/2026/04/06/openais-vision-for-the-ai-economy-public-wealth-funds-robot-taxes-and-a-four-day-work-week/
+
+### Copilot usage metrics now identify active and passive Copilot code review users
+
+Source: GitHub Blog Changelog
+Published: 2026-04-07 07:20 GMT+8
+
+**English Summary:**
+Copilot usage metrics now indicate which users have Copilot code review (CCR) activity, and whether that activity was active or passive. Enterprise and organization admins can see how users engage… The post Copilot usage metrics now identify active and passive Copilot code review users appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-06-copilot-usage-metrics-now-identify-active-and-passive-copilot-code-review-users
 
 ## 2026-04-06
 
@@ -98,3 +188,4 @@ On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's v
 
 Link:
 https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/
+

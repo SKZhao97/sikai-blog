@@ -1,13 +1,103 @@
 +++
-date = '2026-04-07T11:38:21+08:00'
+date = '2026-04-08T11:40:26+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W15'
 description = 'Tech Weekly | 2026 W15 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Cloud', 'Security']
+tags = ['Tech News', 'Weekly', 'Security', 'AI', 'Developer Tools', 'Cloud']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-08
+
+### Cloudflare targets 2029 for full post-quantum security
+
+Source: Cloudflare Blog
+Published: 2026-04-08 05:00 GMT+8
+
+**English Summary:**
+Recent advances in quantum hardware and software have accelerated the timeline on which quantum attack might happen. Cloudflare is responding by moving our target for full post-quantum security to 2029.
+
+Link:
+https://blog.cloudflare.com/post-quantum-roadmap/
+
+### Anthropic debuts preview of powerful new AI model Mythos in new cybersecurity initiative
+
+Source: TechCrunch
+Published: 2026-04-08 02:00 GMT+8
+
+**English Summary:**
+The new model will be used by a small number of high-profile companies to engage in defensive cybersecurity work.
+
+Link:
+https://techcrunch.com/2026/04/07/anthropic-mythos-ai-model-preview-security/
+
+### Prioritize security alerts with runtime context from Dynatrace
+
+Source: GitHub Blog Changelog
+Published: 2026-04-07 23:15 GMT+8
+
+**English Summary:**
+You can now use runtime context from Dynatrace to prioritize GitHub Advanced Security alerts based on deployed artifacts and runtime risk in your Kubernetes environment. When you connect Dynatrace to… The post Prioritize security alerts with runtime context from Dynatrace appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-07-prioritize-security-alerts-with-runtime-context-from-dynatrace
+
+### Copilot CLI now supports BYOK and local models
+
+Source: GitHub Blog Changelog
+Published: 2026-04-07 22:53 GMT+8
+
+**English Summary:**
+GitHub Copilot CLI now lets you connect your own model provider or run fully local models instead of using GitHub-hosted model routing. This means you can use the models and… The post Copilot CLI now supports BYOK and local models appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-07-copilot-cli-now-supports-byok-and-local-models
+
+### Code scanning: Batch apply security alert suggestions on pull requests
+
+Source: GitHub Blog Changelog
+Published: 2026-04-07 18:22 GMT+8
+
+**English Summary:**
+GitHub code scanning alerts on pull requests are now easier to address with bulk actions. You can now apply fixes for code scanning alerts in the Files changed tab by… The post Code scanning: Batch apply security alert suggestions on pull requests appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-07-code-scanning-batch-apply-security-alert-suggestions-on-pull-requests
+
+### An update on our mental health work
+
+Source: Google Blog Technology
+Published: 2026-04-07 18:00 GMT+8
+
+**English Summary:**
+"Google Safety Updates: AI & Mental Health" is overlaid on an image of three Googlers.
+
+Link:
+https://blog.google/innovation-and-ai/technology/health/mental-health-updates/
+
+### Anthropic ups compute deal with Google and Broadcom amid skyrocketing demand
+
+Source: TechCrunch
+Published: 2026-04-08 00:05 GMT+8
+
+**English Summary:**
+Anthropic bulked up its compute deal with Google and Broadcom as the company has seen its run-rate revenue surge to $30 billion.
+
+Link:
+https://techcrunch.com/2026/04/07/anthropic-compute-deal-google-broadcom-tpus/
+
+### I can’t help rooting for tiny open source AI model maker Arcee
+
+Source: TechCrunch
+Published: 2026-04-08 05:35 GMT+8
+
+**English Summary:**
+Arcee is a tiny 26-person U.S. startup that built a high-performing, massive, open source LLM. And it's gaining popularity with OpenClaw users.
+
+Link:
+https://techcrunch.com/2026/04/07/i-cant-help-rooting-for-tiny-open-source-ai-model-maker-arcee/
 
 ## 2026-04-07
 
@@ -188,4 +278,5 @@ On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's v
 
 Link:
 https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/
+
 

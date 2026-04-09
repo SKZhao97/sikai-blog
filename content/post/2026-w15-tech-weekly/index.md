@@ -1,13 +1,103 @@
 +++
-date = '2026-04-08T11:40:26+08:00'
+date = '2026-04-09T11:35:42+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W15'
 description = 'Tech Weekly | 2026 W15 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Security', 'AI', 'Developer Tools', 'Cloud']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Cloud', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-09
+
+### GitHub Copilot in Visual Studio Code, March Releases
+
+Source: GitHub Blog Changelog
+Published: 2026-04-08 21:44 GMT+8
+
+**English Summary:**
+VS Code moved to weekly stable releases. This changelog covers releases v1.111 through v1.115, the releases we shipped throughout March and early April 2026. The highlights include Autopilot for fully… The post GitHub Copilot in Visual Studio Code, March Releases appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-08-github-copilot-in-visual-studio-code-march-releases
+
+### AWS boss explains why investing billions in both Anthropic and OpenAI is an OK conflict
+
+Source: TechCrunch
+Published: 2026-04-09 04:09 GMT+8
+
+**English Summary:**
+AWS has an ingrained culture of handling competition, he explained, because the cloud giant also competes with its partners.
+
+Link:
+https://techcrunch.com/2026/04/08/aws-boss-explains-why-investing-billions-in-both-anthropic-and-openai-is-an-ok-conflict/
+
+### GitHub Mobile: Research and code with Copilot cloud agent anywhere
+
+Source: GitHub Blog Changelog
+Published: 2026-04-09 03:37 GMT+8
+
+**English Summary:**
+Copilot cloud agent now supports more than pull request workflows on GitHub Mobile, so you can keep work moving even when you’re away from your desk. Ask Copilot to research… The post GitHub Mobile: Research and code with Copilot cloud agent anywhere appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-08-github-mobile-research-and-code-with-copilot-cloud-agent-anywhere
+
+### Code Security risk assessment available for organizations
+
+Source: GitHub Blog Changelog
+Published: 2026-04-09 00:52 GMT+8
+
+**English Summary:**
+Organization admins and security managers can now run a free Code Security risk assessment to review security vulnerabilities across their organization. The assessment summarizes vulnerabilities by severity, rule type, and… The post Code Security risk assessment available for organizations appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-08-code-security-risk-assessment-available-for-organizations
+
+### Anthropic limits access to Mythos, its new cybersecurity AI model
+
+Source: Ars Technica
+Published: 2026-04-08 21:34 GMT+8
+
+**English Summary:**
+A select group of customers is testing the Claude Mythos Preview.
+
+Link:
+https://arstechnica.com/ai/2026/04/anthropic-limits-access-to-mythos-its-new-cybersecurity-ai-model/
+
+### Copilot-reviewed pull request merge metrics now in the usage metrics API
+
+Source: GitHub Blog Changelog
+Published: 2026-04-09 07:21 GMT+8
+
+**English Summary:**
+Building on the pull request throughput and cycle-time metrics shipped in February, which track Copilot-created pull requests from the coding agent, the Copilot usage metrics API now includes two new… The post Copilot-reviewed pull request merge metrics now in the usage metrics API appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-08-copilot-reviewed-pull-request-merge-metrics-now-in-the-usage-metrics-api
+
+### Meta debuts the Muse Spark model in a ‘ground-up overhaul’ of its AI
+
+Source: TechCrunch
+Published: 2026-04-09 02:53 GMT+8
+
+**English Summary:**
+This is the first model Meta has released under its Superintelligence Labs, led by former Scale AI CEO Alexandr Wang.
+
+Link:
+https://techcrunch.com/2026/04/08/meta-debuts-the-muse-spark-model-in-a-ground-up-overhaul-of-its-ai/
+
+### New PGP signing key for GitHub CLI Linux packages
+
+Source: GitHub Blog Changelog
+Published: 2026-04-09 00:13 GMT+8
+
+**English Summary:**
+We’ve published an updated PGP keyring for GitHub CLI’s Linux package repositories. The keyring now includes both the current signing key and a new replacement key. If you’ve already rerun… The post New PGP signing key for GitHub CLI Linux packages appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-08-new-pgp-signing-key-for-github-cli-linux-packages
 
 ## 2026-04-08
 
@@ -278,5 +368,6 @@ On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's v
 
 Link:
 https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/
+
 
 

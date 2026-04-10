@@ -1,13 +1,103 @@
 +++
-date = '2026-04-09T11:35:42+08:00'
+date = '2026-04-10T11:48:21+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W15'
 description = 'Tech Weekly | 2026 W15 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Cloud', 'Security']
+tags = ['Tech News', 'Weekly', 'AI', 'Security', 'Developer Tools']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-10
+
+### Florida launches investigation into OpenAI
+
+Source: The Verge Tech
+Published: 2026-04-10 06:17 GMT+8
+
+**English Summary:**
+Florida Attorney General James Uthmeier is launching an investigation into OpenAI over public safety and national security risks, as reported earlier by Reuters. In a statement on Thursday, Uthmeier says there are concerns that OpenAI's data and technology are "falling into the hands of America's enemies, such as the Chinese Communist Party." Uthmeier also says […]
+
+Link:
+https://www.theverge.com/policy/909557/openai-florida-investigation
+
+### Florida AG announces investigation into OpenAI over shooting that allegedly involved ChatGPT
+
+Source: TechCrunch
+Published: 2026-04-10 04:11 GMT+8
+
+**English Summary:**
+ChatGPT had reportedly been used to plan the attack that killed two and injured five at Florida State University last April. The family of one victim has said that they plan to sue OpenAI over the incident.
+
+Link:
+https://techcrunch.com/2026/04/09/florida-ag-investigation-openai-chatgpt-shooting/
+
+### Ask Copilot in security assessments now available
+
+Source: GitHub Blog Changelog
+Published: 2026-04-10 03:33 GMT+8
+
+**English Summary:**
+Organization admins and security managers can now jump into a Copilot experience directly from secret risk assessment or Code Security risk assessment results to get contextual explanations and guided next… The post Ask Copilot in security assessments now available appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-09-ask-copilot-in-security-assessments-now-available
+
+### Is Anthropic limiting the release of Mythos to protect the internet — or Anthropic?
+
+Source: TechCrunch
+Published: 2026-04-10 02:50 GMT+8
+
+**English Summary:**
+Anthropic said this week that it limited the release of its newest model, dubbed Mythos, because it is too capable of finding security exploits in software relied upon by users around the world. Are real cybersecurity concerns a cover for a bigger problem at the frontier lab?
+
+Link:
+https://techcrunch.com/2026/04/09/is-anthropic-limiting-the-release-of-mythos-to-protect-the-internet-or-anthropic/
+
+### New Low Quality option in the Hide comment menu
+
+Source: GitHub Blog Changelog
+Published: 2026-04-10 01:40 GMT+8
+
+**English Summary:**
+GitHub moderators can now classify hidden comments as Low Quality, a new option in the Hide comment dropdown menu available across issues, discussions, pull requests, and commits. Previously, the available… The post New Low Quality option in the Hide comment menu appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-09-new-low-quality-option-in-the-hide-comment-menu
+
+### Release information in issue sidebar and default values for project fields
+
+Source: GitHub Blog Changelog
+Published: 2026-04-10 00:15 GMT+8
+
+**English Summary:**
+This update brings release tracking closer to your issues, configurable defaults for project fields, and faster navigation across related issues. Release information in the issue sidebar When an issue is… The post Release information in issue sidebar and default values for project fields appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-09-release-info-in-issue-sidebar-and-project-defaults
+
+### Florida AG to probe OpenAI, alleging possible connection to FSU shooting
+
+Source: TechCrunch
+Published: 2026-04-10 06:13 GMT+8
+
+**English Summary:**
+Florida Attorney General James Uthmeier plans to investigate OpenAI for its alleged harm to minors, potential to threaten national security, and its possible link to a shooting at Florida State University last year.
+
+Link:
+https://techcrunch.com/2026/04/09/florida-ag-to-probe-openai-alleging-possible-connection-to-fsu-shooting/
+
+### Meta AI app climbs to No. 5 on the App Store after Muse Spark launch
+
+Source: TechCrunch
+Published: 2026-04-10 03:10 GMT+8
+
+**English Summary:**
+The app was ranking No. 57 on the App Store just before Meta AI's new model launched. Now it's No. 5 — and rising.
+
+Link:
+https://techcrunch.com/2026/04/09/meta-ai-app-climbs-to-no-5-on-the-app-store-after-muse-spark-launch/
 
 ## 2026-04-09
 
@@ -368,6 +458,7 @@ On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's v
 
 Link:
 https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/
+
 
 
 

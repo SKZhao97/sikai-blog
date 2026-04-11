@@ -1,13 +1,103 @@
 +++
-date = '2026-04-10T11:48:21+08:00'
+date = '2026-04-11T11:25:25+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W15'
 description = 'Tech Weekly | 2026 W15 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Security', 'Developer Tools']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'Cloud', 'Security', 'AI']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-11
+
+### Pausing new GitHub Copilot Pro trials
+
+Source: GitHub Blog Changelog
+Published: 2026-04-11 04:25 GMT+8
+
+**English Summary:**
+As GitHub Copilot continues to grow, we’ve seen a significant rise in abuse of our free trial system. To protect the experience and integrity of the platform for legitimate developers,… The post Pausing new GitHub Copilot Pro trials appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-10-pausing-new-github-copilot-pro-trials
+
+### Copilot cloud agent’s validation tools are now 20% faster
+
+Source: GitHub Blog Changelog
+Published: 2026-04-10 20:19 GMT+8
+
+**English Summary:**
+When Copilot cloud agent writes code, it automatically runs GitHub’s security and quality validation tools, including CodeQL, the GitHub Advisory Database, secret scanning, and Copilot code review. If any problems… The post Copilot cloud agent’s validation tools are now 20% faster appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-10-copilot-cloud-agents-validation-tools-are-now-20-faster
+
+### Copilot usage metrics now aggregate Copilot cloud agent active user counts
+
+Source: GitHub Blog Changelog
+Published: 2026-04-11 05:42 GMT+8
+
+**English Summary:**
+Note: We’ve recently renamed Copilot coding agent to Copilot cloud agent. We will be updating our data schema for all existing coding agent fields to reflect this change in the… The post Copilot usage metrics now aggregate Copilot cloud agent active user counts appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-10-copilot-usage-metrics-now-aggregate-copilot-cloud-agent-active-user-counts
+
+### 500 Tbps of capacity: 16 years of scaling our global network
+
+Source: Cloudflare Blog
+Published: 2026-04-11 02:00 GMT+8
+
+**English Summary:**
+Cloudflare’s global network has officially crossed 500 Tbps of external capacity, enough to route more than 20% of the web and absorb the largest DDoS attacks ever recorded.
+
+Link:
+https://blog.cloudflare.com/500-tbps-of-capacity/
+
+### Stalking victim sues OpenAI, claims ChatGPT fueled her abuser’s delusions and ignored her warnings
+
+Source: TechCrunch
+Published: 2026-04-11 00:41 GMT+8
+
+**English Summary:**
+OpenAI ignored three warnings that a ChatGPT user was dangerous — including its own mass-casualty flag — while he stalked and harassed his ex-girlfriend, a new lawsuit alleges.
+
+Link:
+https://techcrunch.com/2026/04/10/stalking-victim-sues-openai-claims-chatgpt-fueled-her-abusers-delusions-and-ignored-her-warnings/
+
+### Enforcing new limits and retiring Opus 4.6 Fast from Copilot Pro+
+
+Source: GitHub Blog Changelog
+Published: 2026-04-11 06:56 GMT+8
+
+**English Summary:**
+As GitHub Copilot continues to rapidly grow, we continue to observe an increase in patterns of high concurrency and intense usage. While we understand this can be driven by legitimate… The post Enforcing new limits and retiring Opus 4.6 Fast from Copilot Pro+ appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-10-enforcing-new-limits-and-retiring-opus-4-6-fast-from-copilot-pro
+
+### Anthropic temporarily banned OpenClaw’s creator from accessing Claude
+
+Source: TechCrunch
+Published: 2026-04-11 04:27 GMT+8
+
+**English Summary:**
+This ban took place after Claude's pricing changed for OpenClaw users last week.
+
+Link:
+https://techcrunch.com/2026/04/10/anthropic-temporarily-banned-openclaws-creator-from-accessing-claude/
+
+### Actions workflows are limited to 50 reruns
+
+Source: GitHub Blog Changelog
+Published: 2026-04-11 04:03 GMT+8
+
+**English Summary:**
+Actions workflows are now limited to 50 reruns. Going forward, if you attempt to rerun a given workflow more than 50 times, you will get a failed check suite with… The post Actions workflows are limited to 50 reruns appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-10-actions-workflows-are-limited-to-50-reruns
 
 ## 2026-04-10
 
@@ -458,6 +548,7 @@ On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's v
 
 Link:
 https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/
+
 
 
 

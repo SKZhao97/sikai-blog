@@ -1,13 +1,103 @@
 +++
-date = '2026-04-11T11:25:25+08:00'
+date = '2026-04-12T11:52:05+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W15'
 description = 'Tech Weekly | 2026 W15 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'Cloud', 'Security', 'AI']
+tags = ['Tech News', 'Weekly', 'AI', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-12
+
+### Sam Altman responds to ‘incendiary’ New Yorker article after attack on his home
+
+Source: TechCrunch
+Published: 2026-04-12 01:18 GMT+8
+
+**English Summary:**
+The OpenAI CEO's new blog post responds to both an apparent attack on his home and an in-depth New Yorker profile raising questions about his trustworthiness.
+
+Link:
+https://techcrunch.com/2026/04/11/sam-altman-responds-to-incendiary-new-yorker-article-after-attack-on-his-home/
+
+### Google says Polymarket bets showing up in News was an ‘error’
+
+Source: The Verge Tech
+Published: 2026-04-11 23:07 GMT+8
+
+**English Summary:**
+Polymarket bets started popping up in Google News alongside legitimate news articles. But now those results aren't showing, and Google says they were never supposed to. Spokesperson Ned Adriance told The Verge that "Google News is designed to show sources that create content about current issues, events, and important topics, and we have policies for […]
+
+Link:
+https://www.theverge.com/tech/910691/google-news-polymarket-bets-error
+
+### Google’s latest Nest Doorbells just hit their lowest prices of the year
+
+Source: The Verge Tech
+Published: 2026-04-11 23:00 GMT+8
+
+**English Summary:**
+If you’ve ever worried about porch pirates stealing packages while you’re away, a video doorbell can offer some peace of mind, letting you keep tabs on deliveries no matter where you are. Google offers some of the best around, and right now, its battery-powered, second-gen Nest Doorbell is available for $129.99 ($50 off) from Amazon and […]
+
+Link:
+https://www.theverge.com/gadgets/910472/google-nest-doorbell-wired-battery-powered-deal-sale
+
+### AI models are terrible at betting on soccer—especially xAI Grok
+
+Source: Ars Technica
+Published: 2026-04-11 19:15 GMT+8
+
+**English Summary:**
+Systems from Google, OpenAI, Anthropic, and xAI struggle with the Premier League.
+
+Link:
+https://arstechnica.com/ai/2026/04/ai-models-are-terrible-at-betting-on-soccer-especially-xai-grok/
+
+### Kalshi wins temporary pause in Arizona criminal case
+
+Source: TechCrunch
+Published: 2026-04-12 05:20 GMT+8
+
+**English Summary:**
+The Commodity Futures Trading Commission announced Friday that it has won a temporary restraining order preventing Arizona from pursuing its criminal case against Kalshi.
+
+Link:
+https://techcrunch.com/2026/04/11/kalshi-wins-temporary-pause-in-arizona-criminal-case/
+
+### AMC will stream ‘The Audacity’ premiere in 21 parts on TikTok
+
+Source: TechCrunch
+Published: 2026-04-12 04:32 GMT+8
+
+**English Summary:**
+Is this a smart way to build buzz, or just an odd attempt to recreate Quibi?
+
+Link:
+https://techcrunch.com/2026/04/11/amc-will-stream-the-audacity-premiere-in-21-parts-on-tiktok/
+
+### Nvidia-backed SiFive hits $3.65 billion valuation for open AI chips
+
+Source: TechCrunch
+Published: 2026-04-11 22:03 GMT+8
+
+**English Summary:**
+The deal is interesting for a number of reasons, including that SiFive's chip designs are based on RISC-V, not x86 or ARM.
+
+Link:
+https://techcrunch.com/2026/04/11/nvidia-backed-sifive-hits-3-65-billion-valuation-for-open-ai-chips/
+
+### You don’t have to spend more than $50 on a great USB-C dock for your Switch 2
+
+Source: The Verge Tech
+Published: 2026-04-11 21:30 GMT+8
+
+**English Summary:**
+Nintendo seemingly designed its latest console to be a mystery for third-party accessory makers. With the Switch 2, the company changed the wireless protocol for connecting controllers to the new system, as well as how it outputs video over USB-C, making it clear at launch that every third-party manufacturer needed to start over from scratch. […]
+
+Link:
+https://www.theverge.com/gadgets/907645/nintendo-switch-2-genki-jsaux-usb-c-dock-hands-on
 
 ## 2026-04-11
 
@@ -548,6 +638,7 @@ On the latest episode of TechCrunch’s Equity podcast, we debated Elon Musk's v
 
 Link:
 https://techcrunch.com/2026/04/05/can-orbital-data-centers-help-justify-a-massive-valuation-for-spacex/
+
 
 
 

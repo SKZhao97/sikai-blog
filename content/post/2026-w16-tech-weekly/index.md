@@ -1,13 +1,103 @@
 +++
-date = '2026-04-13T11:59:48+08:00'
+date = '2026-04-14T11:49:52+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W16'
 description = 'Tech Weekly | 2026 W16 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Cloud', 'Security', 'Developer Tools']
+tags = ['Tech News', 'Weekly', 'Cloud', 'AI', 'Developer Tools', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-14
+
+### Enterprises power agentic workflows in Cloudflare Agent Cloud with OpenAI
+
+Source: OpenAI Blog
+Published: 2026-04-13 14:00 GMT+8
+
+**English Summary:**
+Cloudflare brings OpenAI’s GPT-5.4 and Codex to Agent Cloud, enabling enterprises to build, deploy, and scale AI agents for real-world tasks with speed and security.
+
+Link:
+https://openai.com/index/cloudflare-openai-agent-cloud
+
+### Copilot data residency in US + EU and FedRAMP compliance now available
+
+Source: GitHub Blog Changelog
+Published: 2026-04-14 07:03 GMT+8
+
+**English Summary:**
+GitHub Copilot now supports data residency for US and EU regions, ensuring all inference processing and associated data stay within your designated geography. For US government customers, all model hosts… The post Copilot data residency in US + EU and FedRAMP compliance now available appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-13-copilot-data-residency-in-us-eu-and-fedramp-compliance-now-available
+
+### AWS Weekly Roundup: Claude Mythos Preview in Amazon Bedrock, AWS Agent Registry, and more (April 13, 2026)
+
+Source: AWS News Blog
+Published: 2026-04-14 00:16 GMT+8
+
+**English Summary:**
+In my last Week in Review post, I mentioned how much time I’ve been spending on AI-Driven Development Lifecycle (AI-DLC) workshops with customers this year. A common theme in those sessions is the need for better cost visibility. Teams are moving fast with AI, but as they go from experimenting to full production, finance and […]
+
+Link:
+https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-mythos-preview-in-amazon-bedrock-aws-agent-registry-and-more-april-13-2026/
+
+### Building a CLI for all of Cloudflare
+
+Source: Cloudflare Blog
+Published: 2026-04-13 22:29 GMT+8
+
+**English Summary:**
+We’re introducing cf, a new unified CLI designed for consistency across the Cloudflare platform, alongside Local Explorer for debugging local data. These tools simplify how developers and AI agents interact with our nearly 3,000 API operations.
+
+Link:
+https://blog.cloudflare.com/cf-cli-local-explorer/
+
+### Agents have their own computers with Sandboxes GA
+
+Source: Cloudflare Blog
+Published: 2026-04-13 21:08 GMT+8
+
+**English Summary:**
+Cloudflare Sandboxes give AI agents a persistent, isolated environment: a real computer with a shell, a filesystem, and background processes that starts on demand and picks up exactly where it left off.
+
+Link:
+https://blog.cloudflare.com/sandbox-ga/
+
+### Fix merge conflicts in three clicks with Copilot cloud agent
+
+Source: GitHub Blog Changelog
+Published: 2026-04-14 03:36 GMT+8
+
+**English Summary:**
+You can now fix merge conflicts in three clicks with the new Fix with Copilot button on github.com, powered by Copilot cloud agent. Click the button, and a comment is… The post Fix merge conflicts in three clicks with Copilot cloud agent appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-13-fix-merge-conflicts-in-three-clicks-with-copilot-cloud-agent
+
+### Dynamic, identity-aware, and secure Sandbox auth
+
+Source: Cloudflare Blog
+Published: 2026-04-13 21:00 GMT+8
+
+**English Summary:**
+Outbound Workers for Sandboxes provide a programmable, zero-trust egress proxy for AI agents. This allows developers to inject credentials and enforce dynamic security policies without exposing sensitive tokens to untrusted code.
+
+Link:
+https://blog.cloudflare.com/sandbox-auth/
+
+### OpenAI has bought AI personal finance startup Hiro
+
+Source: TechCrunch
+Published: 2026-04-14 08:23 GMT+8
+
+**English Summary:**
+The acquisition indicates a capability that OpenAI is building into ChatGPT: financial planning.
+
+Link:
+https://techcrunch.com/2026/04/13/openai-has-bought-ai-personal-finance-startup-hiro/
 
 ## 2026-04-13
 
@@ -98,3 +188,4 @@ These glasses are a step back from an ambitious plan that once called for Apple 
 
 Link:
 https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/
+

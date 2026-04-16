@@ -1,13 +1,103 @@
 +++
-date = '2026-04-15T11:48:52+08:00'
+date = '2026-04-16T11:55:44+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W16'
 description = 'Tech Weekly | 2026 W16 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'Open Source', 'AI', 'Cloud']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'Cloud', 'AI']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-16
+
+### Register domains wherever you build: Cloudflare Registrar API now in beta
+
+Source: Cloudflare Blog
+Published: 2026-04-15 21:00 GMT+8
+
+**English Summary:**
+The Cloudflare Registrar API is now in beta. Developers and AI agents can search, check availability, and register domains at cost directly from their editor, their terminal, or their agent — without leaving their workflow.
+
+Link:
+https://blog.cloudflare.com/registrar-api-beta/
+
+### The next evolution of the Agents SDK
+
+Source: OpenAI Blog
+Published: 2026-04-15 18:00 GMT+8
+
+**English Summary:**
+OpenAI updates the Agents SDK with native sandbox execution and a model-native harness, helping developers build secure, long-running agents across files and tools.
+
+Link:
+https://openai.com/index/the-next-evolution-of-the-agents-sdk
+
+### OpenAI updates its Agents SDK to help enterprises build safer, more capable agents
+
+Source: TechCrunch
+Published: 2026-04-16 03:28 GMT+8
+
+**English Summary:**
+OpenAI has expanded the capabilities of its agent-building toolkit, as agentic AI continues to grow in popularity.
+
+Link:
+https://techcrunch.com/2026/04/15/openai-updates-its-agents-sdk-to-help-enterprises-build-safer-more-capable-agents/
+
+### Prepay for the Gemini API to get more control over your spend
+
+Source: Google Blog Technology
+Published: 2026-04-15 22:00 GMT+8
+
+**English Summary:**
+Gemini API
+
+Link:
+https://blog.google/innovation-and-ai/technology/developers-tools/prepay-gemini-api/
+
+### Project Think: building the next generation of AI agents on Cloudflare
+
+Source: Cloudflare Blog
+Published: 2026-04-15 21:00 GMT+8
+
+**English Summary:**
+Announcing a preview of the next edition of the Agents SDK — from lightweight primitives to a batteries-included platform for AI agents that think, act, and persist.
+
+Link:
+https://blog.cloudflare.com/project-think/
+
+### Google launches a Gemini AI app on Mac
+
+Source: The Verge Tech
+Published: 2026-04-16 02:10 GMT+8
+
+**English Summary:**
+Google is launching a new Gemini app on Mac that allows you to interact with the AI assistant without switching windows on your desktop. With the app, you can use the Option + Space shortcut to pull up a floating chat bubble, where you can ask Gemini questions and share your window. Before sharing your […]
+
+Link:
+https://www.theverge.com/tech/912638/google-gemini-mac-app
+
+### Introducing Agent Lee - a new interface to the Cloudflare stack
+
+Source: Cloudflare Blog
+Published: 2026-04-15 21:00 GMT+8
+
+**English Summary:**
+Agent Lee is an in-dashboard agent that shifts Cloudflare’s interface from manual tab-switching to a single prompt. Using sandboxed TypeScript, it helps you troubleshoot and manage your stack as a grounded technical collaborator.
+
+Link:
+https://blog.cloudflare.com/introducing-agent-lee/
+
+### Rearchitecting the Workflows control plane for the agentic era
+
+Source: Cloudflare Blog
+Published: 2026-04-15 21:00 GMT+8
+
+**English Summary:**
+Cloudflare Workflows, a durable execution engine for multi-step applications, now supports higher concurrency and creation rate limits through a rearchitectured control plane, helping scale to meet the use cases for durable background agents.
+
+Link:
+https://blog.cloudflare.com/workflows-v2/
 
 ## 2026-04-15
 
@@ -278,5 +368,6 @@ These glasses are a step back from an ambitious plan that once called for Apple 
 
 Link:
 https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/
+
 
 

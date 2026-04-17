@@ -1,13 +1,103 @@
 +++
-date = '2026-04-16T11:55:44+08:00'
+date = '2026-04-17T11:52:29+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W16'
 description = 'Tech Weekly | 2026 W16 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'Cloud', 'AI']
+tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Cloud', 'Open Source']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-17
+
+### Introducing Anthropic’s Claude Opus 4.7 model in Amazon Bedrock
+
+Source: AWS News Blog
+Published: 2026-04-16 22:49 GMT+8
+
+**English Summary:**
+AWS launches Claude Opus 4.7 in Amazon Bedrock, Anthropic's most intelligent Opus model for advancing performance across coding, long-running agents, and professional work. Claude Opus 4.7 is powered by Amazon Bedrock's next generation inference engine, purpose-built for generative AI inferencing and fine-tuning workloads.
+
+Link:
+https://aws.amazon.com/blogs/aws/introducing-anthropics-claude-opus-4-7-model-in-amazon-bedrock/
+
+### Claude Opus 4.7 is generally available
+
+Source: GitHub Blog Changelog
+Published: 2026-04-16 22:02 GMT+8
+
+**English Summary:**
+Claude Opus 4.7, Anthropic’s latest Opus model, is now rolling out on GitHub Copilot. In our early testing, Opus 4.7 delivers stronger multi-step task performance and more reliable agentic execution,… The post Claude Opus 4.7 is generally available appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-16-claude-opus-4-7-is-generally-available
+
+### Cloudflare’s AI Platform: an inference layer designed for agents
+
+Source: Cloudflare Blog
+Published: 2026-04-16 22:00 GMT+8
+
+**English Summary:**
+We're building AI Gateway into a unified inference layer for AI, letting developers call models from 14+ providers. New features include Workers AI binding integration and an expanded catalog with multimodal models.
+
+Link:
+https://blog.cloudflare.com/ai-platform/
+
+### Introducing GPT-Rosalind for life sciences research
+
+Source: OpenAI Blog
+Published: 2026-04-16 09:00 GMT+8
+
+**English Summary:**
+OpenAI introduces GPT-Rosalind, a frontier reasoning model built to accelerate drug discovery, genomics analysis, protein reasoning, and scientific research workflows.
+
+Link:
+https://openai.com/index/introducing-gpt-rosalind
+
+### Rule insights dashboard and unified filter bar
+
+Source: GitHub Blog Changelog
+Published: 2026-04-16 23:30 GMT+8
+
+**English Summary:**
+Rule insights dashboard GitHub repository rulesets are powerful, but it hasn’t been easy to spot trends like spikes in blocked pushes during an incident or patterns in bypass activity without… The post Rule insights dashboard and unified filter bar appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-16-rule-insights-dashboard-and-unified-filter-bar
+
+### OpenAI takes aim at Anthropic with beefed-up Codex that gives it more power over your desktop
+
+Source: TechCrunch
+Published: 2026-04-17 03:18 GMT+8
+
+**English Summary:**
+OpenAI's agentic coding tool has gotten a major makeover, with a variety of new powers and abilities.
+
+Link:
+https://techcrunch.com/2026/04/16/openai-takes-aim-at-anthropic-with-beefed-up-codex-that-gives-it-more-power-over-your-desktop/
+
+### Manage agent skills with GitHub CLI
+
+Source: GitHub Blog Changelog
+Published: 2026-04-17 01:24 GMT+8
+
+**English Summary:**
+Agent skills are reshaping how developers work with AI coding agents. Today we’re launching gh skill, a new command in the GitHub CLI that makes it easy to discover, install,… The post Manage agent skills with GitHub CLI appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-16-manage-agent-skills-with-github-cli
+
+### OpenAI’s big Codex update is a direct shot at Claude Code
+
+Source: The Verge Tech
+Published: 2026-04-17 01:00 GMT+8
+
+**English Summary:**
+OpenAI is beefing up its agentic coding and development system, Codex, with a suite of updates that let it use your computer, generate images, and remember from past experiences. The package of updates comes as OpenAI's rivalry with Anthropic intensifies, following the stellar successes of Claude Code and OpenAI aggressively shifting resources to catch up. […]
+
+Link:
+https://www.theverge.com/ai-artificial-intelligence/913034/openai-codex-updates-use-macos
 
 ## 2026-04-16
 
@@ -368,6 +458,7 @@ These glasses are a step back from an ambitious plan that once called for Apple 
 
 Link:
 https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/
+
 
 
 

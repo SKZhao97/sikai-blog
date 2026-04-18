@@ -1,13 +1,103 @@
 +++
-date = '2026-04-17T11:52:29+08:00'
+date = '2026-04-18T11:37:13+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W16'
 description = 'Tech Weekly | 2026 W16 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Cloud', 'Open Source']
+tags = ['Tech News', 'Weekly', 'AI', 'Cloud', 'Developer Tools', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-18
+
+### GitHub Copilot CLI now supports Copilot auto model selection
+
+Source: GitHub Blog Changelog
+Published: 2026-04-18 06:32 GMT+8
+
+**English Summary:**
+Copilot auto model selection is now generally available in GitHub Copilot CLI for all Copilot plans. With auto, Copilot chooses the most efficient model on your behalf. How it works… The post GitHub Copilot CLI now supports Copilot auto model selection appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-17-github-copilot-cli-now-supports-copilot-auto-model-selection
+
+### Anthropic launches Claude Design, a new product for creating quick visuals
+
+Source: TechCrunch
+Published: 2026-04-17 23:00 GMT+8
+
+**English Summary:**
+The company says Claude Design is intended to help people like founders and product managers without a design background share their ideas more easily.
+
+Link:
+https://techcrunch.com/2026/04/17/anthropic-launches-claude-design-a-new-product-for-creating-quick-visuals/
+
+### CLAUDE Design Anthropic Labs
+
+Source: Anthropic News
+Published: 2026-04-17 22:58 GMT+8
+
+**English Summary:**
+See the source link for the full update.
+
+Link:
+https://www.anthropic.com/news/claude-design-anthropic-labs
+
+### Agents that remember: introducing Agent Memory
+
+Source: Cloudflare Blog
+Published: 2026-04-17 21:00 GMT+8
+
+**English Summary:**
+Cloudflare Agent Memory is a managed service that gives AI agents persistent memory, allowing them to recall what matters, forget what doesn't, and get smarter over time.
+
+Link:
+https://blog.cloudflare.com/introducing-agent-memory/
+
+### Agents Week: network performance update
+
+Source: Cloudflare Blog
+Published: 2026-04-17 21:00 GMT+8
+
+**English Summary:**
+By migrating our request handling layer to a Rust-based architecture called FL2, Cloudflare has increased its performance lead to 60% of the world’s top networks. We use real-user measurements and connection trimeans to ensure our data reflects the actual experience of people on the Internet.
+
+Link:
+https://blog.cloudflare.com/network-performance-agents-week/
+
+### Hackers are abusing unpatched Windows security flaws to hack into organizations
+
+Source: TechCrunch
+Published: 2026-04-18 01:48 GMT+8
+
+**English Summary:**
+A security researcher published details of three security vulnerabilities in Windows Defender, and the code used to exploit them. Now, hackers are taking advantage of the vulnerabilities in real-life attacks, according to a cybersecurity firm.
+
+Link:
+https://techcrunch.com/2026/04/17/hackers-are-abusing-unpatched-windows-security-flaws-to-hack-into-organizations/
+
+### 7 ways to travel smarter this summer, with help from Google
+
+Source: Google Blog Technology
+Published: 2026-04-17 22:00 GMT+8
+
+**English Summary:**
+Illustration showing a person with a Pixel phone in a beach town farmers' market by the water
+
+Link:
+https://blog.google/products-and-platforms/products/search/summer-travel-tips-google-search-ai/
+
+### Unweight: how we compressed an LLM 22% without sacrificing quality
+
+Source: Cloudflare Blog
+Published: 2026-04-17 21:00 GMT+8
+
+**English Summary:**
+Running LLMs across Cloudflare’s network requires us to be smarter and more efficient about GPU memory bandwidth. That’s why we developed Unweight, a lossless inference-time compression system that achieves up to a 22% model footprint reduction, so that we can deliver faster and cheaper inference than ever before.
+
+Link:
+https://blog.cloudflare.com/unweight-tensor-compression/
 
 ## 2026-04-17
 
@@ -458,6 +548,7 @@ These glasses are a step back from an ambitious plan that once called for Apple 
 
 Link:
 https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/
+
 
 
 

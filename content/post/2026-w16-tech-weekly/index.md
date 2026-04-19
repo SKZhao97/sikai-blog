@@ -1,13 +1,103 @@
 +++
-date = '2026-04-18T11:37:13+08:00'
+date = '2026-04-19T11:55:52+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W16'
 description = 'Tech Weekly | 2026 W16 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Cloud', 'Developer Tools', 'Security']
+tags = ['Tech News', 'Weekly', 'AI']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-19
+
+### Anthropic’s relationship with the Trump administration seems to be thawing
+
+Source: TechCrunch
+Published: 2026-04-18 22:56 GMT+8
+
+**English Summary:**
+Despite recently being designated a supply-chain risk by the Pentagon, Anthropic is still talking to high-level members of the Trump administration.
+
+Link:
+https://techcrunch.com/2026/04/18/anthropics-relationship-with-the-trump-administration-seems-to-be-thawing/
+
+### AI chip startup Cerebras files for IPO
+
+Source: TechCrunch
+Published: 2026-04-19 03:19 GMT+8
+
+**English Summary:**
+In recent months, the company announced an agreement with Amazon Web Services to use Cerebras chips in Amazon data centers, as well as a deal with OpenAI reportedly worth more than $10 billion.
+
+Link:
+https://techcrunch.com/2026/04/18/ai-chip-startup-cerebras-files-for-ipo/
+
+### Tesla brings its robotaxi service to Dallas and Houston
+
+Source: TechCrunch
+Published: 2026-04-19 05:37 GMT+8
+
+**English Summary:**
+Tesla is expanding its robotaxi service to Dallas and Houston, according to a social media post from the company. The post says simply that “Robotaxi is now rolling out in Dallas & Houston 🤠” and includes a 14-second video showing Tesla vehicles driving without human monitors or drivers in the front seat. The company now […]
+
+Link:
+https://techcrunch.com/2026/04/18/tesla-brings-its-robotaxi-service-to-dallas-and-houston/
+
+### The RAM shortage could last years
+
+Source: The Verge Tech
+Published: 2026-04-19 05:08 GMT+8
+
+**English Summary:**
+According to Nikkei Asia, even as suppliers ramp up DRAM production, manufacturers are only expected to meet 60 percent of demand by the end of 2027. SK Group chairman has even said that shortages could last until 2030. The world's largest memory makers - Samsung, SK Hynix, and Micron - are all working to add […]
+
+Link:
+https://www.theverge.com/ai-artificial-intelligence/914672/the-ram-shortage-could-last-years
+
+### VC Ron Conway says he has a ‘rare form of cancer’
+
+Source: TechCrunch
+Published: 2026-04-19 04:00 GMT+8
+
+**English Summary:**
+Conway wrote that he “will be stepping back from some of my usual activities,” but he will “continue to support” founders backed by his firm SV Angel.
+
+Link:
+https://techcrunch.com/2026/04/18/vc-ron-conway-says-he-has-a-rare-form-of-cancer/
+
+### Cheap stuff that doesn’t suck, take 3
+
+Source: The Verge Tech
+Published: 2026-04-18 23:33 GMT+8
+
+**English Summary:**
+From fancy OLED TVs to robot vacuums with arms, we tend to cover a lot of cool stuff here at The Verge that, unfortunately, often costs as much as a month’s rent (or more). But with the ongoing tariff situation in the US and a global memory shortage pushing up the cost of, well, everything, we’re well aware that not […]
+
+Link:
+https://www.theverge.com/gadgets/912620/cheap-gadgets-tech-under-50-tools-headphones-fitness-trackers
+
+### The App Store is booming again, and AI may be why
+
+Source: TechCrunch
+Published: 2026-04-18 21:00 GMT+8
+
+**English Summary:**
+New data from Appfigures shows a swell of new app launches in 2026, suggesting AI tools could be fueling a mobile software boom.
+
+Link:
+https://techcrunch.com/2026/04/18/the-app-store-is-booming-again-and-ai-may-be-why/
+
+### Dyson’s handheld fan is more powerful and louder than I expected
+
+Source: The Verge Tech
+Published: 2026-04-18 21:00 GMT+8
+
+**English Summary:**
+Two years ago I attended a picturesque outdoor wedding in August where the hot and humid weather had guests occasionally ducking into their cars to enjoy a blast of AC. Dyson’s new $99.99 handheld fan would have provided some much-needed relief then, although I’m not sure I would have been comfortable powering it up during […]
+
+Link:
+https://www.theverge.com/tech/908962/dyson-hushjet-mini-cool-personal-handheld-fan-hands-on
 
 ## 2026-04-18
 
@@ -548,6 +638,7 @@ These glasses are a step back from an ambitious plan that once called for Apple 
 
 Link:
 https://techcrunch.com/2026/04/12/apple-reportedly-testing-four-designs-for-upcoming-smart-glasses/
+
 
 
 

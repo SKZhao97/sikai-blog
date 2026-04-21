@@ -1,13 +1,103 @@
 +++
-date = '2026-04-20T11:58:59+08:00'
+date = '2026-04-21T11:52:51+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W17'
 description = 'Tech Weekly | 2026 W17 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Cloud']
+tags = ['Tech News', 'Weekly', 'AI', 'Cloud', 'Developer Tools', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-21
+
+### AWS Weekly Roundup: Claude Opus 4.7 in Amazon Bedrock, AWS Interconnect GA, and more (April 20, 2026)
+
+Source: AWS News Blog
+Published: 2026-04-20 23:53 GMT+8
+
+**English Summary:**
+Claude Opus 4.7 arrives in Amazon Bedrock with improved agentic coding and a 1M token context window. AWS Interconnect reaches general availability with multicloud private connectivity and a new last-mile option. Plus, post-quantum TLS for Secrets Manager, new C8in/C8ib EC2 instances, and more.
+
+Link:
+https://aws.amazon.com/blogs/aws/aws-weekly-roundup-claude-opus-4-7-in-amazon-bedrock-aws-interconnect-ga-and-more-april-20-2026/
+
+### Building the agentic cloud: everything we launched during Agents Week 2026
+
+Source: Cloudflare Blog
+Published: 2026-04-20 21:00 GMT+8
+
+**English Summary:**
+Agents Week 2026 is a wrap. Let’s take a look at everything we announced, from compute and security to the agent toolbox, platform tools, and the emerging agentic web. Everything we shipped for the agentic cloud.
+
+Link:
+https://blog.cloudflare.com/agents-week-in-review/
+
+### Changes to GitHub Copilot plans for individuals
+
+Source: GitHub Blog Changelog
+Published: 2026-04-21 01:49 GMT+8
+
+**English Summary:**
+As shared in our recent blog post, we’re making the following changes to Copilot plans for individuals as part of our ongoing efforts to ensure service reliability and a sustainable… The post Changes to GitHub Copilot plans for individuals appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-20-changes-to-github-copilot-plans-for-individuals
+
+### Start vibe coding in AI Studio with your Google AI subscription.
+
+Source: Google Blog Technology
+Published: 2026-04-21 00:32 GMT+8
+
+**English Summary:**
+Starting today, Google AI Pro and Ultra subscribers get increased usage limits in Google AI Studio. This update also includes access to Nano Banana Pro and Gemini Pro mo…
+
+Link:
+https://blog.google/innovation-and-ai/technology/developers-tools/google-one-ai-studio/
+
+### Anthropic's Mythos AI model sparks fears of turbocharged hacking
+
+Source: Ars Technica
+Published: 2026-04-20 22:21 GMT+8
+
+**English Summary:**
+Cyberdefenses could be exposed faster than fixes could be deployed.
+
+Link:
+https://arstechnica.com/ai/2026/04/anthropics-mythos-ai-model-sparks-fears-of-turbocharged-hacking/
+
+### Sunsetting SHA-1 in HTTPS on GitHub
+
+Source: GitHub Blog Changelog
+Published: 2026-04-20 22:15 GMT+8
+
+**English Summary:**
+What’s changing We’re going to remove the use of SHA-1 in HTTPS for GitHub and our CDNs. This impacts browsers that are used to view the GitHub website, any software… The post Sunsetting SHA-1 in HTTPS on GitHub appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-20-sunsetting-sha-1-in-https-on-github
+
+### Anthropic takes $5B from Amazon and pledges $100B in cloud spending in return
+
+Source: TechCrunch
+Published: 2026-04-21 07:10 GMT+8
+
+**English Summary:**
+Amazon has made another circular AI deal: It's investing another $5 billion in Anthropic. Anthropic has agreed to spend $100 billion on AWS in return.
+
+Link:
+https://techcrunch.com/2026/04/20/anthropic-takes-5b-from-amazon-and-pledges-100b-in-cloud-spending-in-return/
+
+### The AI engineering stack we built internally — on the platform we ship
+
+Source: Cloudflare Blog
+Published: 2026-04-20 21:00 GMT+8
+
+**English Summary:**
+We built our internal AI engineering stack on the same products we ship. That means 20 million requests routed through AI Gateway, 241 billion tokens processed, and inference running on Workers AI, serving more than 3,683 internal users. Here's how we did it.
+
+Link:
+https://blog.cloudflare.com/internal-ai-engineering-stack/
 
 ## 2026-04-20
 
@@ -98,3 +188,4 @@ Palantir's ideological bent has come under more scrutiny as it's worked with ICE
 
 Link:
 https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/
+

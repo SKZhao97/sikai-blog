@@ -1,13 +1,103 @@
 +++
-date = '2026-04-21T11:52:51+08:00'
+date = '2026-04-22T11:48:29+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W17'
 description = 'Tech Weekly | 2026 W17 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Cloud', 'Developer Tools', 'Security']
+tags = ['Tech News', 'Weekly', 'AI', 'Security', 'Developer Tools']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-22
+
+### Mozilla: Anthropic's Mythos found 271 security vulnerabilities in Firefox 150
+
+Source: Ars Technica
+Published: 2026-04-22 05:40 GMT+8
+
+**English Summary:**
+CTO says new AI model is "every bit as capable" as world's best security researchers.
+
+Link:
+https://arstechnica.com/ai/2026/04/mozilla-anthropics-mythos-found-271-zero-day-vulnerabilities-in-firefox-150/
+
+### Sam Altman throws shade at Anthropic’s cyber model, Mythos: ‘fear-based marketing’
+
+Source: TechCrunch
+Published: 2026-04-22 02:51 GMT+8
+
+**English Summary:**
+This week, during a podcast appearance, OpenAI CEO Sam Altman called out his competitor's new cybersecurity model, noting that the company was using fear to make its product sound more impressive than it actually is.
+
+Link:
+https://techcrunch.com/2026/04/21/sam-altman-throws-shade-at-anthropics-cyber-model-mythos-fear-based-marketing/
+
+### CodeQL now supports sanitizers and validators in models-as-data
+
+Source: GitHub Blog Changelog
+Published: 2026-04-22 00:07 GMT+8
+
+**English Summary:**
+CodeQL is the static analysis engine behind GitHub code scanning, which finds and remediates security issues in your code. You can now define custom sanitizers and validators using data extensions… The post CodeQL now supports sanitizers and validators in models-as-data appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-21-codeql-now-supports-sanitizers-and-validators-in-models-as-data
+
+### Anthropic Amazon Compute
+
+Source: Anthropic News
+Published: 2026-04-21 22:08 GMT+8
+
+**English Summary:**
+See the source link for the full update.
+
+Link:
+https://www.anthropic.com/news/anthropic-amazon-compute
+
+### Stitch’s DESIGN.md format is now open-source so you can use it across platforms.
+
+Source: Google Blog Technology
+Published: 2026-04-22 00:00 GMT+8
+
+**English Summary:**
+We’ve open-sourced the draft specification for DESIGN.md, so it can be used across any single tool or platform.
+
+Link:
+https://blog.google/innovation-and-ai/models-and-research/google-labs/stitch-design-md/
+
+### 3 new ways Ads Advisor is making Google Ads safer and faster
+
+Source: Google Blog Technology
+Published: 2026-04-21 22:30 GMT+8
+
+**English Summary:**
+The Road to Google Marketing Live graphic. May 20, 2026, 9am PT. White background with colorful bottom gradient.
+
+Link:
+https://blog.google/products/ads-commerce/ads-advisor-google-ads/
+
+### Moving past bots vs. humans
+
+Source: Cloudflare Blog
+Published: 2026-04-21 21:00 GMT+8
+
+**English Summary:**
+As AI assistants and privacy proxies challenge the capabilities of traditional bot detection, the Web needs new models for accountability. We believe that control should remain with the client, and that an open ecosystem of anonymous credentials is key to preserving user privacy while protecting origins from abuse.
+
+Link:
+https://blog.cloudflare.com/past-bots-and-humans/
+
+### Google brings Pomelli in English to small businesses in Europe.
+
+Source: Google Blog Technology
+Published: 2026-04-21 15:00 GMT+8
+
+**English Summary:**
+A video illustrating how Pomelli works.
+
+Link:
+https://blog.google/innovation-and-ai/models-and-research/google-labs/pomelli-in-europe/
 
 ## 2026-04-21
 
@@ -188,4 +278,5 @@ Palantir's ideological bent has come under more scrutiny as it's worked with ICE
 
 Link:
 https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/
+
 

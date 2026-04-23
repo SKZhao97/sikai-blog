@@ -1,13 +1,103 @@
 +++
-date = '2026-04-22T11:48:29+08:00'
+date = '2026-04-23T11:55:07+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W17'
 description = 'Tech Weekly | 2026 W17 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Security', 'Developer Tools']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Cloud', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-23
+
+### GitHub CLI: Opt-out usage telemetry
+
+Source: GitHub Blog Changelog
+Published: 2026-04-23 06:09 GMT+8
+
+**English Summary:**
+With the release of v2.91.0, GitHub CLI sends pseudonymous usage telemetry to help us improve the product. We want you to understand what we send and why. Why we collect… The post GitHub CLI: Opt-out usage telemetry appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-22-github-cli-opt-out-usage-telemetry
+
+### GitHub Copilot for Jira: Our latest enhancements
+
+Source: GitHub Blog Changelog
+Published: 2026-04-23 08:10 GMT+8
+
+**English Summary:**
+Since our last update, we’ve continued to invest in making the GitHub Copilot cloud agent for Jira integration more powerful and customizable. These improvements give teams greater control over how… The post GitHub Copilot for Jira: Our latest enhancements appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-22-github-copilot-for-jira-our-latest-enhancements
+
+### Bring your own language model key in VS Code now available
+
+Source: GitHub Blog Changelog
+Published: 2026-04-23 00:38 GMT+8
+
+**English Summary:**
+Copilot Business and Enterprise users can now use bring your own language model key (BYOK) in Visual Studio Code. BYOK lets teams reuse their API keys to access models from… The post Bring your own language model key in VS Code now available appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-22-bring-your-own-language-model-key-in-vs-code-now-available
+
+### Making ChatGPT better for clinicians
+
+Source: OpenAI Blog
+Published: 2026-04-22 23:00 GMT+8
+
+**English Summary:**
+OpenAI makes ChatGPT for Clinicians free for verified U.S. physicians, nurse practitioners, and pharmacists, supporting clinical care, documentation, and research.
+
+Link:
+https://openai.com/index/making-chatgpt-better-for-clinicians
+
+### Speeding up agentic workflows with WebSockets in the Responses API
+
+Source: OpenAI Blog
+Published: 2026-04-22 18:00 GMT+8
+
+**English Summary:**
+A deep dive into the Codex agent loop, showing how WebSockets and connection-scoped caching reduced API overhead and improved model latency.
+
+Link:
+https://openai.com/index/speeding-up-agentic-workflows-with-websockets
+
+### Google Cloud launches two new AI chips to compete with Nvidia
+
+Source: TechCrunch
+Published: 2026-04-23 02:39 GMT+8
+
+**English Summary:**
+Google's newest TPUs are faster and cheaper than the previous versions. But the company is still embracing Nvidia in its cloud — for now.
+
+Link:
+https://techcrunch.com/2026/04/22/google-cloud-next-new-tpu-ai-chips-compete-with-nvidia/
+
+### C++ code intelligence for GitHub Copilot CLI in public preview
+
+Source: GitHub Blog Changelog
+Published: 2026-04-22 15:00 GMT+8
+
+**English Summary:**
+The Microsoft C++ Language Server is now available in public preview for the Copilot CLI. Powered by the same IntelliSense engine used in Visual Studio and VS Code, it extends… The post C++ code intelligence for GitHub Copilot CLI in public preview appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-22-c-code-intelligence-for-github-copilot-cli-in-public-preview
+
+### Anthropic’s Mythos rollout has missed America’s cybersecurity agency
+
+Source: The Verge Tech
+Published: 2026-04-23 00:57 GMT+8
+
+**English Summary:**
+Several US federal agencies are taking up Anthropic's new cybersecurity model to find vulnerabilities, but one is reportedly not getting in on the action: the nation's central cybersecurity coordinator. On Tuesday, Axios reported that the Cybersecurity and Infrastructure Security Agency (CISA) didn't have access to Mythos Preview, which Anthropic has touted as a powerful tool […]
+
+Link:
+https://www.theverge.com/policy/916758/anthropic-mythos-preview-cisa-left-out
 
 ## 2026-04-22
 
@@ -278,5 +368,6 @@ Palantir's ideological bent has come under more scrutiny as it's worked with ICE
 
 Link:
 https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/
+
 
 

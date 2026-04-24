@@ -1,13 +1,103 @@
 +++
-date = '2026-04-23T11:55:07+08:00'
+date = '2026-04-24T11:58:51+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W17'
 description = 'Tech Weekly | 2026 W17 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Cloud', 'Security']
+tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Security', 'Cloud']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-24
+
+### Copilot Chat improvements for pull requests
+
+Source: GitHub Blog Changelog
+Published: 2026-04-24 03:58 GMT+8
+
+**English Summary:**
+GitHub Copilot Chat now provides richer context and new capabilities when you’re working with diffs and pull requests. You can access this functionality by asking a question about a pull… The post Copilot Chat improvements for pull requests appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-23-copilot-chat-improvements-for-pull-requests
+
+### OpenAI releases GPT-5.5, bringing company one step closer to an AI ‘super app’
+
+Source: TechCrunch
+Published: 2026-04-24 02:29 GMT+8
+
+**English Summary:**
+OpenAI says its latest model offers increased capabilities across a broad variety of categories.
+
+Link:
+https://techcrunch.com/2026/04/23/openai-chatgpt-gpt-5-5-ai-model-superapp/
+
+### Better debugging with GitHub Copilot on the web
+
+Source: GitHub Blog Changelog
+Published: 2026-04-24 00:16 GMT+8
+
+**English Summary:**
+GitHub Copilot Chat in github.com helps you get to the root cause of an error faster when you paste a stack trace. Copilot recognizes stack traces more reliably and will… The post Better debugging with GitHub Copilot on the web appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-23-better-debugging-with-github-copilot-on-the-web
+
+### Introducing GPT-5.5
+
+Source: OpenAI Blog
+Published: 2026-04-23 19:00 GMT+8
+
+**English Summary:**
+Introducing GPT-5.5, our smartest model yet—faster, more capable, and built for complex tasks like coding, research, and data analysis across tools.
+
+Link:
+https://openai.com/index/introducing-gpt-5-5
+
+### Pausing new self-serve signups for GitHub Copilot Business
+
+Source: GitHub Blog Changelog
+Published: 2026-04-23 14:45 GMT+8
+
+**English Summary:**
+As part of our ongoing efforts to ensure a reliable and sustainable Copilot experience for all users, we are pausing new self-serve signups for GitHub Copilot Business for organizations on… The post Pausing new self-serve signups for GitHub Copilot Business appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-22-pausing-new-self-serve-signups-for-github-copilot-business
+
+### Anthropic’s Mythos breach was humiliating
+
+Source: The Verge Tech
+Published: 2026-04-24 02:24 GMT+8
+
+**English Summary:**
+Anthropic's tightly controlled rollout of Claude Mythos has taken an awkward turn. After spending weeks insisting the AI model is so capable at cybersecurity that it is too dangerous to release publicly, it appears the model fell into the wrong hands anyway. According to Bloomberg, a "small group of unauthorized users" has had access to […]
+
+Link:
+https://www.theverge.com/ai-artificial-intelligence/917644/anthropic-claude-mythos-breach-humiliation
+
+### Copilot cloud agent fields added to usage metrics
+
+Source: GitHub Blog Changelog
+Published: 2026-04-24 01:53 GMT+8
+
+**English Summary:**
+Following the Copilot coding agent to Copilot cloud agent rename, the Copilot usage metrics API now includes a new used_copilot_cloud_agent field in user-level reports. This boolean field mirrors the existing… The post Copilot cloud agent fields added to usage metrics appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-23-copilot-cloud-agent-fields-added-to-usage-metrics
+
+### Disable commit comments across your organization
+
+Source: GitHub Blog Changelog
+Published: 2026-04-24 01:35 GMT+8
+
+**English Summary:**
+You can now disable commit comments at the organization level—no more manually updating every repository one by one. A few weeks ago, we added the ability to disable commit comments… The post Disable commit comments across your organization appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-23-disable-commit-comments-across-your-organization
 
 ## 2026-04-23
 
@@ -368,6 +458,7 @@ Palantir's ideological bent has come under more scrutiny as it's worked with ICE
 
 Link:
 https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/
+
 
 
 

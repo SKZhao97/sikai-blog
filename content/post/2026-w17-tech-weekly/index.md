@@ -1,13 +1,103 @@
 +++
-date = '2026-04-24T11:58:51+08:00'
+date = '2026-04-25T11:40:53+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W17'
 description = 'Tech Weekly | 2026 W17 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'Developer Tools', 'AI', 'Security', 'Cloud']
+tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Security', 'Open Source']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-25
+
+### GPT-5.5 is generally available for GitHub Copilot
+
+Source: GitHub Blog Changelog
+Published: 2026-04-25 01:19 GMT+8
+
+**English Summary:**
+GPT-5.5, OpenAI’s latest GPT model, is now rolling out on GitHub Copilot. In our early testing, GPT-5.5 delivers its strongest performance on complex, multi-step agentic coding task and resolves real-world… The post GPT-5.5 is generally available for GitHub Copilot appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-24-gpt-5-5-is-generally-available-for-github-copilot
+
+### Google to invest up to $40B in Anthropic in cash and compute
+
+Source: TechCrunch
+Published: 2026-04-25 02:00 GMT+8
+
+**English Summary:**
+Google plans up to $40B investment in Anthropic as AI rivals race to secure massive compute capacity, following the limited release of its powerful, cybersecurity-focused Mythos model.
+
+Link:
+https://techcrunch.com/2026/04/24/google-to-invest-up-to-40b-in-anthropic-in-cash-and-compute/
+
+### Google will invest as much as $40 billion in Anthropic
+
+Source: Ars Technica
+Published: 2026-04-25 06:05 GMT+8
+
+**English Summary:**
+This follows a similar, but smaller, investment by Amazon just days ago.
+
+Link:
+https://arstechnica.com/ai/2026/04/google-will-invest-as-much-as-40-billion-in-anthropic/
+
+### Notice about upcoming new format for GitHub App installation tokens
+
+Source: GitHub Blog Changelog
+Published: 2026-04-25 05:49 GMT+8
+
+**English Summary:**
+Starting April 27th 2026 and over the coming weeks, we will begin a staged rollout that updates the format of newly minted GitHub App installation tokens, making them more performant… The post Notice about upcoming new format for GitHub App installation tokens appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-24-notice-about-upcoming-new-format-for-github-app-installation-tokens
+
+### Anthropic Amazon Compute
+
+Source: Anthropic News
+Published: 2026-04-24 23:50 GMT+8
+
+**English Summary:**
+See the source link for the full update.
+
+Link:
+https://www.anthropic.com/news/anthropic-amazon-compute
+
+### Inline agent mode in preview and more in GitHub Copilot for JetBrains IDEs
+
+Source: GitHub Blog Changelog
+Published: 2026-04-24 23:43 GMT+8
+
+**English Summary:**
+This update introduces inline agent mode in preview, enhancements to Next Edit Suggestions, global auto approve, and more flexible controls for terminal commands and file edits. It also includes several… The post Inline agent mode in preview and more in GitHub Copilot for JetBrains IDEs appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-24-inline-agent-mode-in-preview-and-more-in-github-copilot-for-jetbrains-ides
+
+### Anthropic Nec
+
+Source: Anthropic News
+Published: 2026-04-24 12:06 GMT+8
+
+**English Summary:**
+See the source link for the full update.
+
+Link:
+https://www.anthropic.com/news/anthropic-nec
+
+### Changes to notification retention and archived repository watches
+
+Source: GitHub Blog Changelog
+Published: 2026-04-25 04:16 GMT+8
+
+**English Summary:**
+Two updates will change the way GitHub notifications and repository watches are retained. These updates are rolling out soon, and are expected to be completed over the next few months.… The post Changes to notification retention and archived repository watches appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-24-changes-to-notification-retention-and-archived-repository-watches
 
 ## 2026-04-24
 
@@ -458,6 +548,7 @@ Palantir's ideological bent has come under more scrutiny as it's worked with ICE
 
 Link:
 https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/
+
 
 
 

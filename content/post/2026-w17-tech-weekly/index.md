@@ -1,13 +1,103 @@
 +++
-date = '2026-04-25T11:40:53+08:00'
+date = '2026-04-26T12:03:29+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W17'
 description = 'Tech Weekly | 2026 W17 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Security', 'Open Source']
+tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-04-26
+
+### Anthropic created a test marketplace for agent-on-agent commerce
+
+Source: TechCrunch
+Published: 2026-04-26 05:43 GMT+8
+
+**English Summary:**
+In a recent experiment, Anthropic created a classified marketplace where AI agents represented both buyers and sellers, striking real deals for real goods and real money.
+
+Link:
+https://techcrunch.com/2026/04/25/anthropic-created-a-test-marketplace-for-agent-on-agent-commerce/
+
+### OpenAI CEO apologizes to Tumbler Ridge community
+
+Source: TechCrunch
+Published: 2026-04-26 01:17 GMT+8
+
+**English Summary:**
+In a letter to the residents of Tumbler Ridge, Canada, OpenAI CEO Sam Altman said he is “deeply sorry” that his company failed to alert law enforcement about the suspect in a recent mass shooting.
+
+Link:
+https://techcrunch.com/2026/04/25/openai-ceo-apologizes-to-tumbler-ridge-community/
+
+### The climate tech IPO window could finally be cracking open
+
+Source: TechCrunch
+Published: 2026-04-26 00:33 GMT+8
+
+**English Summary:**
+Nuclear startup X-energy went public, geothermal startup Fervo is about to. Could this be the moment that climate tech investors have been waiting for?
+
+Link:
+https://techcrunch.com/2026/04/25/the-climate-tech-ipo-window-could-finally-be-cracking-open/
+
+### India’s Snabbit seeks fresh funding at a $400M valuation, sources say
+
+Source: TechCrunch
+Published: 2026-04-25 22:57 GMT+8
+
+**English Summary:**
+Snabbit has scaled rapidly, crossing one million jobs in March, amid growing investor interest.
+
+Link:
+https://techcrunch.com/2026/04/25/indias-snabbit-seeks-fresh-funding-at-a-400m-valuation-sources-say/
+
+### Maine’s governor vetoes data center moratorium
+
+Source: TechCrunch
+Published: 2026-04-26 04:57 GMT+8
+
+**English Summary:**
+L.D. 307 would have imposed the country’s first statewide moratorium on new data centers — lasting, in this case, until November 1, 2027.
+
+Link:
+https://techcrunch.com/2026/04/25/maines-governor-vetoes-data-center-moratorium/
+
+### An influx of used EVs could drive down prices
+
+Source: The Verge Tech
+Published: 2026-04-26 02:25 GMT+8
+
+**English Summary:**
+Part of what has held back electric cars has been the cost. But an influx of used vehicles over the next three years could bring prices down dramatically. In 2025, just 123,000 leases on EVs expired. That is expected to more than double to 300,000 in 2026, and double again to 600,000 in 2027 and […]
+
+Link:
+https://www.theverge.com/tech/918765/an-influx-of-used-evs-could-drive-down-prices
+
+### Why Cohere is merging with Aleph Alpha
+
+Source: TechCrunch
+Published: 2026-04-26 00:00 GMT+8
+
+**English Summary:**
+Canadian AI startup Cohere is taking over Germany-based Aleph Alpha with support from Lidl’s owner, Schwarz Group. With the blessing of their governments, the companies intend to offer a sovereign alternative to enterprises in an AI landscape dominated by American players.
+
+Link:
+https://techcrunch.com/2026/04/25/why-cohere-is-merging-with-aleph-alpha/
+
+### Researchers say we’re talking less than ever
+
+Source: The Verge Tech
+Published: 2026-04-25 23:03 GMT+8
+
+**English Summary:**
+Researchers at the University of Missouri-Kansas City and the University of Arizona say that between 2005 and 2019, the number of words we speak out loud to another human being fell by nearly 28 percent. And that has likely only gotten worse following the pandemic. The researchers actually counted the number of words we were […]
+
+Link:
+https://www.theverge.com/science/918753/researchers-talking-less
 
 ## 2026-04-25
 
@@ -548,6 +638,7 @@ Palantir's ideological bent has come under more scrutiny as it's worked with ICE
 
 Link:
 https://techcrunch.com/2026/04/19/palantir-posts-mini-manifesto-denouncing-regressive-and-harmful-cultures/
+
 
 
 

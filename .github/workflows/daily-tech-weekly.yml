@@ -80,6 +80,16 @@ jobs:
 
       - name: Commit changes
         run: |
+          # 获取当前是本月的第几天
+          DOM=$(date +%d)
+          
+          # 仅在每月 1 号执行 push（也可以改为 28, 30 等）
+          # 注意：如果不是 1 号，虽然脚本运行了，但不会执行下面的 git 操作
+          if [ "$DOM" != "01" ]; then
+            echo "Not the first day of the month, skipping push."
+            exit 0
+          fi
+          
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add content/post

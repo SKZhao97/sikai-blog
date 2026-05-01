@@ -1,13 +1,103 @@
 +++
-date = '2026-04-28T12:23:17+08:00'
+date = '2026-05-01T12:36:21+08:00'
 draft = false
 title = 'Tech Weekly | 2026 W18'
 description = 'Tech Weekly | 2026 W18 generated from curated public RSS feeds.'
 categories = ['Tech Digest']
-tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Cloud']
+tags = ['Tech News', 'Weekly', 'AI', 'Developer Tools', 'Cloud', 'Security']
 image = 'cover.svg'
 +++
 This weekly post collects notable tech news from curated public RSS feeds and is updated daily.
+
+## 2026-05-01
+
+### OpenAI announces new advanced security for ChatGPT accounts, including a partnership with Yubico
+
+Source: TechCrunch
+Published: 2026-05-01 02:20 GMT+8
+
+**English Summary:**
+OpenAI is launching additional opt-in protections for ChatGPT accounts. The new security initiative includes a new partnership with security key provider Yubico.
+
+Link:
+https://techcrunch.com/2026/04/30/openai-announces-new-advanced-security-for-chatgpt-accounts-including-a-partnership-with-yubico/
+
+### GitHub Copilot in Visual Studio — April update
+
+Source: GitHub Blog Changelog
+Published: 2026-04-30 23:00 GMT+8
+
+**English Summary:**
+The April 2026 update to Visual Studio centers on agentic workflows: cloud agent sessions launch directly from the IDE, custom agents gain user-level support, and a new Debugger agent validates… The post GitHub Copilot in Visual Studio — April update appeared first on The GitHub Blog .
+
+Link:
+https://github.blog/changelog/2026-04-30-github-copilot-in-visual-studio-april-update
+
+### After dissing Anthropic for limiting Mythos, OpenAI restricts access to Cyber, too
+
+Source: TechCrunch
+Published: 2026-05-01 03:27 GMT+8
+
+**English Summary:**
+OpenAI will begin rolling out its cybersecurity testing tool, GPT-5.5 Cyber only "to critical cyber defenders" at first.
+
+Link:
+https://techcrunch.com/2026/04/30/after-dissing-anthropic-for-limiting-mythos-openai-restricts-access-to-cyber-too/
+
+### Agents can now create Cloudflare accounts, buy domains, and deploy
+
+Source: Cloudflare Blog
+Published: 2026-04-30 21:00 GMT+8
+
+**English Summary:**
+Starting today, agents can now be Cloudflare customers. They can create a Cloudflare account, start a paid subscription, register a domain, and get back an API token to deploy code right away. Humans can be in the loop to grant permission, but there’s no need to go to the dashboard, copy and paste API tokens, or enter credit card details.
+
+Link:
+https://blog.cloudflare.com/agents-stripe-projects/
+
+### Enabling a new model for healthcare with AI co-clinician
+
+Source: Google DeepMind Blog
+Published: 2026-04-30 20:14 GMT+8
+
+**English Summary:**
+Researching the path to AI-augmented care and development of an AI co-clinician.
+
+Link:
+https://deepmind.google/blog/ai-co-clinician/
+
+### Post-quantum encryption for Cloudflare IPsec is generally available
+
+Source: Cloudflare Blog
+Published: 2026-04-30 22:00 GMT+8
+
+**English Summary:**
+Cloudflare IPsec now has generally available support for post-quantum encryption via hybrid ML-KEM. We’ve confirmed interoperability with Cisco and Fortinet.
+
+Link:
+https://blog.cloudflare.com/post-quantum-ipsec/
+
+### Sources: Anthropic potential $900B+ valuation round could happen within 2 weeks
+
+Source: TechCrunch
+Published: 2026-05-01 07:07 GMT+8
+
+**English Summary:**
+Anthropic is asking investors to submit allocations for the AI company’s latest fundraise within the next 48 hours, according to sources familiar with the matter.
+
+Link:
+https://techcrunch.com/2026/04/30/anthropic-potential-900b-valuation-round-could-happen-within-two-weeks/
+
+### Elon Musk's 7 biggest stumbles on the stand at OpenAI trial
+
+Source: Ars Technica
+Published: 2026-05-01 05:11 GMT+8
+
+**English Summary:**
+Elon Musk spent three days testifying as the first witness in his trial against OpenAI.
+
+Link:
+https://arstechnica.com/tech-policy/2026/04/elon-musks-7-biggest-stumbles-on-the-stand-at-openai-trial/
 
 ## 2026-04-28
 
@@ -188,4 +278,5 @@ It's "a detective story, but the detective happens to also have spider powers.�
 
 Link:
 https://arstechnica.com/culture/2026/04/prime-video-drops-full-trailer-for-spider-noir/
+
 

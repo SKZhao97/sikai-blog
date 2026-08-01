@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1600" y2="640" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0f766e"/>
+      <stop offset="1" stop-color="#14b8a6"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="640" fill="url(#bg)"/>
+  <circle cx="1290" cy="140" r="180" fill="#99f6e4" fill-opacity="0.18"/>
+  <circle cx="1420" cy="520" r="240" fill="#99f6e4" fill-opacity="0.10"/>
+  <rect x="110" y="92" width="420" height="10" rx="5" fill="#99f6e4" fill-opacity="0.82"/>
+  <text x="110" y="220" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="78" font-weight="700">Weekly Digest</text>
+  <text x="110" y="306" fill="white" font-family="Georgia, 'Times New Roman', serif" font-size="60" font-weight="500">Tech Weekly</text>
+  <text x="110" y="420" fill="#99f6e4" font-family="Arial, sans-serif" font-size="38" font-weight="700">2026 W31</text>
+  <text x="110" y="478" fill="#99f6e4" font-family="Arial, sans-serif" font-size="30">2026-07-27 to 2026-08-02</text>
+  <text x="110" y="568" fill="white" font-family="Arial, sans-serif" font-size="24" opacity="0.9">Generated automatically from curated public RSS feeds</text>
+</svg>
